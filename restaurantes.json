@@ -1,0 +1,363 @@
+{
+  "id": "amenity",
+  "title": {
+    "ca": "Afegeix el teu negoci",
+    "es": "Añade tu negocio",
+    "en": "Add your bussiness"
+  },
+  "shortDescription": {
+    "ca": "Afegeix el teu negoci",
+    "es": "Añade tu negocio",
+    "en": "Add your bussiness"
+  },
+  "description": {
+    "ca": "Afegeix el teu negoci",
+    "es": "Añade tu negocio",
+    "en": "Add your bussiness"
+  },
+  "language": [
+    "ca",
+    "es",
+    "en"
+  ],
+  "maintainer": "",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/MapComplete/master/json/images/restaurant.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "restaurants",
+      "name": {
+        "ca": "Restaurants",
+        "es": "Restaurantes",
+        "en": "Restaurants"
+      },
+      "minzoom": 15,
+      "overpassTags": {
+        "and": [
+          "amenity=restaurant"
+        ]
+      },
+      "title": {
+        "render": {
+          "ca": "restaurant",
+          "es": "restaurant",
+          "en": "restaurant"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "amenity=restaurant"
+              ]
+            },
+            "then": {
+              "ca": "Restaurant {name}",
+              "es": "Restaurante {name}",
+              "en": "Restaurant {name}"
+            }
+          }
+        ]
+      },
+      "description": {
+        "ca": "Afegeix el teu negoci",
+        "es": "Añade tu negocio",
+        "en": "Add your bussiness"
+      },
+      "tagRenderings": [
+        "images",
+        {
+          "render": {
+            "ca": "Horari:{opening_hours}",
+            "es": "Horario:{opening_hours}",
+            "en": "Opening hours:{opening_hours}"
+          },
+          "question": {
+            "ca": "Horari?",
+            "es": "¿Horario?",
+            "en": "Opening hours?"
+          },
+          "freeform": {
+            "key": "opening_hours",
+            "type": "opening_hours",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "opening_hours="
+                ]
+              },
+              "then": {
+                "ca": "No té horari definit",
+                "es": "No tiene horario definido",
+                "en": "No opening_hours defined"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        },
+        {
+          "render": {
+            "ca": "Telèfon:{phone}",
+            "es": "Teléfono:{phone}",
+            "en": "Phone:{phone}"
+          },
+          "question": {
+            "ca": "Telèfon?",
+            "es": "¿Teléfono?",
+            "en": "Phone?"
+          },
+          "freeform": {
+            "key": "phone"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "phone="
+                ]
+              },
+              "then": {
+                "ca": "Sense telèfon",
+                "es": "Sin teléfono",
+                "en": "No phone"
+              },
+              "hideInAnswer": true
+            }
+          ]
+       },
+        {
+          "render": {
+            "ca": "Twitter:{contact:twitter}",
+            "es": "Twitter:{contact:twitter}",
+            "en": "Twitter:{contact:twitter}"
+          },
+          "question": {
+            "ca": "Twitter?",
+            "es": "¿Twitter?",
+            "en": "Twitter?"
+          },
+          "freeform": {
+            "key": "contact:twitter"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "contact:twitter="
+                ]
+              },
+              "then": {
+                "ca": "No Twitter",
+                "es": "No Twitter",
+                "en": "No Twitter"
+              },
+              "hideInAnswer": true
+            }
+          ]
+       },
+        {
+          "render": {
+            "ca": "Facebook:{contact:facebook}",
+            "es": "Facebook:{contact:facebook}",
+            "en": "Facebook:{contact:facebook}"
+          },
+          "question": {
+            "ca": "Facebook?",
+            "es": "¿Facebook?",
+            "en": "Facebook?"
+          },
+          "freeform": {
+            "key": "contact:facebook"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "contact:facebook="
+                ]
+              },
+              "then": {
+                "ca": "No Facebook",
+                "es": "No Facebook",
+                "en": "No Facebook"
+              },
+              "hideInAnswer": true
+            }
+          ]
+       },
+        {
+          "render": {
+            "ca": "Instagram:{contact:instagram}",
+            "es": "Instagram:{contact:instagram}",
+            "en": "Instagram:{contact:instagram}"
+          },
+          "question": {
+            "ca": "Instagram?",
+            "es": "¿Instagram?",
+            "en": "Instagram?"
+          },
+          "freeform": {
+            "key": "contact:instagram"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "contact:instagram="
+                ]
+              },
+              "then": {
+                "ca": "No Instagram",
+                "es": "No Instagram",
+                "en": "No Instagram"
+              },
+              "hideInAnswer": true
+            }
+          ]
+       },
+        {
+          "render": {
+            "ca": "Email:{contact:email}",
+            "es": "Email:{contact:email}",
+            "en": "Email:{contact:email}"
+          },
+          "question": {
+            "ca": "Email?",
+            "es": "¿Email?",
+            "en": "Email?"
+          },
+          "freeform": {
+            "key": "contact:email"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "contact:email="
+                ]
+              },
+              "then": {
+                "ca": "No Email",
+                "es": "No Email",
+                "en": "No Email"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        },
+        {
+          "render": {
+            "ca": "Adreça:{addr:street}",
+            "es": "Dirección:{addr:street}",
+            "en": "Address:{addr:street}"
+          },
+          "question": {
+            "ca": "Adreça?",
+            "es": "¿Dirección?",
+            "en": "Address?"
+          },
+          "freeform": {
+            "key": "addr:street"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "addr:street="
+                ]
+              },
+              "then": {
+                "ca": "Sense adreça",
+                "es": "Sin dirección",
+                "en": "No address"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        },
+        {
+          "render": {
+            "ca": "Número:{addr:housenumber}",
+            "es": "Número:{addr:housenumber}",
+            "en": "Housenumber:{addr:housenumber}"
+          },
+          "question": {
+            "ca": "Número?",
+            "es": "¿Número?",
+            "en": "Housenumber?"
+          },
+          "freeform": {
+            "key": "addr:street"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "addr:street="
+                ]
+              },
+              "then": {
+                "ca": "Sense número",
+                "es": "Sin número",
+                "en": "No housenumber"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://raw.githubusercontent.com/yopaseopor/MapComplete/master/json/images/restaurant.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "10,10,center",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name~*"
+              ]
+            },
+            "then": {
+              "ca": "Restaurant  {name}",
+              "es": "Restaurante  {name}",
+              "en": "Restaurant  {name}"
+            }
+          }
+        ]
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "amenity=restaurant"
+          ],
+          "title": {
+            "ca": "Afegeix el teu restaurant",
+            "es": "Añade tu restaurante",
+            "en": "Add your restaurant"
+          },
+          "description": {
+            "ca": "Afegeix el teu restaurant",
+            "es": "Añade tu restaurante",
+            "en": "Add your restaurant"
+          }
+        }
+      ]
+    }
+  ],
+  "roamingRenderings": []
+}
