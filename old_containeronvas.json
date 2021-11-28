@@ -64,11 +64,11 @@
       "tagRenderings": [
         {
           "render": {
-            "ca": "{recycling_type}",
-            "es": "{recycling_type}"
+            "ca": "Contenidor",
+            "es": "Contenedor"
           },
           "freeform": {
-            "key": "recycling_type"
+            "key": "reciclyng_type"
           },
           "mappings": [
             {
@@ -131,7 +131,7 @@
             {
               "if": {
                 "and": [
-                  "recycling:clothes=yes"
+                  "recyclin:clothes=yes"
                 ]
               },
               "then": {
@@ -150,8 +150,8 @@
         },
         {
           "render": {
-            "ca": "{location}",
-            "es": "{location}"
+            "ca": "underground",
+            "es": "underground"
           },
           "question": {
             "ca": "Aquest contenidor és soterrat?",
