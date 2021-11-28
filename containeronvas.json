@@ -17,7 +17,7 @@
     "es"
   ],
   "maintainer": "",
-  "icon": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/general.svg",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/general.svg",
   "version": "2020_09_26",
   "startLat": 0,
   "startLon": 0,
@@ -177,7 +177,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/general.svg",
+        "render": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/general.svg",
         "mappings": [
           {
             "if": {
@@ -186,8 +186,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/paper.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/paper.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/paper.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/paper.svg"
             }
           },
           {
@@ -197,8 +197,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/envasos.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/envasos.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg"
             }
           },
           {
@@ -208,8 +208,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/vidre.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/vidre.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/vidre.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/vidre.svg"
             }
           },
           {
@@ -219,8 +219,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/rebuig.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/rebuig.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/rebuig.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/rebuig.svg"
             }
           },
           {
@@ -230,8 +230,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/organic.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/organic.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/organic.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/organic.svg"
             }
           },
           {
@@ -241,8 +241,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/roba.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_contenidors/roba.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/roba.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/roba.svg"
             }
           }
         ],
