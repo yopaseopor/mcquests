@@ -63,8 +63,8 @@
       "tagRenderings": [
         {
           "render": {
-            "ca": "Regulació de l'encreuament",
-            "es": "Regulación del cruce"
+            "ca": "{crossing}",
+            "es": "{crossing}"
           },
           "question": {
             "ca": "Com està regulat l'encreuament?",
@@ -112,8 +112,8 @@
         },
         {
           "render": {
-            "ca": "Tipus d'encreuament",
-            "es": "Tipo de cruce"
+            "ca": "{crossing_ref}",
+            "es": "{crossing_ref}"
           },
           "question": {
             "ca": "Quin tipus d'encreuament és?",
@@ -196,8 +196,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals_pelican.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals_pelican.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals_pelican.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals_pelican.svg"
             }
           },
           {
@@ -208,8 +208,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals_toucan.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals_toucan.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals_toucan.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals_toucan.svg"
             }
           },
           {
@@ -220,8 +220,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals_puffin.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals_puffin.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals_puffin.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals_puffin.svg"
             }
           },
           {
@@ -231,8 +231,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/traffic_signals.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/traffic_signals.svg"
             }
           },
           {
@@ -243,8 +243,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/uncontrolled_zebra.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/uncontrolled_zebra.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/uncontrolled_zebra.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/uncontrolled_zebra.svg"
             }
           },
           {
@@ -255,8 +255,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/uncontrolled_tiger.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/uncontrolled_tiger.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/uncontrolled_tiger.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/uncontrolled_tiger.svg"
             }
           },
           {
@@ -266,8 +266,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/unmarked.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_encreuaments/unmarked.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/unmarked.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_encreuaments/unmarked.svg"
             }
           }
         ]
