@@ -39,8 +39,9 @@
       "minzoom": 12,
       "overpassTags": {
         "or": [
-          "footway~sidewalk|crossing",
-          "highway=pedestrian"
+          "footway=crossing",
+          "highway=pedestrian",
+          "footway=sidewalk"
         ]
       },
       "title": {
@@ -125,9 +126,9 @@
       "tagRenderings": [
         {
           "render": {
-            "ca": "Nom",
-            "es": "Nombre",
-            "en": "Name"
+            "ca": "{name}",
+            "es": "{name}",
+            "en": "{name}"
           },
           "question": {
             "ca": "A quina via pertany aquesta vorera?",
@@ -162,9 +163,9 @@
         },
         {
           "render": {
-            "ca": "Nom",
-            "es": "Nombre",
-            "en": "Name"
+            "ca": "{name}",
+            "es": "{name}",
+            "en": "{name}"
           },
           "question": {
             "ca": "Quina via es creua per aquí?",
@@ -199,9 +200,9 @@
         },
         {
           "render": {
-            "ca": "Amplada",
-            "es": "Anchura",
-            "en": "Width"
+            "ca": "{width}",
+            "es": "{width}",
+            "en": "{width}"
           },
           "question": {
             "ca": "Quina amplada té aquesta vorera?",
@@ -231,9 +232,9 @@
         },
         {
           "render": {
-            "ca": "Accessibilitat",
-            "es": "Accesibilidad",
-            "en": "Accessibility"
+            "ca": "{wheelchair}",
+            "es": "{wheelchair}",
+            "en": "{wheelchair}"
           },
           "question": {
             "ca": "Aquesta via és adaptada per a cadira de rodes?",
