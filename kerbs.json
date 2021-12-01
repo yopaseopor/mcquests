@@ -21,7 +21,7 @@
     "es"
   ],
   "maintainer": "",
-  "icon": "https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/ramp_wheelchair.svg",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/ramp_wheelchair.svg",
   "version": "0",
   "startLat": 0,
   "startLon": 0,
@@ -71,7 +71,9 @@
       "tagRenderings": [
         {
           "render": {
-            "en": "{key}"
+            "en": "{kerb}",
+            "ca": "{kerb}",
+            "es": "{kerb}"
           },
           "question": {
             "en": "What kind of kerb do you have at the street?",
@@ -139,12 +141,15 @@
                 "es": "Redonda"
               }
             }
-          ]
+          ],
+          "freeform": {
+            "key": "kerb"
+          }
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/ramp_wheelchair.svg",
+        "render": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/ramp_wheelchair.svg",
         "mappings": [
           {
             "if": {
@@ -153,7 +158,7 @@
               ]
             },
             "then": {
-              "en": "https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/kerb_yes.svg"
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_yes.svg"
             }
           },
           {
@@ -163,7 +168,7 @@
               ]
             },
             "then": {
-              "en": "https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/kerb_raised.svg"
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_raised.svg"
             }
           },
           {
@@ -173,7 +178,7 @@
               ]
             },
             "then": {
-              "en": "https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/kerb_lowered.svg"
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_lowered.svg"
             }
           },
           {
@@ -183,7 +188,7 @@
               ]
             },
             "then": {
-              "en": "https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/kerb_flush.svg"
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_flush.svg"
             }
           }
         ]
@@ -192,7 +197,7 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "50,50,center"
       },
       "color": {
         "render": "#00f"
