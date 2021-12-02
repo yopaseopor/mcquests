@@ -105,9 +105,9 @@
       "tagRenderings": [
         {
           "render": {
-            "en": "Way but no data",
-            "ca": "Via però sense dades",
-            "es": "Vía pero sin datos"
+            "en": "{wheelchair}",
+            "ca": "{wheelchair}",
+            "es": "{wheelchair}"
           },
           "question": {
             "en": "Is wheelchair friendly?",
@@ -151,12 +151,65 @@
                 "es": "No es accesible"
               }
             }
-          ]
+          ],
+          "freeform": {
+            "key": "wheelchair"
+          }
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://yopaseopor.github.io/accessibilitat/map/src/img/accessibilitat/obstacle_wheelchair_yes.svg"
+        "render": "https://yopaseopor.github.io/accessibilitat/map/src/img/accessibilitat/obstacle_wheelchair_yes.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "kerb=yes"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_yes.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_yes.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_yes.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "kerb=raised"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_raised.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_raised.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_raised.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "kerb=lowered"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_lowered.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_lowered.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_lowered.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "kerb=flush"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_flush.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_flush.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/kerb_flush.svg"
+            }
+          }
+        ]
       },
       "width": {
         "render": "4"
@@ -174,7 +227,9 @@
               ]
             },
             "then": {
-              "en": "#00ffa6"
+              "en": "#00ffa6",
+              "ca": "#00ffa6",
+              "es": "#00ffa6"
             }
           },
           {
@@ -184,7 +239,9 @@
               ]
             },
             "then": {
-              "en": " #ffaa00 "
+              "en": " #ffaa00 ",
+              "ca": " #ffaa00 ",
+              "es": " #ffaa00 "
             }
           },
           {
@@ -194,7 +251,9 @@
               ]
             },
             "then": {
-              "en": " #ff0000 "
+              "en": " #ff0000 ",
+              "ca": " #ff0000 ",
+              "es": " #ff0000 "
             }
           }
         ]
