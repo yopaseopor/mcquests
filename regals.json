@@ -1,0 +1,174 @@
+{
+  "id": "recollidajoguines",
+  "title": {
+    "ca": "Recollida joguines",
+    "es": "Recogida juguetes"
+  },
+  "shortDescription": {
+    "ca": "Mapa de la recollida de joguines",
+    "es": "Mapa de la recogida de juguetes"
+  },
+  "description": {
+    "ca": "Aquest Nadal fem un mapa per mostrar on hi ha recollida de joguines",
+    "es": "Estas Navidades hacemos un mapa para mostrar dónde se recogen juguetes"
+  },
+  "language": [
+    "ca",
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/mcimages/regals.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "recollidajoguines",
+      "name": {
+        "ca": "Recollida de joguines",
+        "es": "Recogida de juguetes"
+      },
+      "minzoom": 9,
+      "overpassTags": {
+        "and": [
+          "amenity=give_box"
+        ]
+      },
+      "title": {
+        "render": {
+          "ca": "Recollida objectes",
+          "es": "Recogida objetos"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name~*"
+              ]
+            },
+            "then": {
+              "ca": "Nom:{name}",
+              "es": "Nombre:{name}"
+            }
+          }
+        ]
+      },
+      "description": {
+        "ca": "Aquest Nadal fem un mapa per mostrar on hi ha recollida de joguines",
+        "es": "Estas Navidades hacemos un mapa para mostrar dónde se recogen juguetes"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "ca": "Recull joguines:{toys}",
+            "es": "Recoge juguetes: {toys}"
+          },
+          "question": {
+            "ca": "Recull joguines aquest punt?",
+            "es": "¿Recoge juguetes este punto?"
+          },
+          "freeform": {
+            "key": "toys"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toys=only"
+                ]
+              },
+              "then": {
+                "ca": "Només recull joguines",
+                "es": "Sólo juguetes"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toys=yes"
+                ]
+              },
+              "then": {
+                "ca": "Recull joguines i altres coses",
+                "es": "Recoge juguetes y otros objetos"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "ca": "Carrer:{addr:street}",
+            "es": "Calle:{addr:street}"
+          },
+          "question": {
+            "ca": "A quin carrer és situat?",
+            "es": "¿En qué calle está?"
+          },
+          "freeform": {
+            "key": "addr:street"
+          }
+        },
+        {
+          "render": {
+            "ca": "Número:{addr:housenumber}",
+            "es": "Número:{addr:housenumber}"
+          },
+          "question": {
+            "ca": "A quin número està?",
+            "es": "¿Qué número tiene?"
+          },
+          "freeform": {
+            "key": "addr:housenumber"
+          }
+        },
+        {
+          "render": {
+            "ca": "Horari:{opening_hours}",
+            "es": "Horario{opening_hours}"
+          },
+          "question": {
+            "ca": "Horari?",
+            "es": "Horario?"
+          },
+          "freeform": {
+            "key": "opening_hours",
+            "type": "opening_hours"
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/mcimages/regals.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "60,60,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "toys=yes",
+            "amenity=give_box"
+          ],
+          "title": {
+            "ca": "Aquí recullen joguines",
+            "es": "Aquí recogen juguetes"
+          },
+          "description": {
+            "ca": "En aquest punt recullen joguines",
+            "es": "En este punto recogen juguetes"
+          }
+        }
+      ]
+    }
+  ],
+  "roamingRenderings": []
+}
