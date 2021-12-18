@@ -167,7 +167,8 @@
             "es": "En este punto recogen juguetes"
           }
         }
-      ]
+      ],
+      "wayHandling": 1
     }
   ],
   "roamingRenderings": []
