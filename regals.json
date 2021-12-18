@@ -2,19 +2,23 @@
   "id": "recollidajoguines",
   "title": {
     "ca": "Recollida joguines",
-    "es": "Recogida juguetes"
+    "es": "Recogida juguetes",
+    "en": "Toy collection"
   },
   "shortDescription": {
     "ca": "Mapa de la recollida de joguines",
-    "es": "Mapa de la recogida de juguetes"
+    "es": "Mapa de la recogida de juguetes",
+    "en": "Map of toy collection"
   },
   "description": {
     "ca": "Aquest Nadal fem un mapa per mostrar on hi ha recollida de joguines <br><a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>\n",
-    "es": "Estas Navidades hacemos un mapa para mostrar dónde se recogen juguetes<br><a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>"
+    "es": "Estas Navidades hacemos un mapa para mostrar dónde se recogen juguetes<br><a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>",
+    "en": "This Christmas we'll do a map which shows toy collection points.<br><a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>"
   },
   "language": [
     "ca",
-    "es"
+    "es",
+    "en"
   ],
   "maintainer": "",
   "icon": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/mcimages/regals.svg",
@@ -29,7 +33,8 @@
       "id": "recollidajoguines",
       "name": {
         "ca": "Recollida de joguines",
-        "es": "Recogida de juguetes"
+        "es": "Recogida de juguetes",
+        "en": "Toy collection"
       },
       "minzoom": 9,
       "overpassTags": {
@@ -40,7 +45,8 @@
       "title": {
         "render": {
           "ca": "Recollida objectes",
-          "es": "Recogida objetos"
+          "es": "Recogida objetos",
+          "en": "Objects collection"
         },
         "mappings": [
           {
@@ -51,24 +57,28 @@
             },
             "then": {
               "ca": "Nom:{name}",
-              "es": "Nombre:{name}"
+              "es": "Nombre:{name}",
+              "en": "Name:{name}"
             }
           }
         ]
       },
       "description": {
         "ca": "Aquest Nadal fem un mapa per mostrar on hi ha recollida de joguines\n<a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>",
-        "es": "Estas Navidades hacemos un mapa para mostrar dónde se recogen juguetes\n<a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>"
+        "es": "Estas Navidades hacemos un mapa para mostrar dónde se recogen juguetes\n<a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>",
+        "en": "This Christmas we'll do a map which shows toy collection points.<br><a href='https://www.freepik.com/vectors/icons'>Icons vector created by freepik - www.freepik.com</a>"
       },
       "tagRenderings": [
         {
           "render": {
             "ca": "Recull joguines:{toys}",
-            "es": "Recoge juguetes: {toys}"
+            "es": "Recoge juguetes: {toys}",
+            "en": "It collects toys: {toys}"
           },
           "question": {
             "ca": "Recull joguines aquest punt?",
-            "es": "¿Recoge juguetes este punto?"
+            "es": "¿Recoge juguetes este punto?",
+            "en": "Do they collect toys here?"
           },
           "freeform": {
             "key": "toys"
@@ -82,7 +92,8 @@
               },
               "then": {
                 "ca": "Només recull joguines",
-                "es": "Sólo juguetes"
+                "es": "Sólo juguetes",
+                "en": "Only toys"
               }
             },
             {
@@ -93,7 +104,8 @@
               },
               "then": {
                 "ca": "Recull joguines i altres coses",
-                "es": "Recoge juguetes y otros objetos"
+                "es": "Recoge juguetes y otros objetos",
+                "en": "They collect toys and other objects."
               }
             }
           ]
@@ -101,11 +113,13 @@
         {
           "render": {
             "ca": "Carrer:{addr:street}",
-            "es": "Calle:{addr:street}"
+            "es": "Calle:{addr:street}",
+            "en": "Street:{addr:street}"
           },
           "question": {
             "ca": "A quin carrer és situat?",
-            "es": "¿En qué calle está?"
+            "es": "¿En qué calle está?",
+            "en": "What is their street adress?"
           },
           "freeform": {
             "key": "addr:street"
@@ -114,11 +128,13 @@
         {
           "render": {
             "ca": "Número:{addr:housenumber}",
-            "es": "Número:{addr:housenumber}"
+            "es": "Número:{addr:housenumber}",
+            "en": "Housenumber:{addr:housenumber}"
           },
           "question": {
             "ca": "A quin número està?",
-            "es": "¿Qué número tiene?"
+            "es": "¿Qué número tiene?",
+            "en": "What is their housenumber?"
           },
           "freeform": {
             "key": "addr:housenumber"
@@ -127,11 +143,13 @@
         {
           "render": {
             "ca": "Horari:{opening_hours}",
-            "es": "Horario{opening_hours}"
+            "es": "Horario:{opening_hours}",
+            "en": "Opening hours:{opening_hours}"
           },
           "question": {
             "ca": "Horari?",
-            "es": "Horario?"
+            "es": "Horario?",
+            "en": "Opening hours?"
           },
           "freeform": {
             "key": "opening_hours",
@@ -160,11 +178,13 @@
           ],
           "title": {
             "ca": "Aquí recullen joguines",
-            "es": "Aquí recogen juguetes"
+            "es": "Aquí recogen juguetes",
+            "en": "Here they collect toys"
           },
           "description": {
             "ca": "En aquest punt recullen joguines",
-            "es": "En este punto recogen juguetes"
+            "es": "En este punto recogen juguetes",
+            "en": "In this point they collect toys"
           }
         }
       ],
