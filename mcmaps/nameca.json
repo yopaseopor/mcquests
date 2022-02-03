@@ -1,0 +1,108 @@
+{
+  "id": "nameca",
+  "title": {
+    "ca": "Idioma català"
+  },
+  "shortDescription": {
+    "ca": "Utilitat per completar el camp name:ca"
+  },
+  "description": {
+    "ca": "Utilitat per completar el camp name:ca"
+  },
+  "language": [
+    "ca"
+  ],
+  "maintainer": "",
+  "icon": "./assets/svg/bug.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "nameca",
+      "name": {
+        "ca": "name:ca"
+      },
+      "minzoom": 18,
+      "overpassTags": {
+        "and": [
+          "name:ca~*"
+        ]
+      },
+      "title": {
+        "render": {
+          "ca": "name:ca"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name:ca~*"
+              ]
+            },
+            "then": {
+              "ca": "Aquesta via té com a name:ca {name:ca}"
+            }
+          }
+        ]
+      },
+      "description": {},
+      "tagRenderings": [
+        {
+          "render": {
+            "ca": "{name}"
+          },
+          "question": {
+            "ca": "Quin és el nom d'aquest carrer?"
+          },
+          "freeform": {
+            "key": "name"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "name~*"
+                ]
+              },
+              "then": {
+                "ca": "El \"name\" de la via és"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "./assets/svg/bug.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#000000",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name~*"
+              ]
+            },
+            "then": {
+              "ca": "#ffffff"
+            }
+          }
+        ]
+      },
+      "presets": []
+    }
+  ],
+  "roamingRenderings": []
+}
