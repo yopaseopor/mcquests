@@ -87,7 +87,7 @@
         "render": "40,40,center"
       },
       "color": {
-        "render": "#000000",
+        "render": "#F11717",
         "mappings": [
           {
             "if": {
@@ -96,7 +96,7 @@
               ]
             },
             "then": {
-              "ca": "#ffffff"
+              "ca": "#35952E"
             }
           }
         ]
