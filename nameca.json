@@ -69,7 +69,7 @@
                 ]
               },
               "then": {
-                "ca": "El \"name\" de la via és"
+                "ca": "El \"name\" de la via és {name}"
               },
               "hideInAnswer": true
             }
