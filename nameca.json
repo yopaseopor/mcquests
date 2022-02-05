@@ -87,7 +87,7 @@
         "render": "40,40,center"
       },
       "color": {
-        "render": "#F11717",
+        "render": "rgba(0,128,0,0.4)",
         "mappings": [
           {
             "if": {
