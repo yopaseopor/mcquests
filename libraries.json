@@ -1084,41 +1084,9 @@
             "key": "toilets:wheelchair:description"
           }
         },
-        {
-          "render": {
-            "es": "{contact:email}"
-          },
-          "question": {
-            "es": "¿Qué dirección de correo electrónico tiene?"
-          },
-          "freeform": {
-            "key": "contact:email",
-            "type": "email"
-          }
-        },
-        {
-          "render": {
-            "es": "{contact:phone}"
-          },
-          "question": {
-            "es": "¿Qué número de teléfono tiene?"
-          },
-          "freeform": {
-            "key": "contact:phone",
-            "type": "phone"
-          }
-        },
-        {
-          "render": {
-            "es": "{contact:website}"
-          },
-          "question": {
-            "es": "¿Qué página web tiene?"
-          },
-          "freeform": {
-            "key": "contact:website"
-          }
-        },
+        "email",
+        "phone",
+        "website",
         {
           "render": {
             "es": "{contact:facebook}"
@@ -1385,74 +1353,7 @@
             }
           ]
         },
-        {
-          "render": {
-            "es": "De pago en metálico:{payment:cash}"
-          },
-          "question": {
-            "es": "¿Se puede pagar en metálico?"
-          },
-          "freeform": {
-            "key": "payment:cash",
-            "addExtraTags": []
-          },
-          "mappings": [
-            {
-              "if": {
-                "and": [
-                  "payment:cash=yes"
-                ]
-              },
-              "then": {
-                "es": "Sí"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "payment:cash=no"
-                ]
-              },
-              "then": {
-                "es": "No"
-              }
-            }
-          ]
-        },
-        {
-          "render": {
-            "es": "De pago con tarjeta:{payment:credit_cards}"
-          },
-          "question": {
-            "es": "¿Se puede pagar con tarjeta?"
-          },
-          "freeform": {
-            "key": "payment:credit_cards",
-            "addExtraTags": []
-          },
-          "mappings": [
-            {
-              "if": {
-                "and": [
-                  "payment:credit_cards=yes"
-                ]
-              },
-              "then": {
-                "es": "Sí"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "payment:credit_cards=no"
-                ]
-              },
-              "then": {
-                "es": "No"
-              }
-            }
-          ]
-        },
+        "payment-options",
         {
           "render": {
             "es": "Servicios: ¿ordenadores? {service:computer}"
