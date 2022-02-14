@@ -1,0 +1,1991 @@
+{
+  "id": "libraries",
+  "title": {
+    "es": "Bibliotecas"
+  },
+  "shortDescription": {
+    "es": "Todo lo que puedas saber sobre las bibliotecas"
+  },
+  "description": {
+    "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50!"
+  },
+  "language": [
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "https://www.svgrepo.com/show/181859/library-book.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "libraries",
+      "name": {
+        "es": "bibliotecas"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "amenity=library"
+        ]
+      },
+      "title": {
+        "render": {
+          "es": "Biblioteca"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name~*"
+              ]
+            },
+            "then": {
+              "es": "{name}"
+            }
+          }
+        ]
+      },
+      "description": {
+        "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50!"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "es": "Dirección:{addr:street}"
+          },
+          "question": {
+            "es": "¿En que calle se sitúa?"
+          },
+          "freeform": {
+            "key": "addr:street",
+            "addExtraTags": []
+          },
+          "mappings": []
+        },
+        {
+          "render": {
+            "es": "Número:{addr:housenumber}"
+          },
+          "question": {
+            "es": "¿En qué número?"
+          },
+          "freeform": {
+            "key": "addr:housenumber"
+          }
+        },
+        {
+          "render": {
+            "es": "Planta:{addr:floor}"
+          },
+          "question": {
+            "es": "¿En qué planta?"
+          },
+          "freeform": {
+            "key": "addr:floor"
+          }
+        },
+        {
+          "render": {
+            "es": "Población:{addr:city}"
+          },
+          "question": {
+            "es": "¿En qué población?"
+          },
+          "freeform": {
+            "key": "addr:city"
+          }
+        },
+        {
+          "render": {
+            "es": "Código postal:{addr:postcode}"
+          },
+          "question": {
+            "es": "¿Qué código postal tiene?"
+          },
+          "freeform": {
+            "key": "addr:postcode"
+          }
+        },
+        {
+          "render": {
+            "es": "Tipo de biblioteca:{library}"
+          },
+          "question": {
+            "es": "¿Qué tipo de biblioteca es?"
+          },
+          "freeform": {
+            "key": "library",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "library=public"
+                ]
+              },
+              "then": {
+                "es": "Público en general"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "library=cinema"
+                ]
+              },
+              "then": {
+                "es": "Especializada en cine"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "library=students"
+                ]
+              },
+              "then": {
+                "es": "Para estudiantes"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "library=research"
+                ]
+              },
+              "then": {
+                "es": "Especializada en investigación"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "library=university"
+                ]
+              },
+              "then": {
+                "es": "Biblioteca universitaria"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "library=academic"
+                ]
+              },
+              "then": {
+                "es": "Para académic@s"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "library=children"
+                ]
+              },
+              "then": {
+                "es": "Especializada en literatura infantil"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Tiene libros de los siguientes temas:{books}"
+          },
+          "question": {
+            "es": "¿De qué temas tiene la biblioteca libros?"
+          },
+          "freeform": {
+            "key": "books",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "books=all"
+                ]
+              },
+              "then": {
+                "es": "Todo tipo de libros . Si quieres especificar varios escribe la siguiente leyenda (en inglés), cada valor debe ir separado de punto y coma (;) :<br>Administración y dirección de empresas:business_administration<br>Economía:economics<br>Estudios de mercado:trade_studies<br>Anarquismo:anarchism<br>Antiguos:antiquarian<br>Arquitectura:architecture<br>Arte (especializado):fine_art<br>Arte:art<br>Ciencias:sciences<br>Ciencias de la comunicación:communication_science<br>Estudios de comunicación:communication_studies<br>Ciencias de la educación:education_sciences<br>Ciencias naturales:natural_sciences<br>Ciencias sociales:social_sciences<br>Psicología:psychology<br>Ciencias de la salud:health_sciences<br>Medicina:medicine<br>Derecho:law<br>Geografía:tourism_geography<br>Turismo:tourism<br>Ingenería industrial:industrial_engineering<br>Ingenería informática:computer_engineering<br>Ingenería de telecomunicaciones:telecommunications_engineering<br>"
+              },
+              "hideInAnswer": false
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Depende de:{operator}"
+          },
+          "question": {
+            "es": "¿De quien depende la biblioteca?"
+          },
+          "freeform": {
+            "key": "operator"
+          }
+        },
+        {
+          "render": {
+            "es": "Tipo de operador:{operator:type}"
+          },
+          "question": {
+            "es": "¿Qué tipo de institución es?"
+          },
+          "freeform": {
+            "key": "operator:type"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "operator:type=association"
+                ]
+              },
+              "then": {
+                "es": "Una asociación"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=community"
+                ]
+              },
+              "then": {
+                "es": "Una comunidad"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=foundation"
+                ]
+              },
+              "then": {
+                "es": "Una fundación"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=government"
+                ]
+              },
+              "then": {
+                "es": "Un gobierno"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=statewide"
+                ]
+              },
+              "then": {
+                "es": "Un gobierno regional"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=local_authority"
+                ]
+              },
+              "then": {
+                "es": "Un gobierno local"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=private"
+                ]
+              },
+              "then": {
+                "es": "Privada"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=private_non_profit"
+                ]
+              },
+              "then": {
+                "es": "Privada sin afán de lucro"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=public"
+                ]
+              },
+              "then": {
+                "es": "Pública (Sin determinar)"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=religious"
+                ]
+              },
+              "then": {
+                "es": "Religiosa"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=university"
+                ]
+              },
+              "then": {
+                "es": "Universitaria"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "operator:type=corporation"
+                ]
+              },
+              "then": {
+                "es": "Una corporación"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Referencia:{ref}"
+          },
+          "question": {
+            "es": "¿Qué referencia tiene esta biblioteca?"
+          },
+          "freeform": {
+            "key": "ref"
+          }
+        },
+        {
+          "render": {
+            "es": "Referencia (ISIL):{ref:isil}"
+          },
+          "question": {
+            "es": "¿Qué referencia internacional (ISIL) tiene?"
+          },
+          "freeform": {
+            "key": "ref:isil"
+          }
+        },
+        {
+          "render": {
+            "es": "Pertenece a:{network}"
+          },
+          "question": {
+            "es": "¿A qué red pertenece?"
+          },
+          "freeform": {
+            "key": "network"
+          }
+        },
+        {
+          "render": {
+            "es": "Horario:{opening_hours}"
+          },
+          "question": {
+            "es": "¿En qué horario abre?"
+          },
+          "freeform": {
+            "key": "opening_hours",
+            "type": "opening_hours"
+          }
+        },
+        {
+          "render": {
+            "es": "Horario de atención:{service_times}"
+          },
+          "question": {
+            "es": "¿En qué horario te atienden?"
+          },
+          "freeform": {
+            "key": "service_times",
+            "type": "opening_hours"
+          }
+        },
+        {
+          "render": {
+            "es": "Accesibilidad (silla de ruedas):{wheelchair}"
+          },
+          "question": {
+            "es": "¿Es accesible para silla de ruedas?"
+          },
+          "freeform": {
+            "key": "wheelchair",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "wheelchair=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "wheelchair=designated"
+                ]
+              },
+              "then": {
+                "es": "Está designado para silla de ruedas"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "wheelchair=limited"
+                ]
+              },
+              "then": {
+                "es": "Acceso limitado o parcial"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "wheelchair=no"
+                ]
+              },
+              "then": {
+                "es": "No es accesible para silla de ruedas"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{wheelchair:description}"
+          },
+          "question": {
+            "es": "¿Deseas añadir información para usuarios en silla de ruedas?"
+          },
+          "freeform": {
+            "key": "wheelchair:description"
+          }
+        },
+        {
+          "render": {
+            "es": "Discapacidad visual :{access:blind}"
+          },
+          "question": {
+            "es": "¿Está adaptada para personas con discapacidad visual?"
+          },
+          "freeform": {
+            "key": "access:blind",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "access:blind=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:blind=designated"
+                ]
+              },
+              "then": {
+                "es": "Está designado para personas con discapacidad visual"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:blind=limited"
+                ]
+              },
+              "then": {
+                "es": "Acceso limitado o parcial"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:blind=no"
+                ]
+              },
+              "then": {
+                "es": "No está adaptada"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{blind:description}"
+          },
+          "question": {
+            "es": "¿Deseas añadir información para personas con discapacidad visual?"
+          },
+          "freeform": {
+            "key": "blind:description"
+          }
+        },
+        {
+          "render": {
+            "es": "Discapacidad auditiva :{access:deaf}"
+          },
+          "question": {
+            "es": "¿Está adaptada para personas con discapacidad auditiva?"
+          },
+          "freeform": {
+            "key": "access:deaf",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "access:deaf=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:deaf=designated"
+                ]
+              },
+              "then": {
+                "es": "Está designada para personas con discapacidad auditiva"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:deaf=limited"
+                ]
+              },
+              "then": {
+                "es": "Acceso limitado o parcial"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:deaf=no"
+                ]
+              },
+              "then": {
+                "es": "No está adaptada"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{deaf:description}"
+          },
+          "question": {
+            "es": "¿Deseas añadir información para personas con discapacidad auditiva?"
+          },
+          "freeform": {
+            "key": "deaf:description"
+          }
+        },
+        {
+          "render": {
+            "es": "Discapacidad mental :{access:mental_disabled}"
+          },
+          "question": {
+            "es": "¿Está adaptada para personas con discapacidad mental?"
+          },
+          "freeform": {
+            "key": "access:mental_disabled",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "access:mental_disabled=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:mental_disabled=designated"
+                ]
+              },
+              "then": {
+                "es": "Está designado para personas con discapacidad mental"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:mental_disabled=limited"
+                ]
+              },
+              "then": {
+                "es": "Acceso limitado o parcial"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access:mental_disabled=no"
+                ]
+              },
+              "then": {
+                "es": "No está adaptada"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{mental_disabled:description}"
+          },
+          "question": {
+            "es": "¿Deseas añadir información para personas con discapacidad mental?"
+          },
+          "freeform": {
+            "key": "mental_disabled:description"
+          }
+        },
+        {
+          "render": {
+            "es": "Área infantil:{kids_area}"
+          },
+          "question": {
+            "es": "¿Tiene área infantil?"
+          },
+          "freeform": {
+            "key": "kids_area",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "kids_area=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "kids_area=indoor"
+                ]
+              },
+              "then": {
+                "es": "Área infantil interior"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "kids_area=outdoor"
+                ]
+              },
+              "then": {
+                "es": "Área infantil exterior"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "kids_area=no"
+                ]
+              },
+              "then": {
+                "es": "No tiene"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Área infantil supervisada:{kids_area:supervised}"
+          },
+          "question": {
+            "es": "¿Está supervisada el área infantil?"
+          },
+          "freeform": {
+            "key": "kids_area:supervised",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "kids_area:supervised=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "kids_area:supervised=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Área infantil de pago:{kids_area:fee}"
+          },
+          "question": {
+            "es": "¿Es de pago el área infantil?"
+          },
+          "freeform": {
+            "key": "kids_area:fee",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "kids_area:fee=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "kids_area:fee=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "WC:{toilets}"
+          },
+          "question": {
+            "es": "¿Tiene lavabos?"
+          },
+          "freeform": {
+            "key": "toilets",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toilets=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Acceso al WC:{toilets:access}"
+          },
+          "question": {
+            "es": "¿Qué tipo de acceso está permitido al lavabo?"
+          },
+          "freeform": {
+            "key": "toilets:access",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toilets:access=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:access=public"
+                ]
+              },
+              "then": {
+                "es": "Acceso al público en general"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:access=permissive"
+                ]
+              },
+              "then": {
+                "es": "Acceso a los usuarios y permitido al público"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:access=customers"
+                ]
+              },
+              "then": {
+                "es": "Acceso solo para los usuarios"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:access=private"
+                ]
+              },
+              "then": {
+                "es": "Acceso solo privado"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "WC femenino:{toilets:female}"
+          },
+          "question": {
+            "es": "¿Tiene lavabos femeninos?"
+          },
+          "freeform": {
+            "key": "toilets:female",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toilets:female=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:female=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "WC masculino:{toilets:male}"
+          },
+          "question": {
+            "es": "¿Tiene lavabos masculinos?"
+          },
+          "freeform": {
+            "key": "toilets:male",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toilets:male=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:male=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "WC unisex:{toilets:unisex}"
+          },
+          "question": {
+            "es": "¿Tiene lavabos unisex?"
+          },
+          "freeform": {
+            "key": "toilets:unisex",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toilets:unisex=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:unisex=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Accesibilidad (silla de ruedas) en el WC:{toilets:wheelchair}"
+          },
+          "question": {
+            "es": "¿Es accesible para silla de ruedas el lavabo?"
+          },
+          "freeform": {
+            "key": "toilets:wheelchair",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "toilets:wheelchair=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:wheelchair=designated"
+                ]
+              },
+              "then": {
+                "es": "Está designado para silla de ruedas"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:wheelchair=limited"
+                ]
+              },
+              "then": {
+                "es": "Acceso limitado o parcial"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "toilets:wheelchair=no"
+                ]
+              },
+              "then": {
+                "es": "No es accesible para silla de ruedas"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{toilets:wheelchair:description}"
+          },
+          "question": {
+            "es": "¿Deseas añadir información sobre el lavabo para usuarios en silla de ruedas?"
+          },
+          "freeform": {
+            "key": "toilets:wheelchair:description"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:email}"
+          },
+          "question": {
+            "es": "¿Qué dirección de correo electrónico tiene?"
+          },
+          "freeform": {
+            "key": "contact:email",
+            "type": "email"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:phone}"
+          },
+          "question": {
+            "es": "¿Qué número de teléfono tiene?"
+          },
+          "freeform": {
+            "key": "contact:phone",
+            "type": "phone"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:website}"
+          },
+          "question": {
+            "es": "¿Qué página web tiene?"
+          },
+          "freeform": {
+            "key": "contact:website"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:facebook}"
+          },
+          "question": {
+            "es": "¿Qué página de Facebook tiene?"
+          },
+          "freeform": {
+            "key": "contact:facebook"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:instagram}"
+          },
+          "question": {
+            "es": "¿Qué usuario de instagram tiene?"
+          },
+          "freeform": {
+            "key": "contact:instagram"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:twitter}"
+          },
+          "question": {
+            "es": "¿Qué usuario de Twitter tiene?"
+          },
+          "freeform": {
+            "key": "contact:twitter"
+          }
+        },
+        {
+          "render": {
+            "es": "{contact:youtube}"
+          },
+          "question": {
+            "es": "¿Qué página de Youtube tiene?"
+          },
+          "freeform": {
+            "key": "contact:youtube"
+          }
+        },
+        {
+          "render": {
+            "es": "Acceso:{access}"
+          },
+          "question": {
+            "es": "¿Qué tipo de acceso está permitido?"
+          },
+          "freeform": {
+            "key": "access",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "access=public"
+                ]
+              },
+              "then": {
+                "es": "Acceso al público en general"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access=permissive"
+                ]
+              },
+              "then": {
+                "es": "Acceso a los usuarios y permitido al público"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access=customers"
+                ]
+              },
+              "then": {
+                "es": "Acceso solo para los usuarios"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "access=private"
+                ]
+              },
+              "then": {
+                "es": "Acceso solo privado"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{capacity}"
+          },
+          "question": {
+            "es": "¿Cuanto aforo total tiene?"
+          },
+          "freeform": {
+            "key": "capacity",
+            "type": "pnat"
+          }
+        },
+        {
+          "render": {
+            "es": "Aire acondicionado:{air_conditioning}"
+          },
+          "question": {
+            "es": "¿Tiene aire acondicionado?"
+          },
+          "freeform": {
+            "key": "air_conditioning",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "air_conditioning=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "air_conditioning=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Asientos en el exterior:{outdoor_seating}"
+          },
+          "question": {
+            "es": "¿Tiene asientos en el exterior?"
+          },
+          "freeform": {
+            "key": "outdoor_seating",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "outdoor_seating=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "outdoor_seating=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Puertas automáticas:{automatic_door}"
+          },
+          "question": {
+            "es": "¿Tiene puertas automáticas?"
+          },
+          "freeform": {
+            "key": "automatic_door",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "automatic_door=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "automatic_door=button"
+                ]
+              },
+              "then": {
+                "es": "Con botón"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "automatic_door=motion"
+                ]
+              },
+              "then": {
+                "es": "Detector de movimiento"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "automatic_door=no"
+                ]
+              },
+              "then": {
+                "es": "No tiene"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "De pago:{fee}"
+          },
+          "question": {
+            "es": "¿Es de pago?"
+          },
+          "freeform": {
+            "key": "fee",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "fee=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "fee=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "De pago en metálico:{payment:cash}"
+          },
+          "question": {
+            "es": "¿Se puede pagar en metálico?"
+          },
+          "freeform": {
+            "key": "payment:cash",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "payment:cash=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "payment:cash=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "De pago con tarjeta:{payment:credit_cards}"
+          },
+          "question": {
+            "es": "¿Se puede pagar con tarjeta?"
+          },
+          "freeform": {
+            "key": "payment:credit_cards",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "payment:credit_cards=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "payment:credit_cards=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Servicios: ¿ordenadores? {service:computer}"
+          },
+          "question": {
+            "es": "¿Tiene servicio de ordenadores?"
+          },
+          "freeform": {
+            "key": "service:computer",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "service:computer=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "service:computer=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Servicios: ¿copias? {service:copy}"
+          },
+          "question": {
+            "es": "¿Tiene servicio de copia?"
+          },
+          "freeform": {
+            "key": "service:copy",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "service:copy=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "service:copy=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Servicios: ¿impresora? {service:print}"
+          },
+          "question": {
+            "es": "¿Tiene servicio de impresión?"
+          },
+          "freeform": {
+            "key": "service:print",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "service:print=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "service:print=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Servicios: ¿impresora 3D? {service:3dprint}"
+          },
+          "question": {
+            "es": "¿Tiene servicio de impresión 3D?"
+          },
+          "freeform": {
+            "key": "service:3dprint",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "service:3dprint=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "service:3dprint=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Servicios: ¿escáner? {service:scan}"
+          },
+          "question": {
+            "es": "¿Tiene servicio de escáner?"
+          },
+          "freeform": {
+            "key": "service:scan",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "service:scan=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "service:scan=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Servicios: ¿juegos? {service:gaming}"
+          },
+          "question": {
+            "es": "¿Tiene servicio de juegos?"
+          },
+          "freeform": {
+            "key": "service:gaming",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "service:gaming=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "service:gaming=no"
+                ]
+              },
+              "then": {
+                "es": "No"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Acceso a internet:{internet_access}"
+          },
+          "question": {
+            "es": "¿Qué tipo de acceso a internet está disponible?"
+          },
+          "freeform": {
+            "key": "internet_access",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "internet_access=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "internet_access=wlan"
+                ]
+              },
+              "then": {
+                "es": "Acceso vía wlan"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "internet_access=wired"
+                ]
+              },
+              "then": {
+                "es": "Acceso vía cable ethernet"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "internet_access=terminal"
+                ]
+              },
+              "then": {
+                "es": "Acceso vía terminal"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "internet_access=no"
+                ]
+              },
+              "then": {
+                "es": "No hay"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Pago del acceso a internet:{internet_access:fee}"
+          },
+          "question": {
+            "es": "¿Hay que pagar por el acceso a internet?"
+          },
+          "freeform": {
+            "key": "internet_access:fee",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "internet_access:fee=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "internet_access:fee=customers"
+                ]
+              },
+              "then": {
+                "es": "Sólo usuarios"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "internet_access:fee=no"
+                ]
+              },
+              "then": {
+                "es": "No hay que pagar."
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Identificador de red: {internet_access:ssid}"
+          },
+          "question": {
+            "es": "¿Cual es el identificador de red inalámbrica?"
+          },
+          "freeform": {
+            "key": "internet_access:ssid"
+          }
+        },
+        {
+          "render": {
+            "es": "{internet_access:operator}"
+          },
+          "question": {
+            "es": "¿Cual es el operador de internet?"
+          },
+          "freeform": {
+            "key": "internet_access:operator"
+          }
+        },
+        {
+          "render": {
+            "es": "Operador de red:{internet_access:operator}"
+          },
+          "question": {
+            "es": "¿Cual es el operador de internet?"
+          },
+          "freeform": {
+            "key": "internet_access:operator"
+          }
+        },
+        {
+          "render": {
+            "es": "Fecha de puesta en funcionamiento: {start_date}"
+          },
+          "question": {
+            "es": "¿En qué fecha se puso esta biblioteca en funcionamiento?"
+          },
+          "freeform": {
+            "key": "start_date",
+            "type": "date"
+          }
+        },
+        {
+          "render": {
+            "es": "Arquitecto:{architect}"
+          },
+          "question": {
+            "es": "¿Quien fue el arquitecto del edificio?"
+          },
+          "freeform": {
+            "key": "architect"
+          }
+        },
+        {
+          "render": {
+            "es": "Artículo de wikipedia: {wikipedia}"
+          },
+          "question": {
+            "es": "¿Cual es el artículo de wikipedia sobre esta biblioteca?"
+          },
+          "freeform": {
+            "key": "wikipedia",
+            "type": "string"
+          }
+        },
+        {
+          "render": {
+            "es": "{wikidata}"
+          },
+          "question": {
+            "es": "¿Cual es el código de wikidata?"
+          },
+          "freeform": {
+            "key": "wikidata",
+            "type": "wikidata"
+          }
+        },
+        {
+          "render": {
+            "es": "Imagen: {image}"
+          },
+          "question": {
+            "es": "¿Cual es la dirección de la imagen?"
+          },
+          "freeform": {
+            "key": "image",
+            "type": "url"
+          }
+        },
+        {
+          "render": {
+            "es": "Fuente de los datos: {source}"
+          },
+          "question": {
+            "es": "¿De dónde has sacado todos estos datos?"
+          },
+          "freeform": {
+            "key": "source",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "source=survey"
+                ]
+              },
+              "then": {
+                "es": "Encuesta"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "source=local_knowledge"
+                ]
+              },
+              "then": {
+                "es": "Conocimiento local"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "{source:date}"
+          },
+          "question": {
+            "es": "¿En qué fecha lo hiciste?"
+          },
+          "freeform": {
+            "key": "source:date",
+            "type": "date"
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://www.svgrepo.com/show/181859/library-book.svg"
+      },
+      "width": {
+        "render": "2"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "amenity=library"
+          ],
+          "title": {
+            "es": "Añadir biblioteca"
+          },
+          "description": {
+            "es": "Añadir biblioteca con un sólo clic"
+          }
+        }
+      ],
+      "wayHandling": 2
+    },
+    {
+      "id": "accesibilidad",
+      "name": {
+        "es": "Accesibilidad en bibliotecas"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "amenity=library"
+        ]
+      },
+      "title": {
+        "render": {
+          "es": "Biblioteca:{name}"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name~*"
+              ]
+            },
+            "then": {
+              "es": "{name}"
+            }
+          }
+        ]
+      },
+      "description": {
+        "es": "Accesibilidad en bibliotecas"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "es": "Accesibilidad: {wheelchair}"
+          },
+          "question": {
+            "es": "¿Qué accesibilidad para silla de ruedas tiene esta biblioteca?"
+          },
+          "freeform": {
+            "key": "wheelchair"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "wheelchair=yes"
+                ]
+              },
+              "then": {
+                "es": "Está adaptada"
+              }
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://www.svgrepo.com/show/181859/library-book.svg"
+      },
+      "width": {
+        "render": "2"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": []
+    }
+  ],
+  "roamingRenderings": []
+}
