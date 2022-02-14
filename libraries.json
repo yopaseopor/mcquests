@@ -1,13 +1,19 @@
 {
   "id": "libraries",
   "title": {
-    "es": "Bibliotecas"
+    "es": "Bibliotecas",
+    "ca": "Biblioteques",
+    "en": "Libraries"
   },
   "shortDescription": {
-    "es": "Todo lo que puedas saber sobre las bibliotecas"
+    "es": "Todo lo que puedas saber sobre las bibliotecas contéstalo aquí",
+    "ca": "Tot el que puguis saber sobre les biblioteques contesta-ho aquí",
+    "en": "All you know about libraries can be written here"
   },
   "description": {
-    "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50!"
+    "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50! Haz clic en el botón para empezar (no hagas caso del código)",
+    "ca": "¿Tens informació sobre una biblioteca? Ens la pots explicar? Et farem preguntes (la que no sàpigues contestar te la saltes: n'hi ha més de 50! Fes clic al botó per començar (no facis cas del codi)",
+    "en": ""
   },
   "language": [
     "es"
@@ -55,16 +61,27 @@
       "tagRenderings": [
         {
           "render": {
+            "es": "Nombre:{name}"
+          },
+          "question": {
+            "es": "¿Qué nombre tiene?"
+          },
+          "freeform": {
+            "key": "name",
+            "addExtraTags": []
+          },
+          "mappings": []
+        },
+        {
+          "render": {
             "es": "Dirección:{addr:street}"
           },
           "question": {
             "es": "¿En que calle se sitúa?"
           },
           "freeform": {
-            "key": "addr:street",
-            "addExtraTags": []
-          },
-          "mappings": []
+            "key": "addr:street"
+          }
         },
         {
           "render": {
