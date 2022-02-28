@@ -196,10 +196,8 @@
                 "recycling:PET=yes"
               ]
             },
-            "then": {
-              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg"
-            }
+            "then": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg"
+    
           },
           {
             "if": {
