@@ -185,10 +185,7 @@
                 "recycling:paper=yes"
               ]
             },
-            "then": {
-              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/paper.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/paper.svg"
-            }
+            "then": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/paper.svg"
           },
           {
             "if": {
@@ -196,7 +193,7 @@
                 "recycling:PET=yes"
               ]
             },
-            "then": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg"
+            "then":"https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/envasos.svg"
     
           },
           {
@@ -205,10 +202,7 @@
                 "recycling:glass_bottles=yes"
               ]
             },
-            "then": {
-              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/vidre.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/vidre.svg"
-            }
+            "then":"https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/vidre.svg"
           },
           {
             "if": {
@@ -216,10 +210,7 @@
                 "recycling:waste=yes"
               ]
             },
-            "then": {
-              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/rebuig.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/rebuig.svg"
-            }
+            "then":"https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/rebuig.svg"
           },
           {
             "if": {
@@ -227,10 +218,7 @@
                 "recycling:organic=yes"
               ]
             },
-            "then": {
-              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/organic.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/organic.svg"
-            }
+            "then": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/organic.svg"
           },
           {
             "if": {
@@ -238,10 +226,7 @@
                 "recycling:clothes=yes"
               ]
             },
-            "then": {
-              "ca": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/roba.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/roba.svg"
-            }
+            "then":"https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/roba.svg"
           }
         ],
         "condition": {
