@@ -102,9 +102,7 @@
                 "name:uk~*"
               ]
             },
-            "then": {
-              "en": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine.svg"
-            }
+            "then": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine.svg"
           },
           {
             "if": {
@@ -112,9 +110,8 @@
                 "name:uk="
               ]
             },
-            "then": {
-              "en": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine_question.svg"
-            }
+            "then": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine_question.svg"
+           
           }
         ]
       },
