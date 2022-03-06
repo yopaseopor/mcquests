@@ -1,0 +1,157 @@
+{
+  "id": "helpukraine",
+  "title": {
+    "en": "Ukrainian name"
+  },
+  "shortDescription": {
+    "en": "Help us to put the map in ukrainian"
+  },
+  "description": {
+    "en": "Using the name:uk tag put the  map in Ukrainian language"
+  },
+  "language": [
+    "en"
+  ],
+  "maintainer": "",
+  "icon": "./assets/svg/bug.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "helpukraine",
+      "name": {
+        "en": "Help us to translate the map in Ukrainian language"
+      },
+      "minzoom": 16,
+      "overpassTags": {
+        "and": [
+          "name~*",
+          "type!~boundary"
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "Name:{name}"
+        }
+      },
+      "description": {
+        "en": "Using the name:uk tag put the  map in Ukrainian language"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "en": "{name:uk} (name in Ukrainian)"
+          },
+          "question": {
+            "en": "Has this thing name in Ukrainian language?"
+          },
+          "freeform": {
+            "key": "name:uk"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "name:uk~*"
+                ]
+              },
+              "then": {
+                "en": "{name:uk} (Ukrainian language name)"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "{name}"
+          },
+          "question": {
+            "en": "What is its name in Ukrainian language?"
+          },
+          "freeform": {
+            "key": "name"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "name~*",
+                  "name:uk="
+                ]
+              },
+              "then": {
+                "en": "It has not name in Ukrainian"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name:uk~*"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "name:uk="
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine_question.svg"
+            }
+          }
+        ]
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "32,21,center"
+      },
+      "color": {
+        "render": "#00bfff",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "name:uk~*"
+              ]
+            },
+            "then": {
+              "en": "#00bfff"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "name:uk="
+              ]
+            },
+            "then": {
+              "en": "#ff6347"
+            }
+          }
+        ]
+      },
+      "presets": [],
+      "wayHandling": 1
+    }
+  ],
+  "roamingRenderings": []
+}
