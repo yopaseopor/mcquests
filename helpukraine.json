@@ -13,7 +13,7 @@
     "en"
   ],
   "maintainer": "",
-  "icon": "./assets/svg/bug.svg",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/osmhelpukrainemap/main/src/img/flag_ukraine.svg",
   "version": "0",
   "startLat": 0,
   "startLon": 0,
