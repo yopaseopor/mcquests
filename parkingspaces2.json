@@ -1,0 +1,361 @@
+{
+  "id": "parkingspace",
+  "title": {
+    "es": "Plazas de aparcamiento"
+  },
+  "shortDescription": {
+    "es": "Pongamos las plazas de aparcamiento"
+  },
+  "description": {
+    "es": "Pongamos las plazas de aparcamiento"
+  },
+  "language": [
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "parkingspace",
+      "name": {
+        "es": "Plazas de aparcamiento"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "amenity=parking_space"
+        ]
+      },
+      "title": {
+        "render": {
+          "es": "Plaza de aparcamiento"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "amenity=parking_space"
+              ]
+            },
+            "then": {
+              "es": "Plaza de aparcamiento"
+            }
+          }
+        ]
+      },
+      "description": {
+        "es": "Pongamos las plazas de aparcamiento"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "es": "{Tipo de vehículo:{parking_space}"
+          },
+          "question": {
+            "es": "Esta plaza de aparcamiento es ..."
+          },
+          "freeform": {
+            "addExtraTags": [],
+            "key": "parking_space"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "parking_space=normal"
+                ]
+              },
+              "then": {
+                "es": "para coche"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=motorcycle"
+                ]
+              },
+              "then": {
+                "es": "para moto"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=caravan"
+                ]
+              },
+              "then": {
+                "es": "para caravana"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=hgv"
+                ]
+              },
+              "then": {
+                "es": "para camión"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=bus"
+                ]
+              },
+              "then": {
+                "es": "para bus"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=taxi"
+                ]
+              },
+              "then": {
+                "es": "para taxi"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=car_sharing"
+                ]
+              },
+              "then": {
+                "es": "para coche compartido"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=bicycle"
+                ]
+              },
+              "then": {
+                "es": "para bicicleta"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=scooter"
+                ]
+              },
+              "then": {
+                "es": "para patinete"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=disabled"
+                ]
+              },
+              "then": {
+                "es": "para minusválidos"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=delivery"
+                ]
+              },
+              "then": {
+                "es": "para carga y descarga"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=charging"
+                ]
+              },
+              "then": {
+                "es": "para cargar vehículo eléctrico"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=parent"
+                ]
+              },
+              "then": {
+                "es": "para familias"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Condición: {parking:condition}"
+          },
+          "question": {
+            "es": "¿Tiene alguna condición esta plaza de aparcamiento?"
+          },
+          "freeform": {
+            "key": "parking:condition"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "parking:condition=disc"
+                ]
+              },
+              "then": {
+                "es": "Disco"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=ticket"
+                ]
+              },
+              "then": {
+                "es": "Tiquet"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=free"
+                ]
+              },
+              "then": {
+                "es": "Gratis"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=residents"
+                ]
+              },
+              "then": {
+                "es": "Residentes"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=employee"
+                ]
+              },
+              "then": {
+                "es": "Trabajadores"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=customers"
+                ]
+              },
+              "then": {
+                "es": "Clientes"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=private"
+                ]
+              },
+              "then": {
+                "es": "Privado"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=disabled"
+                ]
+              },
+              "then": {
+                "es": "Minusválidos"
+              }
+            }
+          ],
+          "condition": {
+            "and": []
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "parking_space=normal"
+              ]
+            },
+            "then": {
+              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pcapacity.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "parking_space=motorcycle"
+              ]
+            },
+            "then": {
+              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pmotorcycle.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "parking_space=caravan"
+              ]
+            },
+            "then": {
+              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pcaravan.svg"
+            }
+          }
+        ],
+        "condition": {
+          "and": []
+        }
+      },
+      "width": {
+        "render": "4"
+      },
+      "iconSize": {
+        "render": "10,10,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "amenity=parking_space"
+          ],
+          "title": {
+            "es": "Añadir plaza de aparcamiento"
+          },
+          "description": {
+            "es": "Añade aquí una plaza de aparcamiento"
+          }
+        }
+      ]
+    }
+  ],
+  "roamingRenderings": []
+}
