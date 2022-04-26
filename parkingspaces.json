@@ -1,0 +1,173 @@
+{
+  "id": "parkingspace",
+  "title": {
+    "es": "Plazas de aparcamiento"
+  },
+  "shortDescription": {
+    "es": "Pongamos las plazas de aparcamiento"
+  },
+  "description": {
+    "es": "Pongamos las plazas de aparcamiento"
+  },
+  "language": [
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "parkingspace",
+      "name": {
+        "es": "Plazas de aparcamiento"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "amenity=parking_space"
+        ]
+      },
+      "title": {
+        "render": {
+          "es": "Plaza de aparcamiento"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "amenity=parking_space"
+              ]
+            },
+            "then": {
+              "es": "Plaza de aparcamiento"
+            }
+          }
+        ]
+      },
+      "description": {
+        "es": "Pongamos las plazas de aparcamiento"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "es": "{Tipo de vehículo:{parking_space}"
+          },
+          "question": {
+            "es": "Esta plaza de aparcamiento es ..."
+          },
+          "freeform": {
+            "addExtraTags": [],
+            "key": "parking_space"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "parking_space=normal"
+                ]
+              },
+              "then": {
+                "es": "para coche"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=motorcycle"
+                ]
+              },
+              "then": {
+                "es": "para moto"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=caravan"
+                ]
+              },
+              "then": {
+                "es": "para caravana"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "es": "Condición: {parking:condition}"
+          },
+          "question": {
+            "es": "¿Tiene alguna condición esta plaza de aparcamiento?"
+          },
+          "freeform": {
+            "key": "parking:condition"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "parking:condition=disc"
+                ]
+              },
+              "then": {
+                "es": "Disco"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=ticket"
+                ]
+              },
+              "then": {
+                "es": "Tiquet"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=free"
+                ]
+              },
+              "then": {
+                "es": "Gratis"
+              }
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "amenity=parking_space"
+          ],
+          "title": {
+            "es": "Añadir plaza de aparcamiento"
+          },
+          "description": {
+            "es": "Añade aquí una plaza de aparcamiento"
+          }
+        }
+      ]
+    }
+  ],
+  "roamingRenderings": []
+}
