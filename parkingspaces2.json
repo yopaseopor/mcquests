@@ -286,44 +286,7 @@
               },
               "then": {
                 "es": "Minusválidos"
-              }
-            }
-          ]
-        }
-      ],
-      "hideUnderlayingFeaturesMinPercentage": 0,
-      "icon": {
-        "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg",
-        "mappings": [
-          {
-            "if": {
-              "and": [
-                "parking_space=normal"
-              ]
-            },
-            "then": {
-              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pcapacity.svg"
-            }
-          },
-          {
-            "if": {
-              "and": [
-                "parking_space=motorcycle"
-              ]
-            },
-            "then": {
-              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pmotorcycle.svg"
-            }
-          },
-          {
-            "if": {
-              "and": [
-                "parking_space=caravan"
-              ]
-            },
-            "then": {
-              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pcaravan.svg"
-            }
+                           }
             }
           ]
         }
@@ -333,10 +296,10 @@
         "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg"
       },
       "width": {
-        "render": "4"
+        "render": "8"
       },
       "iconSize": {
-        "render": "20,20,center"
+        "render": "40,40,center"
       },
       "color": {
         "render": "#00f"
