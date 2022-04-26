@@ -324,14 +324,19 @@
             "then": {
               "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/pcaravan.svg"
             }
-          }
-        ],
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg"
       },
       "width": {
         "render": "4"
       },
       "iconSize": {
-        "render": "10,10,center"
+        "render": "20,20,center"
       },
       "color": {
         "render": "#00f"
