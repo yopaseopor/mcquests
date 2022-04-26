@@ -288,10 +288,7 @@
                 "es": "Minusválidos"
               }
             }
-          ],
-          "condition": {
-            "and": []
-          }
+          ]
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
