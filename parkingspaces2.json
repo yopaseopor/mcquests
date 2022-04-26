@@ -326,9 +326,6 @@
             }
           }
         ],
-        "condition": {
-          "and": []
-        }
       },
       "width": {
         "render": "4"
