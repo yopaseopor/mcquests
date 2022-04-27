@@ -118,31 +118,11 @@
             {
               "if": {
                 "and": [
-                  "parking_space=car_sharing"
-                ]
-              },
-              "then": {
-                "es": "para coche compartido"
-              }
-            },
-            {
-              "if": {
-                "and": [
                   "parking_space=bicycle"
                 ]
               },
               "then": {
                 "es": "para bicicleta"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "parking_space=scooter"
-                ]
-              },
-              "then": {
-                "es": "para patinete"
               }
             },
             {
@@ -183,16 +163,6 @@
               },
               "then": {
                 "es": "para familias"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "parking_space=caravan"
-                ]
-              },
-              "then": {
-                "es": "para caravana"
               }
             }
           ]
