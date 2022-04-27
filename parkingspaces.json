@@ -88,6 +88,106 @@
             {
               "if": {
                 "and": [
+                  "parking_space=hgv"
+                ]
+              },
+              "then": {
+                "es": "para camión"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=bus"
+                ]
+              },
+              "then": {
+                "es": "para bus"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=taxi"
+                ]
+              },
+              "then": {
+                "es": "para taxi"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=car_sharing"
+                ]
+              },
+              "then": {
+                "es": "para coche compartido"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=bicycle"
+                ]
+              },
+              "then": {
+                "es": "para bicicleta"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=scooter"
+                ]
+              },
+              "then": {
+                "es": "para patinete"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=disabled"
+                ]
+              },
+              "then": {
+                "es": "para minusválidos"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=delivery"
+                ]
+              },
+              "then": {
+                "es": "para carga y descarga"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=charging"
+                ]
+              },
+              "then": {
+                "es": "para cargar vehículo eléctrico"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=parent"
+                ]
+              },
+              "then": {
+                "es": "para familias"
+              }
+            },
+            {
+              "if": {
+                "and": [
                   "parking_space=caravan"
                 ]
               },
@@ -127,6 +227,56 @@
               "then": {
                 "es": "Tiquet"
               }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=residents"
+                ]
+              },
+              "then": {
+                "es": "Residentes"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=employee"
+                ]
+              },
+              "then": {
+                "es": "Trabajadores"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=customers"
+                ]
+              },
+              "then": {
+                "es": "Clientes"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=private"
+                ]
+              },
+              "then": {
+                "es": "Privado"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking:condition=disabled"
+                ]
+              },
+              "then": {
+                "es": "Minusválidos"
+                           }
             },
             {
               "if": {
