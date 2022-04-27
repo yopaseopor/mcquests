@@ -61,20 +61,9 @@
             "es": "Esta plaza de aparcamiento es ..."
           },
           "freeform": {
-            "addExtraTags": [],
             "key": "parking_space"
           },
           "mappings": [
-            {
-              "if": {
-                "and": [
-                  "parking_space=normal"
-                ]
-              },
-              "then": {
-                "es": "para coche"
-              }
-            },
             {
               "if": {
                 "and": [
@@ -103,26 +92,6 @@
               },
               "then": {
                 "es": "para bus"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "parking_space=taxi"
-                ]
-              },
-              "then": {
-                "es": "para taxi"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "parking_space=bicycle"
-                ]
-              },
-              "then": {
-                "es": "para bicicleta"
               }
             },
             {
