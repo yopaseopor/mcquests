@@ -61,9 +61,20 @@
             "es": "Esta plaza de aparcamiento es ..."
           },
           "freeform": {
+            "addExtraTags": [],
             "key": "parking_space"
           },
           "mappings": [
+            {
+              "if": {
+                "and": [
+                  "parking_space=normal"
+                ]
+              },
+              "then": {
+                "es": "para coche"
+              }
+            },
             {
               "if": {
                 "and": [
@@ -72,6 +83,16 @@
               },
               "then": {
                 "es": "para moto"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=caravan"
+                ]
+              },
+              "then": {
+                "es": "para caravana"
               }
             },
             {
@@ -92,6 +113,46 @@
               },
               "then": {
                 "es": "para bus"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=taxi"
+                ]
+              },
+              "then": {
+                "es": "para taxi"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=car_sharing"
+                ]
+              },
+              "then": {
+                "es": "para coche compartido"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=bicycle"
+                ]
+              },
+              "then": {
+                "es": "para bicicleta"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "parking_space=scooter"
+                ]
+              },
+              "then": {
+                "es": "para patinete"
               }
             },
             {
@@ -170,6 +231,16 @@
             {
               "if": {
                 "and": [
+                  "parking:condition=free"
+                ]
+              },
+              "then": {
+                "es": "Gratis"
+              }
+            },
+            {
+              "if": {
+                "and": [
                   "parking:condition=residents"
                 ]
               },
@@ -215,30 +286,48 @@
               },
               "then": {
                 "es": "Minusválidos"
-                           }
-            },
-            {
-              "if": {
-                "and": [
-                  "parking:condition=free"
-                ]
-              },
-              "then": {
-                "es": "Gratis"
               }
             }
-          ]
+          ],
+          "condition": {
+            "and": []
+          }
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg"
+        "render": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "parking_space="
+              ]
+            },
+            "then": {
+              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/faltaparkingspace.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "parking_space~*"
+              ]
+            },
+            "then": {
+              "es": "https://osm-es.github.io/osmparkingmap/src/img/icones_parking/parkingspace.svg"
+            }
+          }
+        ],
+        "condition": {
+          "and": []
+        }
       },
       "width": {
-        "render": "8"
+        "render": "4"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "20,20,center"
       },
       "color": {
         "render": "#00f"
