@@ -32,9 +32,9 @@
     {
       "id": "limits",
       "name": {
-    "es": "Límites",
-    "ca": "Límits",
-    "en": "Limits"
+        "es": "Límites",
+        "ca": "Límits",
+        "en": "Limits"
       },
       "minzoom": 16,
       "overpassTags": {
@@ -79,9 +79,9 @@
         ]
       },
       "description": {
-    "es": "Completaremos los límites de una vía.",
-    "ca": "Completarem els límits de la via.",
-    "en": "Complete the limits of a way."
+        "es": "Completaremos los límites de una vía.",
+        "ca": "Completarem els límits de la via.",
+        "en": "Complete the limits of a way."
       },
       "tagRenderings": [
         {
@@ -228,6 +228,22 @@
           },
           "freeform": {
             "key": "maxweight"
+          }
+        },
+        {
+          "render": {
+            "es": "Comprobado en fecha {survey:date}",
+            "ca": "Comprovat en data {survey:date}",
+            "en": "Checked in date {survey:date}"
+          },
+          "question": {
+            "es": "Fecha de comprobación (clic en aaaa)",
+            "ca": "Data de comprovació (clic a aaaa)",
+            "en": "Checked date (click on aaaa)"
+          },
+          "freeform": {
+            "key": "survey:date",
+            "type": "date"
           }
         }
       ],
