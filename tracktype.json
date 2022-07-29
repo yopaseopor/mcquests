@@ -1,0 +1,261 @@
+{
+  "id": "tracktype",
+  "title": {
+    "en": "Tracktype",
+    "es": "Tipo de camino",
+    "ca": "Tipus de camí"
+  },
+  "shortDescription": {
+    "en": "Tracktype",
+    "es": "Tipo de camino",
+    "ca": "Tipus de camí"
+  },
+  "description": {
+    "en": "Tracktype",
+    "es": "Tipo de camino",
+    "ca": "Tipus de camí"
+  },
+  "language": [
+    "en",
+    "es",
+    "ca"
+  ],
+  "maintainer": "",
+  "icon": "./assets/svg/bug.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "tracktype",
+	  "allowSplit": true,
+      "name": {
+        "en": "Tracktype",
+        "es": "Tipo de camino",
+        "ca": "Tipus de camí"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "highway=track"
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "Type",
+          "es": "Tipo",
+          "ca": "Tipus"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "survey:date~*"
+              ]
+            },
+            "then": {
+              "en": "Survey date:{survey:date}",
+              "es": "Fecha de revisión:{survey:date}",
+              "ca": "Data de revisió:{survey:date}"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "tracktype=grade1"
+              ]
+            },
+            "then": {
+              "en": "Pavemented",
+              "es": "Pavimentado",
+              "ca": "Pavimentat"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "tracktype=grade2"
+              ]
+            },
+            "then": {
+              "en": "No pavement",
+              "es": "Sin pavimentar",
+              "ca": "Sense pavimentar"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "tracktype=grade3"
+              ]
+            },
+            "then": {
+              "en": "Only 4x4",
+              "es": "Sólo 4x4",
+              "ca": "Només 4x4"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "survey:date="
+              ]
+            },
+            "then": {
+              "en": "No survey date",
+              "es": "Sin fecha de revisión",
+              "ca": "Sense data de revisió"
+            }
+          }
+        ]
+      },
+      "description": {
+        "en": "Tracktype",
+        "es": "Tipo de camino",
+        "ca": "Tipus de camí"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "en": "Type:{tracktype}{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "es": "Tipo:{tracktype}{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "ca": "Tipus:{tracktype}{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}"
+          },
+          "question": {
+            "en": "What type is this track?{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "es": "¿De qué tipo es este camino?{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "ca": "De quin tipus és aquest{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)} camí?"
+          },
+          "freeform": {
+            "key": "tracktype"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "tracktype=grade1"
+                ]
+              },
+              "then": {
+                "en": "Paved",
+                "es": "Pavimentado",
+                "ca": "Pavimentat"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "tracktype=grade2"
+                ]
+              },
+              "then": {
+                "en": "Unpaved",
+                "es": "Sin pavimentar",
+                "ca": "No pavimentat"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "tracktype=grade3"
+                ]
+              },
+              "then": {
+                "en": "Only 4x4",
+                "es": "Sólo 4x4",
+                "ca": "Només 4x4"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "Surveyed on:{survey:date}",
+            "es": "Comprobado el:{survey:date}",
+            "ca": "Comprovat el:{survey:date}"
+          },
+          "question": {
+            "en": "What is survey's  date?",
+            "es": "¿En qué fecha se hizo la comprobación?",
+            "ca": "En quina data s'ha comprovat?"
+          },
+          "freeform": {
+            "key": "survey:date",
+            "type": "date"
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "./assets/svg/bug.svg"
+      },
+      "width": {
+        "render": "4"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "rgba(0,0,255,0.5)",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "tracktype=grade1"
+              ]
+            },
+            "then": {
+              "en": "rgba(0,255,0,0.5)",
+              "es": "rgba(0,255,0,0.5)",
+              "ca": "rgba(0,255,0,0.5)"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "tracktype=grade2"
+              ]
+            },
+            "then": {
+              "en": "rgba(255,165,0,0.5)",
+              "es": "rgba(255,165,0,0.5)",
+              "ca": "rgba(255,165,0,0.5)"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "tracktype=grade3"
+              ]
+            },
+            "then": {
+              "en": "rgba(255,0,0,0.5)",
+              "es": "rgba(255,0,0,0.5)",
+              "ca": "rgba(255,0,0,0.5)"
+            }
+          },
+          {
+            "if": {
+              "or": [
+                "tracktype="
+              ]
+            },
+            "then": {
+              "en": "rgba(0,0,0,0.5)",
+              "es": "rgba(0,0,0,0.5)",
+              "ca": "rgba(0,0,0,0.5)"
+            }
+          }
+        ],
+        "condition": {
+          "and": []
+        }
+      },
+      "presets": []
+    }
+  ],
+  "roamingRenderings": []
+}
