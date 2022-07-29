@@ -120,14 +120,14 @@
       "tagRenderings": [
         {
           "render": {
-            "en": "Type:{tracktype}{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
-            "es": "Tipo:{tracktype}{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
-            "ca": "Tipus:{tracktype}{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}"
+            "en": "Type:{tracktype}{image(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "es": "Tipo:{tracktype}{image(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "ca": "Tipus:{tracktype}{image(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}"
           },
           "question": {
-            "en": "What type is this track?{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
-            "es": "¿De qué tipo es este camino?{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
-            "ca": "De quin tipus és aquest{image_carousel(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)} camí?"
+            "en": "What type is this track?{image(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "es": "¿De qué tipo es este camino?{image(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)}",
+            "ca": "De quin tipus és aquest{image(https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg,true)} camí?"
           },
           "freeform": {
             "key": "tracktype"
