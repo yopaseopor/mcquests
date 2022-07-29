@@ -120,9 +120,9 @@
       "tagRenderings": [
         {
           "render": {
-            "en": "Type:{tracktype}</br><img src='https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg'/>",
-            "es": "Tipo:{tracktype}</br><img src='https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg'/>",
-            "ca": "Tipus:{tracktype}</br><img src='https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg'/>"
+            "en": "Type:{tracktype}",
+            "es": "Tipo:{tracktype}",
+            "ca": "Tipus:{tracktype}"
           },
           "question": {
             "en": "What type is this track?<img src='https://wiki.openstreetmap.org/w/images/7/7f/Tracktype.jpg'/>",
@@ -140,9 +140,9 @@
                 ]
               },
               "then": {
-                "en": "Paved",
-                "es": "Pavimentado",
-                "ca": "Pavimentat"
+                "en": "Paved (grade1)",
+                "es": "Pavimentado (grade1)",
+                "ca": "Pavimentat (grade1)"
               }
             },
             {
@@ -152,9 +152,9 @@
                 ]
               },
               "then": {
-                "en": "Unpaved",
-                "es": "Sin pavimentar",
-                "ca": "No pavimentat"
+                "en": "Unpaved (grade2)",
+                "es": "Sin pavimentar (grade2)",
+                "ca": "No pavimentat (grade2)"
               }
             },
             {
@@ -164,9 +164,9 @@
                 ]
               },
               "then": {
-                "en": "Only 4x4",
-                "es": "Sólo 4x4",
-                "ca": "Només 4x4"
+                "en": "Only 4x4 (grade3)",
+                "es": "Sólo 4x4 (grade3)",
+                "ca": "Només 4x4 (grade3)"
               }
             }
           ]
