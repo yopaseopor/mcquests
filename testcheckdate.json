@@ -128,7 +128,27 @@
               ]
             },
             "then": {
-              "en": "rgba(255,0,0,1)"
+              "en": "rgba(255,0,0,0.5)"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "check_date~*"
+              ]
+            },
+            "then": {
+              "en": "rgba(0,255,0,0.5)"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "operational_status:date~*"
+              ]
+            },
+            "then": {
+              "en": "rgba(0,0,255,0.5)"
             }
           }
         ]
