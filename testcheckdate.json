@@ -1,0 +1,140 @@
+{
+  "id": "id",
+  "title": {
+    "en": "surveydate"
+  },
+  "shortDescription": {
+    "en": "surveydate"
+  },
+  "description": {
+    "en": "surveydate"
+  },
+  "language": [
+    "en"
+  ],
+  "maintainer": "",
+  "icon": "./assets/svg/bug.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "surveydate",
+      "name": {
+        "en": "surveydate"
+      },
+      "minzoom": 18,
+      "overpassTags": {
+        "or": [
+          "survey:date=",
+          "boundary=",
+          "landuse=",
+          "natural=",
+          {
+            "or": [
+              "check_date=",
+              "boundary=",
+              "landuse=",
+              "natural="
+            ]
+          },
+          {
+            "or": [
+              "operational_status:date=",
+              "boundary=",
+              "landuse=",
+              "natural="
+            ]
+          }
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "Item"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "survey:date~*"
+              ]
+            },
+            "then": {
+              "en": "With survey:date"
+            }
+          }
+        ]
+      },
+      "description": {},
+      "tagRenderings": [
+        {
+          "render": {
+            "en": "{survey:date}"
+          },
+          "question": {
+            "en": "What is the survey date of this item?"
+          },
+          "freeform": {
+            "key": "survey:date",
+            "type": "date"
+          },
+          "mappings": []
+        },
+        {
+          "render": {
+            "en": "{check_date}"
+          },
+          "question": {
+            "en": "What is the check_date?"
+          },
+          "freeform": {
+            "key": "check_date",
+            "type": "date"
+          }
+        },
+        {
+          "render": {
+            "en": "{operational_status:date}"
+          },
+          "question": {
+            "en": "What is the date of the last operational check done?"
+          },
+          "freeform": {
+            "key": "operational_status:date",
+            "type": "date"
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "./assets/svg/bug.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "survey:date~*"
+              ]
+            },
+            "then": {
+              "en": "rgba(255,0,0,1)"
+            }
+          }
+        ]
+      },
+      "presets": []
+    }
+  ],
+  "roamingRenderings": []
+}
