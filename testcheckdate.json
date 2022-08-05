@@ -28,7 +28,7 @@
       },
       "minzoom": 18,
       "overpassTags": {
-        "or": [
+        "and": [
           "survey:date=",
           "boundary=",
           "landuse=",
