@@ -32,7 +32,7 @@
           {
             "and": [
               "check_date=",
-			  "check_date!~",
+			  "check_date!~*",
               "boundary=",
               "landuse=",
               "natural="
