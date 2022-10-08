@@ -157,9 +157,9 @@
           {
             "if": {
               "and": [
-                "addr:housenumber~",
-                "addr:postcode~",
-                "addr:street~"
+                "addr:housenumber~*",
+                "addr:postcode~*",
+                "addr:street~*"
               ]
             },
             "then": {
