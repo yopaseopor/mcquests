@@ -17,7 +17,7 @@
     "es"
   ],
   "maintainer": "",
-  "icon": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_plena.svg",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_plena.svg",
   "version": "2020_09_27",
   "startLat": 0,
   "startLon": 0,
@@ -119,7 +119,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_plena.svg",
+        "render": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_plena.svg",
         "mappings": [
           {
             "if": {
@@ -128,8 +128,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_buida.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_buida.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_buida.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_buida.svg"
             }
           },
           {
@@ -139,8 +139,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_buida.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_buida.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_buida.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_buida.svg"
             }
           },
           {
@@ -150,8 +150,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_buida.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_buida.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_buida.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_buida.svg"
             }
           },
           {
@@ -163,8 +163,8 @@
               ]
             },
             "then": {
-              "ca": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_plena.svg",
-              "es": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/icones_adreces/casa_plena.svg"
+              "ca": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_plena.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/mcquests/master/images/icones_adreces/casa_plena.svg"
             }
           }
         ]
