@@ -245,6 +245,21 @@
             "key": "survey:date",
             "type": "date"
           }
+        },
+        {
+          "render": {
+            "es": "Pendiente: {incline}",
+            "ca": "Pendent: {incline}",
+            "en": "Inclination: {incline}"
+          },
+          "question": {
+            "es": "¿Pendiente? Subida=Valor positivo.Bajada =Valor negativo. Escribe el símbolo de porcentaje al final",
+            "ca": "Pendent? Pujada=Valor positiu. Baixada=Valor negatiu. Al final escriu el símbol del percentatge",
+            "en": "Slope? Ascent=Positive number. Descent=Negative number. Write percentatge symbol at the end."
+          },
+          "freeform": {
+            "key": "incline"
+          }
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
