@@ -1,5 +1,5 @@
 {
-  "id": "playgroundtypesmap",
+  "id": "playgroundmap",
   "title": {
     "en": "Playground map",
     "es": "Mapa de parques infantiles",
@@ -30,7 +30,7 @@
   "socialImage": "",
   "layers": [
     {
-      "id": "playgroundtypesmap",
+      "id": "playgroundmap",
       "name": {
         "en": "Playground map",
         "es": "Mapa de parques infantiles",
@@ -39,7 +39,12 @@
       "minzoom": 12,
       "overpassTags": {
         "and": [
-          "leisure=playground"
+          "leisure=playground",
+          {
+            "or": [
+              "playground~*"
+            ]
+          }
         ]
       },
       "title": {
@@ -498,7 +503,8 @@
             "es": "Ahora puedes añadir un juego para el parque. Primero añades el parque y después respondes qué tipo de juego es."
           }
         }
-      ]
+      ],
+      "wayHandling": 1
     }
   ],
   "roamingRenderings": []
