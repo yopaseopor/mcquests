@@ -1,0 +1,505 @@
+{
+  "id": "playgroundmap",
+  "title": {
+    "en": "Playground map",
+    "es": "Mapa de parques infantiles",
+    "ca": "Mapa de parcs infantils"
+  },
+  "shortDescription": {
+    "en": "Help to complete playground map",
+    "es": "Ayuda a completar los parques infantiles",
+    "ca": "Ajuda a completar els parcs infantils"
+  },
+  "description": {
+    "en": "Help to complete playground map",
+    "es": "Ayuda a completar los parques infantiles",
+    "ca": "Ajuda a completar els parcs infantils"
+  },
+  "language": [
+    "en",
+    "es",
+    "ca"
+  ],
+  "maintainer": "",
+  "icon": "https://wiki.openstreetmap.org/w/images/3/31/Playground-16.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "playgroundmap",
+      "name": {
+        "en": "Playground map",
+        "es": "Mapa de parques infantiles",
+        "ca": "Mapa de parcs infantils"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "leisure=playground"
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "{playground}",
+          "es": "{playground}",
+          "ca": "{playground}"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "leisure=playground"
+              ]
+            },
+            "then": {
+              "en": "Here it is a playground",
+              "es": "Aquí hay un parque infantil",
+              "ca": "Aquí hi ha un parc infantil"
+            }
+          }
+        ]
+      },
+      "description": {
+        "en": "Here it is all the playgrounds,but what kind of playground do you see?",
+        "es": "Aquí están los parques infantiles pero ¿qué tipo de parque infantil ves?",
+        "ca": "Aquí hi són els parcs infantils però quin tipus de parc infantil veus?"
+      },
+      "tagRenderings": [
+        {
+          "question": {
+            "en": "What kind of playground is it?",
+            "es": "¿Qué tipo de parque infantil es?",
+            "ca": "Quin tipus de parc infantil és?"
+          },
+          "freeform": {
+            "key": "playground"
+          },
+          "render": {
+            "en": "Playground: {playground}",
+            "es": "Parque infantil : {playground}",
+            "ca": "Parc infantil: {playground}"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "playground=swing"
+                ]
+              },
+              "then": {
+                "en": "swing",
+                "es": "columpio",
+                "ca": "gronxador"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=basketswing"
+                ]
+              },
+              "then": {
+                "en": "basket swing",
+                "es": "columpio de cesta",
+                "ca": "gronxador de cistella"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=structure"
+                ]
+              },
+              "then": {
+                "en": "structure",
+                "es": "estructura",
+                "ca": "estructura"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=map"
+                ]
+              },
+              "then": {
+                "en": "map",
+                "es": "mapa",
+                "ca": "mapa"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=aerialrotator"
+                ]
+              },
+              "then": {
+                "en": "aerial rotator",
+                "es": "círculo rotatorio superior",
+                "ca": "cercle rotatori superior"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=spining_circle"
+                ]
+              },
+              "then": {
+                "en": "spinning_circle",
+                "es": "círculo giratorio",
+                "ca": "cercle giratori"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=springy"
+                ]
+              },
+              "then": {
+                "en": "springy",
+                "es": "balancín muelle",
+                "ca": "balancí de molla"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=cushion"
+                ]
+              },
+              "then": {
+                "en": "cushion",
+                "es": "elástico inflable",
+                "ca": "elàstic inflable"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=zipwire"
+                ]
+              },
+              "then": {
+                "en": "zipwire",
+                "es": "minitirolina",
+                "ca": "minitirol·lina"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=trampoline"
+                ]
+              },
+              "then": {
+                "en": "trampoline",
+                "es": "trampolín elástico",
+                "ca": "trampolí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=basketrotator"
+                ]
+              },
+              "then": {
+                "en": "basket rotator",
+                "es": "cesta giratoria",
+                "ca": "cistella giratòria"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=seesaw"
+                ]
+              },
+              "then": {
+                "en": "seesaw",
+                "es": "balancín",
+                "ca": "balancí"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=ball_pool"
+                ]
+              },
+              "then": {
+                "en": "ball pool",
+                "es": "piscina de bolas",
+                "ca": "piscina de boles"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=speaking_tube"
+                ]
+              },
+              "then": {
+                "en": "speaking tube",
+                "es": "tubo para hablar",
+                "ca": "tub per parlar"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=bridge"
+                ]
+              },
+              "then": {
+                "en": "bridge",
+                "es": "puente",
+                "ca": "pont"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=funnel_ball"
+                ]
+              },
+              "then": {
+                "en": "funnel ball",
+                "es": "pelota embudo",
+                "ca": "pilota embut"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=tunnel_tube"
+                ]
+              },
+              "then": {
+                "en": "tunnel_tube",
+                "es": "tubo túnel",
+                "ca": "tub túnel"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=youth_bench"
+                ]
+              },
+              "then": {
+                "en": "youth bench",
+                "es": "banquito",
+                "ca": "banquet"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=sledding"
+                ]
+              },
+              "then": {
+                "en": "sledding",
+                "es": "ladera para deslizarse",
+                "ca": "pendent per lliscar"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=teenshelter"
+                ]
+              },
+              "then": {
+                "en": "teenshelter",
+                "es": "techado",
+                "ca": "sostre"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=hopscotch"
+                ]
+              },
+              "then": {
+                "en": "hopscotch",
+                "es": "rayuela",
+                "ca": "xarranca"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=sandpit"
+                ]
+              },
+              "then": {
+                "en": "sandpit",
+                "es": "arenero",
+                "ca": "sorral"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=playhouse"
+                ]
+              },
+              "then": {
+                "en": "playhouse",
+                "es": "casita",
+                "ca": "caseta"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=balancebeam"
+                ]
+              },
+              "then": {
+                "en": "balance beam",
+                "es": "tronco equilibrio",
+                "ca": "tronc equilibri"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=splash_pad"
+                ]
+              },
+              "then": {
+                "en": "splash_pad",
+                "es": "fuente lúdica",
+                "ca": "font lúdica"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=water"
+                ]
+              },
+              "then": {
+                "en": "to play with water",
+                "es": "para jugar con agua",
+                "ca": "per jugar amb aigua"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=horizontal_bar"
+                ]
+              },
+              "then": {
+                "en": "horizontal bar",
+                "es": "barra horizontal",
+                "ca": "barra horitzontal"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=activitypanel"
+                ]
+              },
+              "then": {
+                "en": "activity panel",
+                "es": "panel de actividades",
+                "ca": "panell d'activitats"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=exercise"
+                ]
+              },
+              "then": {
+                "en": "exercise",
+                "es": "para hacer ejercicios",
+                "ca": "per fer exercicis"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=climbingwall"
+                ]
+              },
+              "then": {
+                "en": "climbingwall",
+                "es": "pared para escalar",
+                "ca": "paret per escalar"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=climbingframe"
+                ]
+              },
+              "then": {
+                "en": "climbingframe",
+                "es": "araña de cuerda",
+                "ca": "xarxa vertical"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground=slide"
+                ]
+              },
+              "then": {
+                "en": "slide",
+                "es": "tobogán",
+                "ca": "tobogan"
+              }
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://wiki.openstreetmap.org/w/images/3/31/Playground-16.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [
+        {
+          "tags": [
+            "leisure=playground"
+          ],
+          "title": {
+            "en": "a game for the playground",
+            "es": "un juego del parque"
+          },
+          "description": {
+            "en": "Now you can add a game for the playground. First add a new playground. Then answer the questions",
+            "es": "Ahora puedes añadir un juego para el parque. Primero añades el parque y después respondes qué tipo de juego es."
+          }
+        }
+      ]
+    }
+  ],
+  "roamingRenderings": []
+}
