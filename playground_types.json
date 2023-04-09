@@ -42,7 +42,7 @@
           "leisure=playground",
           {
             "or": [
-              "playground~*"
+              "playground=*"
             ]
           }
         ]
