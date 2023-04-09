@@ -1,5 +1,5 @@
 {
-  "id": "playgroundmap",
+  "id": "playgroundtypesmap",
   "title": {
     "en": "Playground map",
     "es": "Mapa de parques infantiles",
@@ -30,7 +30,7 @@
   "socialImage": "",
   "layers": [
     {
-      "id": "playgroundmap",
+      "id": "playgroundtypesmap",
       "name": {
         "en": "Playground map",
         "es": "Mapa de parques infantiles",
