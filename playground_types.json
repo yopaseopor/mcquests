@@ -38,11 +38,11 @@
       },
       "minzoom": 12,
       "overpassTags": {
-        "and": [
+        "or": [
           "leisure=playground",
           {
-            "or": [
-              "playground=*"
+            "and": [
+              "playground~*"
             ]
           }
         ]
@@ -496,11 +496,13 @@
           ],
           "title": {
             "en": "a game for the playground",
-            "es": "un juego del parque"
+            "es": "un juego del parque",
+            "ca": "un joc del parc"
           },
           "description": {
             "en": "Now you can add a game for the playground. First add a new playground. Then answer the questions",
-            "es": "Ahora puedes añadir un juego para el parque. Primero añades el parque y después respondes qué tipo de juego es."
+            "es": "Ahora puedes añadir un juego para el parque. Primero añades el parque y después respondes qué tipo de juego es.",
+            "ca": "Ara pots afegir un parc i després respondre quin tipus de joc és."
           }
         }
       ],
