@@ -483,8 +483,8 @@
           },
           "question": {
             "en": "What form does it have?",
-            "es": "¿Qué forma tiene?",
-            "ca": "Quina forma té?"
+            "es": "¿Qué forma tiene? Si no sale aquí descríbela con una palabra en inglés",
+            "ca": "Quina forma té? Si no surt aquí descriu-la amb una paraula en anglès"
           },
           "freeform": {
             "key": "playground:theme"
