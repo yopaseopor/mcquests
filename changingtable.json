@@ -1,0 +1,263 @@
+{
+  "id": "changingtable",
+  "title": {
+    "en": "Changing table",
+    "es": "Cambiadores"
+  },
+  "shortDescription": {
+    "en": "Complete changing table",
+    "es": "Completa cambiadores"
+  },
+  "description": {
+    "en": "Complete changing table",
+    "es": "Completa cambiadores"
+  },
+  "language": [
+    "en",
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "./assets/svg/bug.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "changingtablemap",
+      "name": {
+        "en": "Changing tables map",
+        "es": "Mapa de cambiadores"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "or": [
+          "amenity~*",
+          "shop~*",
+          "office~*",
+          "tourism~*",
+          "changing_table~*"
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "Changing table info?",
+          "es": "Hay info del cambiador?"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "changing_table!~no"
+              ]
+            },
+            "then": {
+              "en": "Changing table info",
+              "es": "Info de cambiador"
+            }
+          }
+        ]
+      },
+      "description": {
+        "en": "Here it is all the change tables but does it lack any info more?",
+        "es": "Aquí están los cambiadores pero puedes aportar parques infantiles pero ¿qué tipo de parque infantil ves?"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "en": "{changing_table}",
+            "es": "{changing_table}"
+          },
+          "question": {
+            "en": "Changing table",
+            "es": "Cambiador"
+          },
+          "freeform": {
+            "key": "changing_table"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "changing_table=yes"
+                ]
+              },
+              "then": {
+                "en": "There is changing table",
+                "es": "Hay cambiador"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table=no"
+                ]
+              },
+              "then": {
+                "en": "No changing table. You don't have any other answer",
+                "es": "No hay cambiador, no contestes ninguna pregunta más"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table=limited"
+                ]
+              },
+              "then": {
+                "en": "There is a limited changing table",
+                "es": "Hay un cambiador de uso limitado."
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "Changing table with fee: {changing_table:fee}",
+            "es": "Cambiador de pago: {changing_table:fee}"
+          },
+          "question": {
+            "en": "Do you have to pay to use it?",
+            "es": "¿Debes pagar por usarlo?"
+          },
+          "freeform": {
+            "key": "changing_table:fee"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "changing_table:fee=yes"
+                ]
+              },
+              "then": {
+                "en": "You have to pay a fee",
+                "es": "Es de pago"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:fee=no"
+                ]
+              },
+              "then": {
+                "en": "You don't have to pay",
+                "es": "Es gratis su uso"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "Location of the changing table:{changing_table:location}",
+            "es": "Ubicación del cambiador:{changing_table:location}"
+          },
+          "question": {
+            "en": "Where is the changing table?",
+            "es": "¿Dónde está el cambiador?"
+          },
+          "freeform": {
+            "key": "changing_table:location"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=wheelchair_toilet"
+                ]
+              },
+              "then": {
+                "en": "It's in the wheelchair toilet",
+                "es": "Está en el baño de minusválidos"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=female_toilet"
+                ]
+              },
+              "then": {
+                "en": "It's in the female toilet",
+                "es": "Está en el lavabo de mujeres"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=male_toilet"
+                ]
+              },
+              "then": {
+                "en": "It's in the male toilet",
+                "es": "Está en el lavabo de hombres"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=unisex_toilet"
+                ]
+              },
+              "then": {
+                "en": "It's in the unisex toilet",
+                "es": "Está en el lavabo unisex"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=dedicated_room"
+                ]
+              },
+              "then": {
+                "en": "It's in a dedicated room",
+                "es": "Está en una habitación dedicada"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=room"
+                ]
+              },
+              "then": {
+                "en": "It's in a room",
+                "es": "Está en una habitación"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "changing_table:location=sales_area"
+                ]
+              },
+              "then": {
+                "en": "It's in the sales area",
+                "es": "Está en la zona de ventas"
+              }
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "./assets/svg/bug.svg"
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": []
+    }
+  ],
+  "roamingRenderings": []
+}
