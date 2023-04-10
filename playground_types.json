@@ -472,6 +472,19 @@
                 "es": "tobogán",
                 "ca": "tobogan"
               }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme="
+                ]
+              },
+              "then": {
+                "en": "{playground:theme} or No info about form. Write it here",
+                "es": "{playground:theme}  o No hay información sobre la forma. Escríbela en inglés.",
+                "ca": "{playground:theme} o No hi ha informació sobre la forma. Escriu-la en anglès"
+              },
+              "hideInAnswer": true
             }
           ]
         }
