@@ -472,6 +472,195 @@
                 "es": "tobogán",
                 "ca": "tobogan"
               }
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "Playground: {playground:theme}",
+            "es": "Parque infantil: {playground:theme}",
+            "ca": "Parc infantil: {playground:theme}"
+          },
+          "question": {
+            "en": "What form does it have?",
+            "es": "¿Qué forma tiene?",
+            "ca": "Quina forma té?"
+          },
+          "freeform": {
+            "key": "playground:theme"
+          },
+          "condition": {
+            "and": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "playground:theme=ship"
+                ]
+              },
+              "then": {
+                "en": "ship",
+                "es": "barco",
+                "ca": "vaixell"
+              },
+              "hideInAnswer": false
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=castle"
+                ]
+              },
+              "then": {
+                "en": "castle",
+                "es": "castillo",
+                "ca": "castell"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=play"
+                ]
+              },
+              "then": {
+                "en": "play",
+                "es": "juego",
+                "ca": "joc"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=adventure"
+                ]
+              },
+              "then": {
+                "en": "adventure",
+                "es": "aventura",
+                "ca": "aventura"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=spiderweb"
+                ]
+              },
+              "then": {
+                "en": "spiderweb",
+                "es": "tela de araña",
+                "ca": "tela d'aranya"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=water"
+                ]
+              },
+              "then": {
+                "en": "water",
+                "es": "agua",
+                "ca": "aigua"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=horse"
+                ]
+              },
+              "then": {
+                "en": "horse",
+                "es": "caballo",
+                "ca": "cavall"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=train"
+                ]
+              },
+              "then": {
+                "en": "train",
+                "es": "tren",
+                "ca": "tren"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=car"
+                ]
+              },
+              "then": {
+                "en": "car",
+                "es": "coche",
+                "ca": "cotxe"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=motorcycle"
+                ]
+              },
+              "then": {
+                "en": "motorcycle",
+                "es": "moto",
+                "ca": "moto"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=elephant"
+                ]
+              },
+              "then": {
+                "en": "elephant",
+                "es": "elefante",
+                "ca": "elefant"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=dog"
+                ]
+              },
+              "then": {
+                "en": "dog",
+                "es": "perro",
+                "ca": "gos"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=dragon"
+                ]
+              },
+              "then": {
+                "en": "dragon",
+                "es": "dragón",
+                "ca": "drac"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "playground:theme=playground"
+                ]
+              },
+              "then": {
+                "en": "default",
+                "es": "genérico",
+                "ca": "genèric"
+              }
             },
             {
               "if": {
@@ -480,11 +669,11 @@
                 ]
               },
               "then": {
-                "en": "{playground:theme} or No info about form. Write it here",
-                "es": "{playground:theme}  o No hay información sobre la forma. Escríbela en inglés.",
-                "ca": "{playground:theme} o No hi ha informació sobre la forma. Escriu-la en anglès"
+                "en": "There is no info. Write it in a word",
+                "es": "No hay info. Descríbela con una palabra en inglés",
+                "ca": "No hi ha info. Descriu-la amb una paraula en anglès"
               },
-              "hideInAnswer": false
+              "hideInAnswer": true
             }
           ]
         }
