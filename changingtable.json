@@ -245,18 +245,55 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg"
+        "render": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "changing_table=yes"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "changing_table=no"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_no.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_no.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "changing_table="
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg"
+            }
+          }
+        ]
       },
       "width": {
         "render": "8"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "40,40,center",
+        "mappings": []
       },
       "color": {
         "render": "#00f"
       },
-      "presets": []
+      "presets": [],
+      "wayHandling": 1
     }
   ],
   "roamingRenderings": []
