@@ -34,11 +34,14 @@
       "minzoom": 12,
       "overpassTags": {
         "or": [
-          "amenity~*",
           "shop~*",
           "office~*",
           "tourism~*",
-          "changing_table~*"
+          "changing_table~*",
+          "amenity=restaurant",
+		  "amenity=cafe",
+		  "amenity=fast_food",
+          "amenity=toilets"
         ]
       },
       "title": {
