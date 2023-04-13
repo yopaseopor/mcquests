@@ -245,7 +245,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele.svg"
+        "render": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg"
       },
       "width": {
         "render": "8"
