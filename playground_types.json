@@ -676,6 +676,22 @@
               "hideInAnswer": true
             }
           ]
+        },
+        {
+          "render": {
+            "en": "Checked on {check_date}",
+            "es": "Comprobado el {check_date}",
+            "ca": "Comprovat el {check_date}"
+          },
+          "question": {
+            "en": "What is the date of your visit?",
+            "es": "¿En qué fecha lo visitaste?",
+            "ca": "En quina data  ho vas visitar?"
+          },
+          "freeform": {
+            "key": "check_date",
+            "type": "date"
+          }
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
