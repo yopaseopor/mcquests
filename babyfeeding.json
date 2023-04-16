@@ -2,19 +2,23 @@
   "id": "babyfeeding",
   "title": {
     "en": "Baby feeding",
-    "es": "Zona de alimentación de bebés"
+    "es": "Zona de alimentación de bebés",
+    "ca": "Zona d'alimentació de nadons"
   },
   "shortDescription": {
     "en": "Complete baby feeding zone",
-    "es": "Completa zona de alimentación para bebés"
+    "es": "Completa zona de alimentación para bebés",
+    "ca": "Completa la zona d'alimentació per a nadons"
   },
   "description": {
     "en": "Complete baby feeding zone",
-    "es": "Completa  la información sobre la zona de alimentación para bebés."
+    "es": "Completa  la información sobre la zona de alimentación para bebés.",
+    "ca": "Completa la informació sobre la zona d'alimentació per a nadons"
   },
   "language": [
     "en",
-    "es"
+    "es",
+    "ca"
   ],
   "maintainer": "",
   "icon": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding.svg",
@@ -29,7 +33,8 @@
       "id": "babyfeedingmap",
       "name": {
         "en": "Baby feeding map",
-        "es": "Mapa de zona de alimentación para bebés"
+        "es": "Mapa de zona de alimentación para bebés",
+        "ca": "Mapa de zona d'alimentació de nadons"
       },
       "minzoom": 12,
       "overpassTags": {
@@ -115,7 +120,8 @@
       "title": {
         "render": {
           "en": "Baby feeding info?",
-          "es": "Hay info de la zona de alimentación para bebés?"
+          "es": "¿Hay info de la zona de alimentación para bebés?",
+          "ca": "Hi ha info sobre la zona d'alimentació per a nadons?"
         },
         "mappings": [
           {
@@ -126,24 +132,28 @@
             },
             "then": {
               "en": "Baby feeding info",
-              "es": "Zona de alimentación para bebés"
+              "es": "Info sobre la Zona de alimentación para bebés",
+              "ca": "Info sobre la Zona d'alimentació per a nadons"
             }
           }
         ]
       },
       "description": {
-        "en": "Here it is all the b aby feeding zones but does it lack any info more?",
-        "es": "Aquí están  las zonas para alimentación infantil pero ¿qué tipo de zona es?"
+        "en": "Here it is all the baby feeding zones but does it lack any info more?",
+        "es": "Aquí están las zonas para alimentación de bebés pero ¿qué tipo de zona es?",
+        "ca": "Aquí estan les zones per alimentació de nadons però quin tipus de zona és?"
       },
       "tagRenderings": [
         {
           "render": {
             "en": "{baby_feeding}",
-            "es": "{baby_feeding}"
+            "es": "{baby_feeding}",
+            "ca": "{baby_feeding}"
           },
           "question": {
             "en": "Baby feeding",
-            "es": "Zona de alimentación para bebés"
+            "es": "Zona de alimentación para bebés",
+            "ca": "Zona d'alimentació per a nadons"
           },
           "freeform": {
             "key": "baby_feeding"
@@ -157,7 +167,8 @@
               },
               "then": {
                 "en": "There is baby_feeding zone",
-                "es": "Hay zona de alimentación para bebés"
+                "es": "Hay zona de alimentación para bebés",
+                "ca": "Hi ha zona d'alimentació per a nadons."
               }
             },
             {
@@ -168,7 +179,8 @@
               },
               "then": {
                 "en": "No baby feeding zone.",
-                "es": "No hay zona de lactancia."
+                "es": "No hay zona de alimentación para bebés",
+                "ca": "No hi ha zona d'alimentació per a nadons"
               }
             },
             {
@@ -179,7 +191,8 @@
               },
               "then": {
                 "en": "There is a room with a baby feeding zone.",
-                "es": "Hay una habitación que tiene una zona de lactancia."
+                "es": "Hay una habitación que tiene una zona de alimentación de bebés.",
+                "ca": "Hi ha una habitació amb zona d'alimentació de nadons."
               }
             },
             {
@@ -190,7 +203,8 @@
               },
               "then": {
                 "en": "There is a lactation zone.",
-                "es": "Hay zona de lactancia materna"
+                "es": "Hay zona de lactancia materna",
+                "ca": "Hi ha zona de lactància materna"
               }
             },
             {
@@ -201,7 +215,8 @@
               },
               "then": {
                 "en": "There is no info about baby feeding. Add it.",
-                "es": "No hay info sobre lactancia. Añádela."
+                "es": "No hay info sobre alimentación de bebés. Añádela.",
+                "ca": "No hi ha info sobre la zona d'alimentació de nadons. Afegeix-la"
               }
             }
           ]
@@ -209,7 +224,8 @@
         {
           "render": {
             "en": "Checked on {check_date}",
-            "es": "Comprobado el {check_date}"
+            "es": "Comprobado el {check_date}",
+            "ca": "Comprovat el {check_date}"
           },
           "freeform": {
             "key": "check_date",
@@ -217,7 +233,8 @@
           },
           "question": {
             "en": "What is the date of your visit?",
-            "es": "¿En qué fecha lo visitaste?"
+            "es": "¿En qué fecha lo visitaste?",
+            "ca": "En quina data ho has visitat?"
           }
         }
       ],
@@ -233,7 +250,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg"
             }
           },
           {
@@ -244,7 +262,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg"
             }
           },
           {
@@ -255,7 +274,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg"
             }
           },
           {
@@ -266,7 +286,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg"
             }
           },
           {
@@ -277,7 +298,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg"
             }
           }
         ]
