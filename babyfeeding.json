@@ -115,7 +115,7 @@
       "title": {
         "render": {
           "en": "Baby feeding info?",
-          "es": "Hay info de la zona de lactancia?"
+          "es": "Hay info de la zona de alimentación para bebés?"
         },
         "mappings": [
           {
@@ -126,7 +126,7 @@
             },
             "then": {
               "en": "Baby feeding info",
-              "es": "Zona de lactancia"
+              "es": "Zona de alimentación para bebés"
             }
           }
         ]
@@ -143,7 +143,7 @@
           },
           "question": {
             "en": "Baby feeding",
-            "es": "Zona lactancia"
+            "es": "Zona de alimentación para bebés"
           },
           "freeform": {
             "key": "baby_feeding"
@@ -157,7 +157,7 @@
               },
               "then": {
                 "en": "There is baby_feeding zone",
-                "es": "Hay zona de lactancia"
+                "es": "Hay zona de alimentación para bebés"
               }
             },
             {
@@ -190,7 +190,7 @@
               },
               "then": {
                 "en": "There is a lactation zone.",
-                "es": "Hay zona de lactancia"
+                "es": "Hay zona de lactancia materna"
               }
             },
             {
