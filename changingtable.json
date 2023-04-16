@@ -242,7 +242,7 @@
           "render": {
             "en": "Location of the changing table:{changing_table:location}",
             "es": "Ubicación del cambiador:{changing_table:location}",
-            "ca": "Ubicació del canviador"
+            "ca": "Ubicació del canviador{changing_table:location}"
           },
           "question": {
             "en": "Where is the changing table?",
