@@ -2,19 +2,23 @@
   "id": "changingtable",
   "title": {
     "en": "Changing table",
-    "es": "Cambiadores"
+    "es": "Cambiadores",
+    "ca": "Canviadors"
   },
   "shortDescription": {
     "en": "Complete changing table",
-    "es": "Completa cambiadores"
+    "es": "Completa cambiadores",
+    "ca": "Completa canviadors"
   },
   "description": {
     "en": "Complete changing table",
-    "es": "Completa cambiadores"
+    "es": "Completa cambiadores",
+    "ca": "Completa canviadors"
   },
   "language": [
     "en",
-    "es"
+    "es",
+    "ca"
   ],
   "maintainer": "",
   "icon": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele.svg",
@@ -29,7 +33,8 @@
       "id": "changingtablemap",
       "name": {
         "en": "Changing tables map",
-        "es": "Mapa de cambiadores"
+        "es": "Mapa de cambiadores",
+        "ca": "Mapa de canviadors"
       },
       "minzoom": 12,
       "overpassTags": {
@@ -115,7 +120,8 @@
       "title": {
         "render": {
           "en": "Changing table info?",
-          "es": "Hay info del cambiador?"
+          "es": "¿Hay info del cambiador?",
+          "ca": "Hi ha info del canviador?"
         },
         "mappings": [
           {
@@ -126,24 +132,28 @@
             },
             "then": {
               "en": "Changing table info",
-              "es": "Info de cambiador"
+              "es": "Info de cambiador",
+              "ca": "Info del canviador"
             }
           }
         ]
       },
       "description": {
         "en": "Here it is all the change tables but does it lack any info more?",
-        "es": "Aquí están los cambiadores pero puedes aportar parques infantiles pero ¿qué tipo de parque infantil ves?"
+        "es": "Aquí están los cambiadores ¿pero puedes aportar más información?",
+        "ca": "Aquí hi són els canviadors però pots aportar més informació?"
       },
       "tagRenderings": [
         {
           "render": {
             "en": "{changing_table}",
-            "es": "{changing_table}"
+            "es": "{changing_table}",
+            "ca": "{changing_table}"
           },
           "question": {
             "en": "Changing table",
-            "es": "Cambiador"
+            "es": "Cambiador",
+            "ca": "Canviador"
           },
           "freeform": {
             "key": "changing_table"
@@ -157,7 +167,8 @@
               },
               "then": {
                 "en": "There is changing table",
-                "es": "Hay cambiador"
+                "es": "Hay cambiador",
+                "ca": "Hi ha canviador"
               }
             },
             {
@@ -168,7 +179,8 @@
               },
               "then": {
                 "en": "No changing table. You don't have any other answer",
-                "es": "No hay cambiador, no contestes ninguna pregunta más"
+                "es": "No hay cambiador, no contestes ninguna pregunta más",
+                "ca": "No hi ha canviador, no contestis més preguntes."
               }
             },
             {
@@ -179,7 +191,8 @@
               },
               "then": {
                 "en": "There is a limited changing table",
-                "es": "Hay un cambiador de uso limitado."
+                "es": "Hay un cambiador de uso limitado.",
+                "ca": "Hi ha un canviador d'ús limitat"
               }
             }
           ]
@@ -187,11 +200,13 @@
         {
           "render": {
             "en": "Changing table with fee: {changing_table:fee}",
-            "es": "Cambiador de pago: {changing_table:fee}"
+            "es": "Cambiador de pago: {changing_table:fee}",
+            "ca": "Canviador de pagament: {changing_table:fee} "
           },
           "question": {
             "en": "Do you have to pay to use it?",
-            "es": "¿Debes pagar por usarlo?"
+            "es": "¿Debes pagar por usarlo?",
+            "ca": "Has de pagar per utilitzar-lo?"
           },
           "freeform": {
             "key": "changing_table:fee"
@@ -205,7 +220,8 @@
               },
               "then": {
                 "en": "You have to pay a fee",
-                "es": "Es de pago"
+                "es": "Es de pago",
+                "ca": "És de pagament"
               }
             },
             {
@@ -216,7 +232,8 @@
               },
               "then": {
                 "en": "You don't have to pay",
-                "es": "Es gratis su uso"
+                "es": "Es gratis su uso",
+                "ca": "És de franc fer-lo servir"
               }
             }
           ]
@@ -224,11 +241,13 @@
         {
           "render": {
             "en": "Location of the changing table:{changing_table:location}",
-            "es": "Ubicación del cambiador:{changing_table:location}"
+            "es": "Ubicación del cambiador:{changing_table:location}",
+            "ca": "Ubicació del canviador"
           },
           "question": {
             "en": "Where is the changing table?",
-            "es": "¿Dónde está el cambiador?"
+            "es": "¿Dónde está el cambiador?",
+            "ca": "On és el canviador?"
           },
           "freeform": {
             "key": "changing_table:location"
@@ -242,7 +261,8 @@
               },
               "then": {
                 "en": "It's in the wheelchair toilet",
-                "es": "Está en el baño de minusválidos"
+                "es": "Está en el baño de minusválidos",
+                "ca": "Està al lavabo de minusvàlids"
               }
             },
             {
@@ -253,7 +273,8 @@
               },
               "then": {
                 "en": "It's in the female toilet",
-                "es": "Está en el lavabo de mujeres"
+                "es": "Está en el lavabo de mujeres",
+                "ca": "Està al lavabo de dones"
               }
             },
             {
@@ -264,7 +285,8 @@
               },
               "then": {
                 "en": "It's in the male toilet",
-                "es": "Está en el lavabo de hombres"
+                "es": "Está en el lavabo de hombres",
+                "ca": "Està al lavabo d'homes"
               }
             },
             {
@@ -275,7 +297,8 @@
               },
               "then": {
                 "en": "It's in the unisex toilet",
-                "es": "Está en el lavabo unisex"
+                "es": "Está en el lavabo unisex",
+                "ca": "Està al lavabo unisex"
               }
             },
             {
@@ -286,7 +309,8 @@
               },
               "then": {
                 "en": "It's in a dedicated room",
-                "es": "Está en una habitación dedicada"
+                "es": "Está en una habitación dedicada",
+                "ca": "Està en una habitació dedicada"
               }
             },
             {
@@ -297,7 +321,8 @@
               },
               "then": {
                 "en": "It's in a room",
-                "es": "Está en una habitación"
+                "es": "Está en una habitación",
+                "ca": "Està en una habitació"
               }
             },
             {
@@ -308,7 +333,8 @@
               },
               "then": {
                 "en": "It's in the sales area",
-                "es": "Está en la zona de ventas"
+                "es": "Está en la zona de ventas",
+                "ca": "Està a la zona de vendes"
               }
             }
           ]
@@ -316,7 +342,8 @@
         {
           "render": {
             "en": "Checked on {check_date}",
-            "es": "Comprobado el {check_date}"
+            "es": "Comprobado el {check_date}",
+            "ca": "Comprovat el  {check_date}"
           },
           "freeform": {
             "key": "check_date",
@@ -324,7 +351,8 @@
           },
           "question": {
             "en": "What is the date of your visit?",
-            "es": "¿En qué fecha lo visitaste?"
+            "es": "¿En qué fecha lo visitaste?",
+            "ca": "En quina data ho vas visitar?"
           }
         }
       ],
@@ -340,7 +368,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_yes.svg"
             }
           },
           {
@@ -351,7 +380,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_no.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_no.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_no.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_no.svg"
             }
           },
           {
@@ -362,7 +392,8 @@
             },
             "then": {
               "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg",
-              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg"
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg",
+              "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/pelele_question.svg"
             }
           }
         ]
