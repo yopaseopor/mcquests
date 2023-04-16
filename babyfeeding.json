@@ -1,0 +1,300 @@
+{
+  "id": "babyfeeding",
+  "title": {
+    "en": "Baby feeding",
+    "es": "Zona de alimentación de bebés"
+  },
+  "shortDescription": {
+    "en": "Complete baby feeding zone",
+    "es": "Completa zona de alimentación para bebés"
+  },
+  "description": {
+    "en": "Complete baby feeding zone",
+    "es": "Completa  la información sobre la zona de alimentación para bebés."
+  },
+  "language": [
+    "en",
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "babyfeedingmap",
+      "name": {
+        "en": "Baby feeding map",
+        "es": "Mapa de zona de alimentación para bebés"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "or": [
+          "shop~*",
+          "office~*",
+          "tourism~*",
+          "baby_feeding~*",
+          "amenity=polling_station",
+          "amenity=refugee_site",
+          "amenity=stables",
+          "amenity=karaoke_box",
+          "amenity=payment_centre",
+          "amenity=table",
+          "amenity=dive_centre",
+          "amenity=coworking_space",
+          "amenity=mortuary",
+          "amenity=driver_training",
+          "amenity=reception_desk",
+          "amenity=blood_bank",
+          "amenity=funeral_hall",
+          "amenity=research_institute",
+          "amenity=post_depot",
+          "amenity=training",
+          "amenity=game_feeding",
+          "amenity=ranger_station",
+          "amenity=conference_centre",
+          "amenity=language_school",
+          "amenity=prep_school",
+          "amenity=animal_shelter",
+          "amenity=dojo",
+          "amenity=casino",
+          "amenity=music_school",
+          "amenity=monastery",
+          "amenity=vehicle_inspection",
+          "amenity=social_centre",
+          "amenity=car_sharing",
+          "amenity=public_bath",
+          "amenity=studio",
+          "amenity=food_court",
+          "amenity=internet_cafe",
+          "amenity=prison",
+          "amenity=nursing_home",
+          "amenity=events_venue",
+          "amenity=arts_centre",
+          "amenity=car_rental",
+          "amenity=driving_school",
+          "amenity=courthouse",
+          "amenity=ferry_terminal",
+          "amenity=cinema",
+          "amenity=theatre",
+          "amenity=ice_cream",
+          "amenity=childcare",
+          "amenity=veterinary",
+          "amenity=public_building",
+          "amenity=university",
+          "amenity=college",
+          "amenity=marketplace",
+          "amenity=library",
+          "amenity=dentist",
+          "amenity=fire_station",
+          "amenity=social_facility",
+          "amenity=police",
+          "amenity=townhall",
+          "amenity=community_centre",
+          "amenity=doctors",
+          "amenity=clinic",
+          "amenity=pub",
+          "amenity=post_office",
+          "amenity=hospital",
+          "amenity=bar",
+          "amenity=kindergarten",
+          "amenity=toilets",
+          "amenity=bank",
+          "amenity=shelter",
+          "amenity=fast_food",
+          "amenity=cafe",
+          "amenity=fuel",
+          "amenity=restaurant",
+          "amenity=place_of_worship"
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "Baby feeding info?",
+          "es": "Hay info de la zona de lactancia?"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "baby_feeding!~no"
+              ]
+            },
+            "then": {
+              "en": "Baby feeding info",
+              "es": "Zona de lactancia"
+            }
+          }
+        ]
+      },
+      "description": {
+        "en": "Here it is all the b aby feeding zones but does it lack any info more?",
+        "es": "Aquí están  las zonas para alimentación infantil pero ¿qué tipo de zona es?"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "en": "{baby_feeding}",
+            "es": "{baby_feeding}"
+          },
+          "question": {
+            "en": "Baby feeding",
+            "es": "Zona lactancia"
+          },
+          "freeform": {
+            "key": "baby_feeding"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "baby_feeding=yes"
+                ]
+              },
+              "then": {
+                "en": "There is baby_feeding zone",
+                "es": "Hay zona de lactancia"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "baby_feeding=no"
+                ]
+              },
+              "then": {
+                "en": "No baby feeding zone.",
+                "es": "No hay zona de lactancia."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "baby_feeding=room"
+                ]
+              },
+              "then": {
+                "en": "There is a room with a baby feeding zone.",
+                "es": "Hay una habitación que tiene una zona de lactancia."
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "baby_feeding=lactation"
+                ]
+              },
+              "then": {
+                "en": "There is a lactation zone.",
+                "es": "Hay zona de lactancia"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "baby_feeding="
+                ]
+              },
+              "then": {
+                "en": "There is no info about baby feeding. Add it.",
+                "es": "No hay info sobre lactancia. Añádela."
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "Checked on {check_date}",
+            "es": "Comprobado el {check_date}"
+          },
+          "freeform": {
+            "key": "check_date",
+            "type": "date"
+          },
+          "question": {
+            "en": "What is the date of your visit?",
+            "es": "¿En qué fecha lo visitaste?"
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "baby_feeding=yes"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "baby_feeding=no"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "baby_feeding="
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "baby_feeding=room"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "baby_feeding=lactation"
+              ]
+            },
+            "then": {
+              "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg",
+              "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg"
+            }
+          }
+        ]
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center",
+        "mappings": []
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [],
+      "wayHandling": 1
+    }
+  ],
+  "roamingRenderings": []
+}
