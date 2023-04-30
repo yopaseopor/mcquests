@@ -58,9 +58,9 @@
               ]
             },
             "then": {
-              "en": "incline {incline}",
-              "es": "pendiente {incline}",
-              "ca": "pendent {incline}"
+              "en": "incline {incline} in {name}",
+              "es": "pendiente {incline} en {name}",
+              "ca": "pendent {incline} a {name}"
             }
           },
           {
@@ -70,9 +70,9 @@
               ]
             },
             "then": {
-              "en": "No info",
-              "es": "No info",
-              "ca": "No info"
+              "en": "No info in {name}",
+              "es": "No info en {name}",
+              "ca": "No info a {name}"
             }
           }
         ]
