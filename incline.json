@@ -1,0 +1,149 @@
+{
+  "id": "idincline",
+  "title": {
+    "en": "Help to complete incline",
+    "es": "Ayuda a completar pendiente",
+    "ca": "Ajuda a completar pendent"
+  },
+  "shortDescription": {
+    "en": "Help to complete incline",
+    "ca": "Ajuda a completar pendent",
+    "es": "Ayuda a completar pendiente"
+  },
+  "description": {
+    "en": "Help to complete incline",
+    "ca": "Ajuda a completar pendent",
+    "es": "Ayuda a completar pendiente"
+  },
+  "language": [
+    "en",
+    "es",
+    "ca"
+  ],
+  "maintainer": "",
+  "icon": "https://yopaseopor.github.io/osmaccessibilitymap/src/img/accessibilitat/incline_question.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "idincline",
+      "allowSplit": true,
+      "name": {
+        "en": "Help to complete incline",
+        "es": "Ayuda a completar pendiente",
+        "ca": "Ajuda a completar la pendent"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "and": [
+          "highway~*",
+          "highway!~elevator"
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "incline",
+          "es": "pendiente",
+          "ca": "pendent"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "incline~*"
+              ]
+            },
+            "then": {
+              "en": "incline {incline}",
+              "es": "pendiente {incline}",
+              "ca": "pendent {incline}"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "incline="
+              ]
+            },
+            "then": {
+              "en": "No info",
+              "es": "No info",
+              "ca": "No info"
+            }
+          }
+        ]
+      },
+      "description": {
+        "en": "Help to complete incline",
+        "es": "Ayuda a completar pendiente",
+        "ca": "Ajuda a completar la pendent"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "en": "incline {incline}",
+            "es": "pendiente {incline}",
+            "ca": "pendent {incline}"
+          },
+          "question": {
+            "en": "There's no inclination. Tell us. If negative put a minus at first. End all with a %. Also you can use up or down if you don't know the %.",
+            "es": "No hay pendiente informada. Dínos cual es. Si es negativa pon un menos en inicio. Acábalo todo con un %. Si no lo sabes exactamente puedes decir si es subida (up) o bajada (down) . Los valores se escriben en inglés.",
+            "ca": "No hi ha pendent informada. Diga'ns quina és. Si és negativa posa un menys a l'inici. Acaba-ho tot amb un %. Si no ho saps exactament pots dir si és pujada (up) o baixada (down). Els valors s'escriuen en anglès."
+          },
+          "freeform": {
+            "key": "incline",
+            "addExtraTags": []
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "incline="
+                ]
+              },
+              "then": {
+                "en": "Tell us inclination",
+                "es": "Dínos la pendiente",
+                "ca": "Diga'ns el pendent"
+              },
+              "hideInAnswer": true
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://yopaseopor.github.io/osmaccessibilitymap/src/img/accessibilitat/incline_question.svg"
+      },
+      "width": {
+        "render": "4"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00ff00",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "incline="
+              ]
+            },
+            "then": {
+              "en": "#ff0000",
+              "es": "#ff0000",
+              "ca": "#ff0000"
+            }
+          }
+        ]
+      },
+      "presets": []
+    }
+  ],
+  "roamingRenderings": []
+}
