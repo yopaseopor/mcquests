@@ -37,7 +37,7 @@
         "es": "Ayuda a completar pendiente",
         "ca": "Ajuda a completar la pendent"
       },
-      "minzoom": 12,
+      "minzoom": 16,
       "overpassTags": {
         "and": [
           "highway~*",
