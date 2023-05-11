@@ -39,7 +39,8 @@
       "minzoom": 16,
       "overpassTags": {
         "and": [
-          "kerb~*"
+          "kerb~*",
+          "barrier=kerb"
         ]
       },
       "title": {
