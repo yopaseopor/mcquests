@@ -36,7 +36,7 @@
         "ca": "Vorades",
         "es": "Bordillos"
       },
-      "minzoom": 12,
+      "minzoom": 16,
       "overpassTags": {
         "and": [
           "kerb~*"
@@ -197,7 +197,7 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "50,50,center"
+        "render": "30,30,center"
       },
       "color": {
         "render": "#00f"
