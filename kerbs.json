@@ -150,7 +150,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/ramp_wheelchair.svg",
+        "render": "https://raw.githubusercontent.com/yopaseopor/mcquests/main/images/icones_accessibilitat/wheelchair_unknown.svg",
         "mappings": [
           {
             "if": {
