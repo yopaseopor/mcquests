@@ -31,6 +31,7 @@
   "layers": [
     {
       "id": "wheelchairsidewalks",
+      "allowSplit": true,
       "name": {
         "en": "Accessible sidewalks and crossings",
         "ca": "Voreres i passos accessibles",
