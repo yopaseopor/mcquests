@@ -21,7 +21,7 @@
     "en"
   ],
   "maintainer": "",
-  "icon": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/logo_mapes/lanes_quest_logo.svg",
+  "icon": "https://yopaseopor.github.io/mcquests/mcimages/lanes_quest_logo.svg",
   "version": "0",
   "startLat": 0,
   "startLon": 0,
@@ -223,7 +223,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://raw.githubusercontent.com/OSM-Catalan/osmcatmap/master/img/logo_mapes/lanes_quest_logo.svg",
+        "render": "https://yopaseopor.github.io/mcquests/mcimages/lanes_quest_logo.svg",
         "mappings": []
       },
       "width": {
