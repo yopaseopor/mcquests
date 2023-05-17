@@ -31,6 +31,7 @@
   "layers": [
     {
       "id": "1roadalllanes",
+	        "allowSplit": true,
       "name": {
         "es": "Info sobre carriles",
         "ca": "Info sobre carrils",
@@ -288,8 +289,8 @@
           {
             "if": {
               "or": [
-                "lanes!~",
-                "lanes:forward!~",
+                "lanes=",
+                "lanes:forward=",
                 {
                   "and": []
                 }
