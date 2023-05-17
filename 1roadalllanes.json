@@ -1,9 +1,9 @@
 {
-  "id": "1roadAlllanes",
+  "id": "1roadalllanes",
   "title": {
-    "es": "1roadAlllanes",
-    "ca": "1roadAlllanes",
-    "en": "1roadAlllanes"
+    "es": "1roadalllanes",
+    "ca": "1roadalllanes",
+    "en": "1roadalllanes"
   },
   "shortDescription": {
     "es": "Info sobre carriles",
@@ -11,9 +11,9 @@
     "en": "Info about lanes"
   },
   "description": {
-    "es": "1roadAlllanes es una quest que pregunta sobre carriles",
-    "ca": "1roadAlllanes és una quest que pregunta sobre carrils",
-    "en": "1roadAlllanes is a quest which ask for lanes info"
+    "es": "1roadalllanes es una quest que pregunta sobre carriles",
+    "ca": "1roadalllanes és una quest que pregunta sobre carrils",
+    "en": "1roadalllanes is a quest which ask for lanes info"
   },
   "language": [
     "es",
@@ -30,7 +30,7 @@
   "socialImage": "",
   "layers": [
     {
-      "id": "1roadAlllanes",
+      "id": "1roadalllanes",
       "name": {
         "es": "Info sobre carriles",
         "ca": "Info sobre carrils",
@@ -89,9 +89,9 @@
         }
       },
       "description": {
-        "es": "1roadAlllanes es una quest que pregunta sobre carriles\n<br><br>\nRojo: falta info",
-        "ca": "1roadAlllanes és una quest que pregunta sobre carrils\n<br><br>\nVermell: falta info",
-        "en": "1roadAlllanes is a quest which ask for lanes info\n<br><br>\nRed: missing info"
+        "es": "1roadalllanes es una quest que pregunta sobre carriles\n<br><br>\nRojo: falta info",
+        "ca": "1roadalllanes és una quest que pregunta sobre carrils\n<br><br>\nVermell: falta info",
+        "en": "1roadalllanes is a quest which ask for lanes info\n<br><br>\nRed: missing info"
       },
       "tagRenderings": [
         {
