@@ -60,7 +60,7 @@
           {
             "if": {
               "and": [
-                "name!~",
+                "name=",
                 "ref~*"
               ]
             },
@@ -73,7 +73,7 @@
           {
             "if": {
               "and": [
-                "name!~"
+                "name="
               ]
             },
             "then": {
@@ -97,9 +97,9 @@
       "tagRenderings": [
         {
           "render": {
-            "es": "Falta info sobre carriles",
-            "ca": "Falta info sobre carrils",
-            "en": "Lanes info missing"
+            "es": "Info sobre carriles: {lanes}",
+            "ca": "Info sobre carrils: {lanes}",
+            "en": "Lanes info: {lanes}"
           },
           "question": {
             "es": "¿Cuantos carriles tiene esta vía?",
@@ -165,9 +165,9 @@
         },
         {
           "render": {
-            "es": "Info carriles en el sentido de la vía",
-            "ca": "Info carrils en el sentit de la via   ",
-            "en": "Lanes forward info"
+            "es": "Info carriles en el sentido de la vía: {lanes:forward}",
+            "ca": "Info carrils en el sentit de la via: {lanes:forward}",
+            "en": "Lanes forward info: {lanes:forward}"
           },
           "question": {
             "es": "¿Cuantos carriles hay en el sentido de la vía?",
