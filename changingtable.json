@@ -29,6 +29,7 @@
   "widenFactor": 0.05,
   "socialImage": "",
   "layers": [
+    {
       "id": "changingtablemap",
       "name": {
         "en": "Changing tables map",
@@ -406,14 +407,24 @@
       },
       "color": {
         "render": "#00f"
-      },
-      "presets": [{
-      "builtin": "toilets",
-      "=presets": [],
-      "=name": null,
-      "override": {
-        "minzoom": 19
-      }],
+},
+      "presets": [
+        {
+          "tags": [
+            "amenity=toilets"
+          ],
+          "title": {
+            "en": "a toilet",
+            "es": "un lavabo",
+            "ca": "un lavabo"
+          },
+          "description": {
+            "en": "Now you can add a toilet. Then answer the questions",
+            "es": "Ahora puedes añadir un lavabo. Después respondes las preguntas.",
+            "ca": "Ara pots afegir un lavabo i després respondre les preguntes."
+          }
+        }
+      ],
       "wayHandling": 1
     }
   ],
