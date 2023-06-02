@@ -29,13 +29,6 @@
   "widenFactor": 0.05,
   "socialImage": "",
   "layers": [
-     {
-      "builtin": [
-        "toilet"
-      ],
-      "override": {
-        "minzoom": 16
-      }
       "id": "changingtablemap",
       "name": {
         "en": "Changing tables map",
@@ -414,7 +407,13 @@
       "color": {
         "render": "#00f"
       },
-      "presets": [],
+      "presets": [{
+      "builtin": "toilets",
+      "=presets": [],
+      "=name": null,
+      "override": {
+        "minzoom": 19
+      }],
       "wayHandling": 1
     }
   ],
