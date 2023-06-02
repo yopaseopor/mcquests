@@ -28,7 +28,8 @@
   "startZoom": 1,
   "widenFactor": 0.05,
   "socialImage": "",
-  "layers": [
+"layers": [
+    "toilet",
     {
       "id": "changingtablemap",
       "name": {
