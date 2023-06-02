@@ -33,6 +33,9 @@
       "builtin": [
         "toilet"
       ],
+      "override": {
+        "minzoom": 16
+      }
       "id": "changingtablemap",
       "name": {
         "en": "Changing tables map",
