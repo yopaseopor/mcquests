@@ -61,7 +61,7 @@
               ]
             },
             "then": {
-              "en": "Here it is a playground <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SunwardCohousingPlayStructure2005.jpg/200px-SunwardCohousingPlayStructure2005.jpg' width='100' /> ",
+              "en": "Here it is a playground <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SunwardCohousingPlayStructure2005.jpg/100px-SunwardCohousingPlayStructure2005.jpg' width='100' /> ",
               "es": "Aquí hay un parque infantil",
               "ca": "Aquí hi ha un parc infantil"
             }
@@ -84,7 +84,7 @@
             "key": "playground"
           },
           "render": {
-            "en": "Playground: {playground} <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SunwardCohousingPlayStructure2005.jpg/100px-SunwardCohousingPlayStructure2005.jpg' width='100' /> ",
+            "en": "Playground: {playground}",
             "es": "Parque infantil : {playground}",
             "ca": "Parc infantil: {playground}"
           },
@@ -96,7 +96,7 @@
                 ]
               },
               "then": {
-                "en": "swing <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/SunwardCohousingPlayStructure2005.jpg/100px-SunwardCohousingPlayStructure2005.jpg' width='100' /> ",
+                "en": "swing",
                 "es": "columpio",
                 "ca": "gronxador"
               }
