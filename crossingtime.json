@@ -276,7 +276,7 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "32,32,center",
+        "render": "32,32,anchor",
         "mappings": []
       },
       "color": {

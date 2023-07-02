@@ -105,7 +105,7 @@
         "render": "3"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "40,40,anchor"
       },
       "color": {
         "render": "#000000",

@@ -119,7 +119,7 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "32,21,center"
+        "render": "32,21,anchor"
       },
       "color": {
         "render": "#00bfff",

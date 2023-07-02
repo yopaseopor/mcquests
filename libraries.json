@@ -1813,7 +1813,7 @@
         "render": "2"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "40,40,anchor"
       },
       "color": {
         "render": "#00f"
@@ -1897,7 +1897,7 @@
         "render": "2"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "40,40,anchor"
       },
       "color": {
         "render": "#00f"

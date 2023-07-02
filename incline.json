@@ -123,7 +123,7 @@
         "render": "4"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "40,40,anchor"
       },
       "color": {
         "render": "#00ff00",

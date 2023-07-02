@@ -165,7 +165,7 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "60,60,center"
+        "render": "60,60,anchor"
       },
       "color": {
         "render": "#00f"

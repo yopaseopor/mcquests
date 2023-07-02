@@ -327,7 +327,7 @@
         "render": "4"
       },
       "iconSize": {
-        "render": "20,20,center"
+        "render": "20,20,anchor"
       },
       "color": {
         "render": "#00f"

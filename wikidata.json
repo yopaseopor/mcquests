@@ -90,7 +90,7 @@
         "render": "3"
       },
       "iconSize": {
-        "render": "60,32,center"
+        "render": "60,32,anchor"
       },
       "color": {
         "render": "#ff0000",

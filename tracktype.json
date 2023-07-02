@@ -196,7 +196,7 @@
         "render": "4"
       },
       "iconSize": {
-        "render": "40,40,center"
+        "render": "40,40,anchor"
       },
       "color": {
         "render": "rgba(0,0,255,0.5)",

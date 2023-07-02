@@ -216,7 +216,7 @@
         "render": "4"
       },
       "iconSize": {
-        "render": "30,30,center"
+        "render": "30,30,anchor"
       },
       "color": {
         "render": "#000000",

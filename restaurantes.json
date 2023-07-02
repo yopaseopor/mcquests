@@ -321,7 +321,7 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "10,10,center",
+        "render": "10,10,anchor",
         "mappings": [
           {
             "if": {
