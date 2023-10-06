@@ -340,77 +340,77 @@
         },
         {
           "render": {
-            "es": "Mercancías peligrosas {hazard}",
-            "ca": "Mercaderies perilloses {hazard}",
-            "en": "Hazard {hazard}"
+            "es": "Mercancías peligrosas {hazmat}",
+            "ca": "Mercaderies perilloses {hazmat}",
+            "en": "hazmat {hazmat}"
           },
           "question": {
             "es": "¿La vía tiene restricciones a mercancías peligrosas?",
             "ca": "La via té restriccions a mercaderies perilloses?",
-            "en": "Does the way has restrictions to hazard?"
+            "en": "Does the way has restrictions to hazmat?"
           },
           "freeform": {
-            "key": "hazard"
+            "key": "hazmat"
           },
           "mappings": [
             {
               "if": {
                 "and": [
-                  "hazard=designated"
+                  "hazmat=designated"
                 ]
               },
               "then": {
                 "es": "Esta vía es obligatoria para mercancías peligrosas",
                 "ca": "Aquesta via és obligatòria per mercaderies perilloses",
-                "en": "This way is designated for Hazard vehicles"
+                "en": "This way is designated for hazmat vehicles"
               }
             },
             {
               "if": {
                 "and": [
-                  "hazard=yes"
+                  "hazmat=yes"
                 ]
               },
               "then": {
                 "es": "Esta vía permite mercancías peligrosas",
                 "ca": "Aquesta via permet mercaderies perilloses",
-                "en": "This way can be used by Hazard vehicles"
+                "en": "This way can be used by hazmat vehicles"
               }
             },
             {
               "if": {
                 "and": [
-                  "hazard=destination"
+                  "hazmat=destination"
                 ]
               },
               "then": {
                 "es": "Esta vía no permite mercancías peligrosas en ruta",
                 "ca": "Aquesta via no permet mercaderies perilloses en ruta",
-                "en": "This way can be used by destination Hazard vehicles"
+                "en": "This way can be used by destination hazmat vehicles"
               }
             },
             {
               "if": {
                 "and": [
-                  "hazard=delivery"
+                  "hazmat=delivery"
                 ]
               },
               "then": {
                 "es": "Esta vía sólo permite mercancías peligrosas en reparto",
                 "ca": "Aquesta via només permet mercaderies perilloses en repartiment",
-                "en": "This way can be used by delivery Hazard vehicles"
+                "en": "This way can be used by delivery hazmat vehicles"
               }
             },
             {
               "if": {
                 "and": [
-                  "hazard=no"
+                  "hazmat=no"
                 ]
               },
               "then": {
                 "es": "Esta vía no permite el paso de mercancías peligrosas",
                 "ca": "Aquesta via no permet el pas de mercaderies perilloses",
-                "en": "This way can not be used by Hazard vehicles"
+                "en": "This way can not be used by hazmat vehicles"
               }
             }
           ],
