@@ -336,17 +336,18 @@
                 "en": "This way can not be used by HGV"
               }
             }
-},
+          ]
+        },
         {
           "render": {
-            "es": "Mercancías peligrosas: {hazard}",
-            "ca": "MercaderiesCamions: {hazard}",
-            "en": "HGV: {hazard}"
+            "es": "Mercancías peligrosas {hazard}",
+            "ca": "Mercaderies perilloses {hazard}",
+            "en": "Hazard {hazard}"
           },
           "question": {
-            "es": "¿La vía tiene restricciones a camiones?",
-            "ca": "La via té restriccions a camions?",
-            "en": "Does the way has restrictions to HGV?"
+            "es": "¿La vía tiene restricciones a mercancías peligrosas?",
+            "ca": "La via té restriccions a mercaderies perilloses?",
+            "en": "Does the way has restrictions to hazard?"
           },
           "freeform": {
             "key": "hazard"
@@ -359,9 +360,9 @@
                 ]
               },
               "then": {
-                "es": "Esta vía es obligatoria para camiones",
-                "ca": "Aquesta via és obligatòria per camions",
-                "en": "This way is designated for HGV"
+                "es": "Esta vía es obligatoria para mercancías peligrosas",
+                "ca": "Aquesta via és obligatòria per mercaderies perilloses",
+                "en": "This way is designated for Hazard vehicles"
               }
             },
             {
@@ -371,21 +372,9 @@
                 ]
               },
               "then": {
-                "es": "Esta vía permite camiones",
-                "ca": "Aquesta via permet camions",
-                "en": "This way can be used by HGV"
-              }
-            },
-            {
-              "if": {
-                "and": [
-                  "hazard=delivery"
-                ]
-              },
-              "then": {
-                "es": "Esta vía sólo permite camiones en reparto",
-                "ca": "Aquesta via només permet camions en repartiment",
-                "en": "This way can be used by delivery HGV"
+                "es": "Esta vía permite mercancías peligrosas",
+                "ca": "Aquesta via permet mercaderies perilloses",
+                "en": "This way can be used by Hazard vehicles"
               }
             },
             {
@@ -395,9 +384,21 @@
                 ]
               },
               "then": {
-                "es": "Esta vía no permite camiones en ruta",
-                "ca": "Aquesta via no permet camions en ruta",
-                "en": "This way can be used by destination HGV"
+                "es": "Esta vía no permite mercancías peligrosas en ruta",
+                "ca": "Aquesta via no permet mercaderies perilloses en ruta",
+                "en": "This way can be used by destination Hazard vehicles"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "hazard=delivery"
+                ]
+              },
+              "then": {
+                "es": "Esta vía sólo permite mercancías peligrosas en reparto",
+                "ca": "Aquesta via només permet mercaderies perilloses en repartiment",
+                "en": "This way can be used by delivery Hazard vehicles"
               }
             },
             {
@@ -407,12 +408,15 @@
                 ]
               },
               "then": {
-                "es": "Esta vía no permite el paso de camiones",
-                "ca": "Aquesta via no permet el pas de camions",
-                "en": "This way can not be used by HGV"
+                "es": "Esta vía no permite el paso de mercancías peligrosas",
+                "ca": "Aquesta via no permet el pas de mercaderies perilloses",
+                "en": "This way can not be used by Hazard vehicles"
               }
             }
-          ]
+          ],
+          "condition": {
+            "and": []
+          }
         }
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
