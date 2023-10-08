@@ -37,7 +37,7 @@
         "ca": "Info sobre carrils",
         "en": "Info about lanes"
       },
-      "minzoom": 15,
+      "minzoom": 13,
       "overpassTags": {
         "and": [
           "highway~residential|living_street|tertiary|service|unclassified|secondary|primary|trunk|motorway|tertiary_link|secondary_link|primary_link|trunk_link|motorway_link"
