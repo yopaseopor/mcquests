@@ -36,6 +36,7 @@
         "es": "Mapa de parques infantiles",
         "ca": "Mapa de parcs infantils"
       },
+	  "playground",
       "minzoom": 12,
       "overpassTags": {
         "or": [
