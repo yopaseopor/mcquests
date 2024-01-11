@@ -1690,6 +1690,17 @@
         },
         {
           "render": {
+            "es": "Operador de red:{internet_access:operator}"
+          },
+          "question": {
+            "es": "¿Cual es el operador de internet?"
+          },
+          "freeform": {
+            "key": "internet_access:operator"
+          }
+        },
+        {
+          "render": {
             "es": "Fecha de puesta en funcionamiento: {start_date}"
           },
           "question": {
