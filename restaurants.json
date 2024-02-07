@@ -206,11 +206,11 @@
           {
             "if": {
               "and": [
-                "addr:housenumber~",
-                "addr:postcode~",
-                "addr:street~",
-                "opening_hours~",
-                "website~"
+                "addr:housenumber=",
+                "addr:postcode=",
+                "addr:street=",
+                "opening_hours=",
+                "website="
               ]
             },
             "then": {
