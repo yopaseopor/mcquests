@@ -33,8 +33,10 @@
       },
       "minzoom": 15,
       "overpassTags": {
-        "and": [
-          "amenity=restaurant"
+        "or": [
+          "amenity=restaurant",
+          "amenity=cafe",
+          "amenity=pub"
         ]
       },
       "title": {
@@ -177,6 +179,61 @@
                 "ca": "Tapes",
                 "es": "Tapas"
               }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=churro"
+                ]
+              },
+              "then": {
+                "ca": "Xurreria",
+                "es": "Churrería"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=regional"
+                ]
+              },
+              "then": {
+                "ca": "Regional",
+                "es": "Regional"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=spanish"
+                ]
+              },
+              "then": {
+                "ca": "Espanyola",
+                "es": "Española"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=burger"
+                ]
+              },
+              "then": {
+                "ca": "Hamburgueseria",
+                "es": "Hamburguesería"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=pizza"
+                ]
+              },
+              "then": {
+                "ca": "Pizza",
+                "es": "Pizza"
+              }
             }
           ]
         }
@@ -278,6 +335,32 @@
           "description": {
             "ca": "Dibuixar un nou restaurant, sempre a la vora de l'edifici",
             "es": "Dibujar un nuevo restaurante siempre en los bordes de un edificio"
+          }
+        },
+        {
+          "tags": [
+            "amenity=cafe"
+          ],
+          "title": {
+            "ca": "Nou café",
+            "es": "Nuevo café"
+          },
+          "description": {
+            "ca": "Dibuixar  una nova cafeteria, sempre a la vora de l'edifici",
+            "es": "Dibujar una nueva cafetería siempre en los bordes de un edificio"
+          }
+        },
+        {
+          "tags": [
+            "amenity=pub"
+          ],
+          "title": {
+            "ca": "Nou bar",
+            "es": "Nuevo bar"
+          },
+          "description": {
+            "ca": "Dibuixar un nou bar ,sempre a la vora de l'edifici",
+            "es": "Dibujar un nuevo bar ,siempre en los bordes de un edificio"
           }
         }
       ],
