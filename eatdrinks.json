@@ -41,8 +41,8 @@
       },
       "title": {
         "render": {
-          "ca": "Nom: {name}",
-          "es": "Nombre: {name}"
+          "ca": "Nom: {name} ({amenity})",
+          "es": "Nombre: {name} ({amenity})"
         },
         "mappings": [
           {
@@ -318,7 +318,8 @@
         "render": "8"
       },
       "iconSize": {
-        "render": "40,40,anchor"
+        "render": "40,40,anchor",
+        "mappings": []
       },
       "color": {
         "render": "#00f"
