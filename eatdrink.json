@@ -1,16 +1,16 @@
 {
-  "id": "restaurants",
+  "id": "eatdrink",
   "title": {
-    "ca": "Dades de restaurants",
-    "es": "Datos de restaurantes"
+    "ca": "Dades de restaurants, cafés i bars",
+    "es": "Datos de restaurantes, cafés y bares"
   },
   "shortDescription": {
-    "ca": "Completar dades de restaurants",
-    "es": "Completar datos de restaurantes"
+    "ca": "Completar dades de restaurants, cafés i bars",
+    "es": "Completar datos de restaurantes, cafés y bares"
   },
   "description": {
-    "ca": "Afegir dades a restaurants",
-    "es": "Añadir datos a restaurantes"
+    "ca": "Afegir dades a restaurants, cafés i bars",
+    "es": "Añadir datos a restaurantes, cafés y bares"
   },
   "language": [
     "ca",
@@ -26,7 +26,7 @@
   "socialImage": "",
   "layers": [
     {
-      "id": "restaurants",
+      "id": "eatdrink",
       "name": {
         "ca": "Completem dades de portals",
         "es": "Completamos datos de portales"
@@ -59,7 +59,7 @@
         ]
       },
       "description": {
-        "ca": "Completarem les dades dels r estaurants amb número, carrer, pàgina web , horari i codi postal",
+        "ca": "Completarem les dades dels locals de menjar amb número, carrer, pàgina web , horari i codi postal",
         "es": "Completaremos los datos de portales con número, calle, horario, página web y código postal"
       },
       "tagRenderings": [
