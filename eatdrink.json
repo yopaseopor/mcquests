@@ -234,6 +234,105 @@
                 "ca": "Pizza",
                 "es": "Pizza"
               }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=coffee_shop"
+                ]
+              },
+              "then": {
+                "ca": "Café",
+                "es": "Café"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=italian"
+                ]
+              },
+              "then": {
+                "ca": "Italià",
+                "es": "Italiana"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=chinese"
+                ]
+              },
+              "then": {
+                "ca": "Xinesa",
+                "es": "China"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=sandwich"
+                ]
+              },
+              "then": {
+                "ca": "Entrepans",
+                "es": "Bocadillos"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=chicken"
+                ]
+              },
+              "then": {
+                "ca": "Pollastre",
+                "es": "Pollo"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=kebab"
+                ]
+              },
+              "then": {
+                "ca": "Kebab",
+                "es": "Kebab"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=mexican"
+                ]
+              },
+              "then": {
+                "ca": "Mexicana",
+                "es": "Mejicana"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=japanese"
+                ]
+              },
+              "then": {
+                "ca": "Japonesa",
+                "es": "Japonesa"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "cuisine=american"
+                ]
+              },
+              "then": {
+                "ca": "Americana",
+                "es": "Americana"
+              }
             }
           ]
         }
