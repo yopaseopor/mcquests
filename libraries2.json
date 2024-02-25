@@ -13,10 +13,12 @@
   "description": {
     "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50! Haz clic en el botón para empezar (no hagas caso del código)",
     "ca": "¿Tens informació sobre una biblioteca? Ens la pots explicar? Et farem preguntes (la que no sàpigues contestar te la saltes: n'hi ha més de 50! Fes clic al botó per començar (no facis cas del codi)",
-    "en": ""
+    "en": "Do you have all the information about a library? Can you explain us? WE make you a few questions (all that you can't answer you can omit them, there are more than 50! Clic on the button to start (don't watch the code)"
   },
   "language": [
-    "es"
+    "es",
+	"ca",
+	"en"
   ],
   "maintainer": "",
   "icon": "https://www.svgrepo.com/show/181859/library-book.svg",
@@ -30,7 +32,9 @@
     {
       "id": "libraries",
       "name": {
-        "es": "bibliotecas"
+        "es": "bibliotecas",
+		"ca": "",
+		"en": ""
       },
       "minzoom": 12,
       "overpassTags": {
@@ -40,7 +44,9 @@
       },
       "title": {
         "render": {
-          "es": "Biblioteca"
+          "es": "Biblioteca",
+		"ca": "",
+		"en": ""
         },
         "mappings": [
           {
@@ -56,15 +62,21 @@
         ]
       },
       "description": {
-        "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50!"
+        "es": "¿Tienes información sobre una biblioteca? ¿Nos la puedes contar? Te haremos unas preguntas (la que no sepas la saltas , directamente, ¡hay más de 50!",
+		"ca": "",
+		"en": ""
       },
       "tagRenderings": [
         {
           "render": {
-            "es": "Nombre:{name}"
+            "es": "Nombre:{name}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Qué nombre tiene?"
+            "es": "¿Qué nombre tiene?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "name",
@@ -74,10 +86,14 @@
         },
         {
           "render": {
-            "es": "Dirección:{addr:street}"
+            "es": "Dirección:{addr:street}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿En que calle se sitúa?"
+            "es": "¿En que calle se sitúa?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "addr:street"
@@ -85,10 +101,14 @@
         },
         {
           "render": {
-            "es": "Número:{addr:housenumber}"
+            "es": "Número:{addr:housenumber}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿En qué número?"
+            "es": "¿En qué número?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "addr:housenumber"
@@ -96,10 +116,14 @@
         },
         {
           "render": {
-            "es": "Planta:{addr:floor}"
+            "es": "Planta:{addr:floor}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿En qué planta?"
+            "es": "¿En qué planta?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "addr:floor"
@@ -107,10 +131,14 @@
         },
         {
           "render": {
-            "es": "Población:{addr:city}"
+            "es": "Población:{addr:city}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿En qué población?"
+            "es": "¿En qué población?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "addr:city"
@@ -118,10 +146,14 @@
         },
         {
           "render": {
-            "es": "Código postal:{addr:postcode}"
+            "es": "Código postal:{addr:postcode}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Qué código postal tiene?"
+            "es": "¿Qué código postal tiene?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "addr:postcode"
@@ -129,10 +161,14 @@
         },
         {
           "render": {
-            "es": "Tipo de biblioteca:{library}"
+            "es": "Tipo de biblioteca:{library}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Qué tipo de biblioteca es?"
+            "es": "¿Qué tipo de biblioteca es?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "library",
@@ -146,7 +182,9 @@
                 ]
               },
               "then": {
-                "es": "Público en general"
+                "es": "Público en general",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -156,7 +194,9 @@
                 ]
               },
               "then": {
-                "es": "Especializada en cine"
+                "es": "Especializada en cine",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -166,7 +206,9 @@
                 ]
               },
               "then": {
-                "es": "Para estudiantes"
+                "es": "Para estudiantes",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -176,7 +218,9 @@
                 ]
               },
               "then": {
-                "es": "Especializada en investigación"
+                "es": "Especializada en investigación",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -186,7 +230,9 @@
                 ]
               },
               "then": {
-                "es": "Biblioteca universitaria"
+                "es": "Biblioteca universitaria",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -196,7 +242,9 @@
                 ]
               },
               "then": {
-                "es": "Para académic@s"
+                "es": "Para académic@s",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -206,17 +254,23 @@
                 ]
               },
               "then": {
-                "es": "Especializada en literatura infantil"
+                "es": "Especializada en literatura infantil",
+		"ca": "",
+		"en": ""
               }
             }
           ]
         },
         {
           "render": {
-            "es": "Tiene libros de los siguientes temas:{books}"
+            "es": "Tiene libros de los siguientes temas:{books}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿De qué temas tiene la biblioteca libros?"
+            "es": "¿De qué temas tiene la biblioteca libros?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "books",
@@ -230,7 +284,9 @@
                 ]
               },
               "then": {
-                "es": "Todo tipo de libros . Si quieres especificar varios escribe la siguiente leyenda (en inglés), cada valor debe ir separado de punto y coma (;) :<br>Administración y dirección de empresas:business_administration<br>Economía:economics<br>Estudios de mercado:trade_studies<br>Anarquismo:anarchism<br>Antiguos:antiquarian<br>Arquitectura:architecture<br>Arte (especializado):fine_art<br>Arte:art<br>Ciencias:sciences<br>Ciencias de la comunicación:communication_science<br>Estudios de comunicación:communication_studies<br>Ciencias de la educación:education_sciences<br>Ciencias naturales:natural_sciences<br>Ciencias sociales:social_sciences<br>Psicología:psychology<br>Ciencias de la salud:health_sciences<br>Medicina:medicine<br>Derecho:law<br>Geografía:tourism_geography<br>Turismo:tourism<br>Ingenería industrial:industrial_engineering<br>Ingenería informática:computer_engineering<br>Ingenería de telecomunicaciones:telecommunications_engineering<br>"
+                "es": "Todo tipo de libros . Si quieres especificar varios escribe la siguiente leyenda (en inglés), cada valor debe ir separado de punto y coma (;) :<br>Administración y dirección de empresas:business_administration<br>Economía:economics<br>Estudios de mercado:trade_studies<br>Anarquismo:anarchism<br>Antiguos:antiquarian<br>Arquitectura:architecture<br>Arte (especializado):fine_art<br>Arte:art<br>Ciencias:sciences<br>Ciencias de la comunicación:communication_science<br>Estudios de comunicación:communication_studies<br>Ciencias de la educación:education_sciences<br>Ciencias naturales:natural_sciences<br>Ciencias sociales:social_sciences<br>Psicología:psychology<br>Ciencias de la salud:health_sciences<br>Medicina:medicine<br>Derecho:law<br>Geografía:tourism_geography<br>Turismo:tourism<br>Ingenería industrial:industrial_engineering<br>Ingenería informática:computer_engineering<br>Ingenería de telecomunicaciones:telecommunications_engineering<br>",
+		"ca": "",
+		"en": ""
               },
               "hideInAnswer": false
             }
@@ -238,10 +294,14 @@
         },
         {
           "render": {
-            "es": "Depende de:{operator}"
+            "es": "Depende de:{operator}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿De quien depende la biblioteca?"
+            "es": "¿De quien depende la biblioteca?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "operator"
@@ -249,10 +309,14 @@
         },
         {
           "render": {
-            "es": "Tipo de operador:{operator:type}"
+            "es": "Tipo de operador:{operator:type}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Qué tipo de institución es?"
+            "es": "¿Qué tipo de institución es?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "operator:type"
@@ -261,11 +325,15 @@
             {
               "if": {
                 "and": [
-                  "operator:type=association"
+                  "operator:type=association",
+		"ca": "",
+		"en": ""
                 ]
               },
               "then": {
-                "es": "Una asociación"
+                "es": "Una asociación",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -275,7 +343,9 @@
                 ]
               },
               "then": {
-                "es": "Una comunidad"
+                "es": "Una comunidad",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -285,7 +355,9 @@
                 ]
               },
               "then": {
-                "es": "Una fundación"
+                "es": "Una fundación",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -295,7 +367,9 @@
                 ]
               },
               "then": {
-                "es": "Un gobierno"
+                "es": "Un gobierno",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -305,7 +379,9 @@
                 ]
               },
               "then": {
-                "es": "Un gobierno regional"
+                "es": "Un gobierno regional",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -315,7 +391,9 @@
                 ]
               },
               "then": {
-                "es": "Un gobierno local"
+                "es": "Un gobierno local",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -325,7 +403,9 @@
                 ]
               },
               "then": {
-                "es": "Privada"
+                "es": "Privada",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -335,7 +415,9 @@
                 ]
               },
               "then": {
-                "es": "Privada sin afán de lucro"
+                "es": "Privada sin afán de lucro",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -345,7 +427,9 @@
                 ]
               },
               "then": {
-                "es": "Pública (Sin determinar)"
+                "es": "Pública (Sin determinar)",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -355,7 +439,9 @@
                 ]
               },
               "then": {
-                "es": "Religiosa"
+                "es": "Religiosa",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -365,7 +451,9 @@
                 ]
               },
               "then": {
-                "es": "Universitaria"
+                "es": "Universitaria",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -375,17 +463,23 @@
                 ]
               },
               "then": {
-                "es": "Una corporación"
+                "es": "Una corporación",
+		"ca": "",
+		"en": ""
               }
             }
           ]
         },
         {
           "render": {
-            "es": "Referencia:{ref}"
+            "es": "Referencia:{ref}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Qué referencia tiene esta biblioteca?"
+            "es": "¿Qué referencia tiene esta biblioteca?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "ref"
@@ -393,10 +487,14 @@
         },
         {
           "render": {
-            "es": "Referencia (ISIL):{ref:isil}"
+            "es": "Referencia (ISIL):{ref:isil}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Qué referencia internacional (ISIL) tiene?"
+            "es": "¿Qué referencia internacional (ISIL) tiene?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "ref:isil"
@@ -404,10 +502,14 @@
         },
         {
           "render": {
-            "es": "Pertenece a:{network}"
+            "es": "Pertenece a:{network}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿A qué red pertenece?"
+            "es": "¿A qué red pertenece?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "network"
@@ -415,10 +517,14 @@
         },
         {
           "render": {
-            "es": "Horario:{opening_hours}"
+            "es": "Horario:{opening_hours}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿En qué horario abre?"
+            "es": "¿En qué horario abre?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "opening_hours",
@@ -427,10 +533,14 @@
         },
         {
           "render": {
-            "es": "Horario de atención:{service_times}"
+            "es": "Horario de atención:{service_times}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿En qué horario te atienden?"
+            "es": "¿En qué horario te atienden?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "service_times",
@@ -439,10 +549,14 @@
         },
         {
           "render": {
-            "es": "Accesibilidad (silla de ruedas):{wheelchair}"
+            "es": "Accesibilidad (silla de ruedas):{wheelchair}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Es accesible para silla de ruedas?"
+            "es": "¿Es accesible para silla de ruedas?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "wheelchair",
@@ -456,7 +570,9 @@
                 ]
               },
               "then": {
-                "es": "Sí"
+                "es": "Sí",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -466,7 +582,9 @@
                 ]
               },
               "then": {
-                "es": "Está designado para silla de ruedas"
+                "es": "Está designado para silla de ruedas",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -476,7 +594,9 @@
                 ]
               },
               "then": {
-                "es": "Acceso limitado o parcial"
+                "es": "Acceso limitado o parcial",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -486,7 +606,9 @@
                 ]
               },
               "then": {
-                "es": "No es accesible para silla de ruedas"
+                "es": "No es accesible para silla de ruedas",
+		"ca": "",
+		"en": ""
               }
             }
           ]
@@ -496,7 +618,9 @@
             "es": "{wheelchair:description}"
           },
           "question": {
-            "es": "¿Deseas añadir información para usuarios en silla de ruedas?"
+            "es": "¿Deseas añadir información para usuarios en silla de ruedas?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "wheelchair:description"
@@ -504,10 +628,14 @@
         },
         {
           "render": {
-            "es": "Discapacidad visual :{access:blind}"
+            "es": "Discapacidad visual :{access:blind}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Está adaptada para personas con discapacidad visual?"
+            "es": "¿Está adaptada para personas con discapacidad visual?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "access:blind",
@@ -521,7 +649,9 @@
                 ]
               },
               "then": {
-                "es": "Sí"
+                "es": "Sí",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -531,7 +661,9 @@
                 ]
               },
               "then": {
-                "es": "Está designado para personas con discapacidad visual"
+                "es": "Está designado para personas con discapacidad visual",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -541,7 +673,9 @@
                 ]
               },
               "then": {
-                "es": "Acceso limitado o parcial"
+                "es": "Acceso limitado o parcial",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -551,17 +685,23 @@
                 ]
               },
               "then": {
-                "es": "No está adaptada"
+                "es": "No está adaptada",
+		"ca": "",
+		"en": ""
               }
             }
           ]
         },
         {
           "render": {
-            "es": "{blind:description}"
+            "es": "{blind:description}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Deseas añadir información para personas con discapacidad visual?"
+            "es": "¿Deseas añadir información para personas con discapacidad visual?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "blind:description"
@@ -569,10 +709,14 @@
         },
         {
           "render": {
-            "es": "Discapacidad auditiva :{access:deaf}"
+            "es": "Discapacidad auditiva :{access:deaf}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Está adaptada para personas con discapacidad auditiva?"
+            "es": "¿Está adaptada para personas con discapacidad auditiva?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "access:deaf",
@@ -586,7 +730,9 @@
                 ]
               },
               "then": {
-                "es": "Sí"
+                "es": "Sí",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -596,7 +742,9 @@
                 ]
               },
               "then": {
-                "es": "Está designada para personas con discapacidad auditiva"
+                "es": "Está designada para personas con discapacidad auditiva",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -606,7 +754,9 @@
                 ]
               },
               "then": {
-                "es": "Acceso limitado o parcial"
+                "es": "Acceso limitado o parcial",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -616,17 +766,23 @@
                 ]
               },
               "then": {
-                "es": "No está adaptada"
+                "es": "No está adaptada",
+		"ca": "",
+		"en": ""
               }
             }
           ]
         },
         {
           "render": {
-            "es": "{deaf:description}"
+            "es": "{deaf:description}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Deseas añadir información para personas con discapacidad auditiva?"
+            "es": "¿Deseas añadir información para personas con discapacidad auditiva?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "deaf:description"
@@ -634,10 +790,14 @@
         },
         {
           "render": {
-            "es": "Discapacidad mental :{access:mental_disabled}"
+            "es": "Discapacidad mental :{access:mental_disabled}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Está adaptada para personas con discapacidad mental?"
+            "es": "¿Está adaptada para personas con discapacidad mental?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "access:mental_disabled",
@@ -651,7 +811,9 @@
                 ]
               },
               "then": {
-                "es": "Sí"
+                "es": "Sí",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -661,7 +823,9 @@
                 ]
               },
               "then": {
-                "es": "Está designado para personas con discapacidad mental"
+                "es": "Está designado para personas con discapacidad mental",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -671,7 +835,9 @@
                 ]
               },
               "then": {
-                "es": "Acceso limitado o parcial"
+                "es": "Acceso limitado o parcial",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -681,17 +847,23 @@
                 ]
               },
               "then": {
-                "es": "No está adaptada"
+                "es": "No está adaptada",
+		"ca": "",
+		"en": ""
               }
             }
           ]
         },
         {
           "render": {
-            "es": "{mental_disabled:description}"
+            "es": "{mental_disabled:description}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Deseas añadir información para personas con discapacidad mental?"
+            "es": "¿Deseas añadir información para personas con discapacidad mental?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "mental_disabled:description"
@@ -699,10 +871,14 @@
         },
         {
           "render": {
-            "es": "Área infantil:{kids_area}"
+            "es": "Área infantil:{kids_area}",
+		"ca": "",
+		"en": ""
           },
           "question": {
-            "es": "¿Tiene área infantil?"
+            "es": "¿Tiene área infantil?",
+		"ca": "",
+		"en": ""
           },
           "freeform": {
             "key": "kids_area",
@@ -716,7 +892,9 @@
                 ]
               },
               "then": {
-                "es": "Sí"
+                "es": "Sí",
+		"ca": "",
+		"en": ""
               }
             },
             {
@@ -1680,17 +1858,6 @@
         {
           "render": {
             "es": "{internet_access:operator}"
-          },
-          "question": {
-            "es": "¿Cual es el operador de internet?"
-          },
-          "freeform": {
-            "key": "internet_access:operator"
-          }
-        },
-        {
-          "render": {
-            "es": "Operador de red:{internet_access:operator}"
           },
           "question": {
             "es": "¿Cual es el operador de internet?"
