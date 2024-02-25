@@ -1673,17 +1673,6 @@
         },
         {
           "render": {
-            "es": "{internet_access:operator}"
-          },
-          "question": {
-            "es": "¿Cual es el operador de internet?"
-          },
-          "freeform": {
-            "key": "internet_access:operator"
-          }
-        },
-        {
-          "render": {
             "es": "Operador de red:{internet_access:operator}"
           },
           "question": {
