@@ -1,0 +1,164 @@
+{
+  "id": "diets",
+  "title": {
+    "es": "Dieta",
+    "ca": "Dieta",
+    "en": "Diet"
+  },
+  "shortDescription": {
+    "es": "Aquí encontrarás lugares con dietas específicas",
+    "ca": "Aquí trobaràs llocs amb dietes específiques",
+    "en": "Here you can find places with specific diets"
+  },
+  "description": {
+    "en": "Here you can find places with specific diets",
+    "ca": "Aquí trobaràs llocs amb dietes específiques",
+    "es": "Aquí encontrarás lugares con dietas específicas"
+  },
+  "language": [
+    "es",
+    "ca",
+    "en"
+  ],
+  "maintainer": "",
+  "icon": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.05,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "diets",
+      "name": {
+        "es": "Dieta",
+        "ca": "Dieta",
+        "en": "Diet"
+      },
+      "minzoom": 12,
+      "overpassTags": {
+        "or": [
+          "amenity=pub",
+          "amenity=bar",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=cafe",
+          "shop=convenience",
+          "shop=supermarket"
+        ]
+      },
+      "title": {
+        "render": {
+          "es": "Sitio y dieta",
+          "ca": "Lloc i dieta",
+          "en": "Place and diet"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "diet~*"
+              ]
+            },
+            "then": {
+              "es": "Este sitio tiene datos sobre dietas",
+              "ca": "Aquest lloc té dades sobre dietes",
+              "en": "This place has information about diets"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "diet="
+              ]
+            },
+            "then": {
+              "es": "Este sitio no tiene datos sobre dietas",
+              "ca": "Aquest lloc no té informació sobre dietes",
+              "en": "This place has no information about diets"
+            }
+          }
+        ]
+      },
+      "description": {
+        "es": "Aquí encontrarás lugares con dietas específicas",
+        "ca": "Aquí trobaràs llocs amb dietes específiques",
+        "en": "Here you can find places with specific diets"
+      },
+      "tagRenderings": [
+        {
+          "render": {
+            "es": "Vegetariano",
+            "ca": "Vegetarià",
+            "en": "Vegetarian"
+          },
+          "question": {
+            "es": "¿Este lugar ofrece comida vegetariana?",
+            "ca": "Aquest lloc ofereix menjar vegetarià?",
+            "en": "Is this place offering vegetarina diet?"
+          },
+          "freeform": {
+            "key": "diet:vegetarian"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "diet:vegetarian=yes"
+                ]
+              },
+              "then": {
+                "es": "Sí, ofrece",
+                "ca": "Sí, ofereix",
+                "en": "Yes, it offers"
+              }
+            }
+          ]
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "diet~*"
+              ]
+            },
+            "then": {
+              "es": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
+              "ca": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
+              "en": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "diet~"
+              ]
+            },
+            "then": {
+              "es": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_no.svg",
+              "ca": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_no.svg",
+              "en": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_no.svg"
+            }
+          }
+        ]
+      },
+      "width": {
+        "render": "8"
+      },
+      "iconSize": {
+        "render": "40,40,center"
+      },
+      "color": {
+        "render": "#00f"
+      },
+      "presets": [],
+      "wayHandling": 1
+    }
+  ],
+  "roamingRenderings": []
+}
