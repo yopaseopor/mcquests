@@ -124,7 +124,7 @@
           {
             "if": {
               "and": [
-                "^(diet:.*)$~~.+"
+                "diet:vegetarian~*"
               ]
             },
             "then": {
@@ -136,7 +136,7 @@
           {
             "if": {
               "and": [
-                "^(diet:.*)$~~.+"
+                "diet:vegetarian="
               ]
             },
             "then": {
