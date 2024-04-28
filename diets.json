@@ -565,9 +565,10 @@
     }
   ],
   "pointRendering": [
-    {
+        {
       "location": [
-        "centroid;point"
+        "centroid",
+        "point"
       ],
       "iconBadges": [
         {
