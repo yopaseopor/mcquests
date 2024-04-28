@@ -24,10 +24,10 @@
           "ca": "Dieta de {name}",
           "es": "Dieta de {name}"
         },
-        "icon": "https://raw.githubusercontent.com/yopaseopor/osmeatdrinkmap/main/src/img/icones_web/osmeatdrink_logo.svg"
+        "icon": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_logo.svg"
       }
     ],
-    "icon": "https://raw.githubusercontent.com/yopaseopor/osmeatdrinkmap/main/src/img/icones_web/osmeatdrink_logo.svg"
+    "icon": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_logo.svg"
   },
   "source": {
     "osmTags": {
@@ -565,9 +565,8 @@
     }
   ],
   "pointRendering": [
-        {
+    {
       "location": [
-        "centroid",
         "point"
       ],
       "iconBadges": [
@@ -585,5 +584,5 @@
   ],
   "minzoom": 13,
   "shownByDefault": true,
-  "popupInFloatover": true
+  "popupInFloatover": false
 }
