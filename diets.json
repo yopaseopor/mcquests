@@ -1,164 +1,588 @@
 {
   "id": "diets",
-  "title": {
-    "es": "Dieta",
-    "ca": "Dieta",
-    "en": "Diet"
-  },
-  "shortDescription": {
-    "es": "Aquí encontrarás lugares con dietas específicas",
-    "ca": "Aquí trobaràs llocs amb dietes específiques",
-    "en": "Here you can find places with specific diets"
+  "name": {
+    "en": "Diets",
+    "es": "Dietas",
+    "ca": "Dietes"
   },
   "description": {
-    "en": "Here you can find places with specific diets",
-    "ca": "Aquí trobaràs llocs amb dietes específiques",
-    "es": "Aquí encontrarás lugares con dietas específicas"
+    "en": "Places with specific diets",
+    "ca": "Llocs amb dietes específiques",
+    "es": "Sitios con dietas específicas"
   },
-  "language": [
-    "es",
-    "ca",
-    "en"
-  ],
-  "maintainer": "",
-  "icon": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
-  "version": "0",
-  "startLat": 0,
-  "startLon": 0,
-  "startZoom": 1,
-  "widenFactor": 0.05,
-  "socialImage": "",
-  "layers": [
-    {
-      "id": "diets",
-      "name": {
-        "es": "Dieta",
-        "ca": "Dieta",
-        "en": "Diet"
-      },
-      "minzoom": 12,
-      "overpassTags": {
-        "or": [
-          "amenity=pub",
-          "amenity=bar",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=cafe",
-          "shop=convenience",
-          "shop=supermarket"
-        ]
-      },
-      "title": {
-        "render": {
-          "es": "Sitio y dieta",
-          "ca": "Lloc i dieta",
-          "en": "Place and diet"
+  "title": {
+    "render": {
+      "en": "Diets",
+      "ca": "Dietes",
+      "es": "Dietas"
+    },
+    "mappings": [
+      {
+        "if": "name~*",
+        "then": {
+          "en": "{name}'s diet",
+          "ca": "Dieta de {name}",
+          "es": "Dieta de {name}"
         },
-        "mappings": [
-          {
-            "if": {
-              "and": [
-                "^(diet:.*)$~~.+"
-              ]
-            },
-            "then": {
-              "es": "Este sitio tiene datos sobre dietas",
-              "ca": "Aquest lloc té dades sobre dietes",
-              "en": "This place has information about diets"
-            }
-          },
-          {
-            "if": {
-              "and": [
-                "diet="
-              ]
-            },
-            "then": {
-              "es": "Este sitio no tiene datos sobre dietas",
-              "ca": "Aquest lloc no té informació sobre dietes",
-              "en": "This place has no information about diets"
-            }
-          }
-        ]
+        "icon": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_logo.svg"
+      }
+    ],
+    "icon": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_logo.svg"
+  },
+  "source": {
+    "osmTags": {
+      "or": [
+        "amenity=restaurant",
+        "amenity=pub",
+        "amenity=cafe",
+        "amenity=fast_food",
+        "amenity=bar",
+        "shop=convenience",
+        "shop=bakery",
+        "shop=supermarket",
+        "shop=pastry"
+      ]
+    }
+  },
+  "tagRenderings": [
+    "images",
+    {
+      "id": "vegetarian",
+      "question": {
+        "en": "Is this place for vegetarians?",
+        "ca": "Aquest lloc és apte per vegetarians?",
+        "es": "¿Este lugar es apto para vegetarianos?"
       },
-      "description": {
-        "es": "Aquí encontrarás lugares con dietas específicas",
-        "ca": "Aquí trobaràs llocs amb dietes específiques",
-        "en": "Here you can find places with specific diets"
-      },
-      "tagRenderings": [
+      "mappings": [
         {
-          "render": {
-            "es": "Vegetariano",
-            "ca": "Vegetarià",
-            "en": "Vegetarian"
-          },
-          "question": {
-            "es": "¿Este lugar ofrece comida vegetariana?",
-            "ca": "Aquest lloc ofereix menjar vegetarià?",
-            "en": "Is this place offering vegetarina diet?"
-          },
-          "freeform": {
-            "key": "diet:vegetarian"
-          },
-          "mappings": [
-            {
-              "if": {
-                "and": [
-                  "diet:vegetarian=yes"
-                ]
-              },
-              "then": {
-                "es": "Sí, ofrece",
-                "ca": "Sí, ofereix",
-                "en": "Yes, it offers"
-              }
-            }
-          ]
-        }
-      ],
-      "hideUnderlayingFeaturesMinPercentage": 0,
-      "icon": {
-        "render": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
-        "mappings": [
-          {
-            "if": {
-              "and": [
-                "diet:vegetarian~*"
-              ]
-            },
-            "then": {
-              "es": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
-              "ca": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg",
-              "en": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrinklogo.svg"
-            }
-          },
-          {
-            "if": {
-              "and": [
-                "diet:vegetarian="
-              ]
-            },
-            "then": {
-              "es": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_no.svg",
-              "ca": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_no.svg",
-              "en": "https://github.com/yopaseopor/osmeatdrinkmap/raw/main/src/img/icones_web/osmeatdrink_no.svg"
-            }
+          "if": "diet:vegetarian=yes",
+          "then": {
+            "en": "This place is for vegetarians",
+            "ca": "Aquest lloc és apte per vegetarians",
+            "es": "Este lugar es apto para vegetarianos"
           }
-        ]
+        },
+        {
+          "if": "diet:vegetarian=no",
+          "then": {
+            "ca": "Aquest lloc no és apte per vegetarians",
+            "es": "Este lugar no es apto para vegetarianos",
+            "en": "This place is not for vegetarians"
+          }
+        },
+        {
+          "if": "diet:vegetarian=only",
+          "then": {
+            "en": "This places is only for vegetarians",
+            "ca": "Aquest lloc és apte només per a vegetarians",
+            "es": "Este local es apto solo para vegetarianos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vegan",
+      "question": {
+        "en": "Is this place for vegan?",
+        "ca": "Aquest lloc és apte per vegans?",
+        "es": "¿Este lugar es apto para veganos?"
       },
-      "width": {
-        "render": "8"
+      "mappings": [
+        {
+          "if": "diet:vegan=yes",
+          "then": {
+            "en": "This place is for vegans",
+            "ca": "Aquest lloc és per vegans",
+            "es": "Este lugar es para veganos"
+          }
+        },
+        {
+          "if": "diet:vegan=no",
+          "then": {
+            "ca": "Aquest lloc no és per vegans",
+            "es": "Este lugar no es para veganos",
+            "en": "This places is not for vegans"
+          }
+        },
+        {
+          "if": "diet:vegan=only",
+          "then": {
+            "en": "This places is only for vegans",
+            "ca": "Aquest lloc és només per a vegans",
+            "es": "Este local solo tiene dieta para veganos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "halal",
+      "question": {
+        "en": "Does this place offer halal?",
+        "ca": "Aquest lloc ofereix halal?",
+        "es": "¿Este lugar ofrece halal?"
       },
-      "iconSize": {
-        "render": "40,40,center"
+      "mappings": [
+        {
+          "if": "diet:halal=yes",
+          "then": {
+            "en": "This place offers halal",
+            "ca": "Aquest lloc ofereix halal",
+            "es": "Este lugar ofrece halal"
+          }
+        },
+        {
+          "if": "diet:halal=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix halal",
+            "es": "Este lugar no ofrece halal",
+            "en": "This places don't offer halal"
+          }
+        },
+        {
+          "if": "diet:halal=only",
+          "then": {
+            "en": "This places only offers halal",
+            "ca": "Aquest lloc només ofereix halal",
+            "es": "Este local solo ofrece halal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kosher",
+      "question": {
+        "en": "Does this place offer kosher?",
+        "ca": "Aquest lloc ofereix kosher?",
+        "es": "¿Este lugar ofrece kosher?"
       },
-      "color": {
-        "render": "#00f"
+      "mappings": [
+        {
+          "if": "diet:kosher=yes",
+          "then": {
+            "en": "This place offers kosher",
+            "ca": "Aquest lloc ofereix kosher",
+            "es": "Este lugar ofrece kosher"
+          }
+        },
+        {
+          "if": "diet:kosher=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix kosher",
+            "es": "Este lugar no ofrece kosher",
+            "en": "This place don't offer kosher"
+          }
+        },
+        {
+          "if": "diet:kosher=only",
+          "then": {
+            "en": "This place only offers kosher",
+            "ca": "Aquest lloc només ofereix kosher",
+            "es": "Este local solo ofrece kosher"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gluten_free",
+      "question": {
+        "en": "Does this place offer gluten_free?",
+        "ca": "Aquest lloc ofereix menjar sense gluten?",
+        "es": "¿Este lugar ofrece comida sin gluten?"
       },
-      "presets": [],
-      "wayHandling": 1
+      "mappings": [
+        {
+          "if": "diet:gluten_free=yes",
+          "then": {
+            "en": "This place offers gluten_free",
+            "ca": "Aquest lloc ofereix menjar sense gluten",
+            "es": "Este lugar ofrece comida sin gluten"
+          }
+        },
+        {
+          "if": "diet:gluten_free=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix menjar sense gluten",
+            "es": "Este lugar no ofrece comida sin gluten",
+            "en": "This place don't offer gluten_free"
+          }
+        },
+        {
+          "if": "diet:gluten_free=only",
+          "then": {
+            "en": "This places only offers gluten_free",
+            "ca": "Aquest lloc només ofereix menjar sense gluten",
+            "es": "Este local solo ofrece comida sin gluten"
+          }
+        }
+      ]
+    },
+    {
+      "id": "meat",
+      "question": {
+        "en": "Does this place offer meat?",
+        "ca": "Aquest lloc ofereix carn?",
+        "es": "¿Este lugar ofrece carne?"
+      },
+      "mappings": [
+        {
+          "if": "diet:meat=yes",
+          "then": {
+            "en": "This place offers meat",
+            "ca": "Aquest lloc ofereix carn",
+            "es": "Este lugar ofrece carne"
+          }
+        },
+        {
+          "if": "diet:meat=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix carn",
+            "es": "Este lugar no ofrece carne",
+            "en": "This places don't offer meat"
+          }
+        },
+        {
+          "if": "diet:meat=only",
+          "then": {
+            "en": "This places only offers meat",
+            "ca": "Aquest lloc només ofereix carn",
+            "es": "Este local solo ofrece carne"
+          }
+        }
+      ]
+    },
+    {
+      "id": "non-vegetarian",
+      "question": {
+        "en": "Is this place for non-vegetarians?",
+        "ca": "Aquest lloc és apte per no vegetarians?",
+        "es": "¿Este lugar es apto para no vegetarianos?"
+      },
+      "mappings": [
+        {
+          "if": "diet:non-vegetarian=yes",
+          "then": {
+            "en": "This place is for non-vegetarians",
+            "ca": "Aquest lloc és per no vegetarians",
+            "es": "Este lugar es para no vegetarianos"
+          }
+        },
+        {
+          "if": "diet:non-vegetarian=no",
+          "then": {
+            "ca": "Aquest lloc no és per non-vegetarians",
+            "es": "Este lugar no es para no vegetarianos",
+            "en": "This places is not for no vegetarians"
+          }
+        },
+        {
+          "if": "diet:non-vegetarian=only",
+          "then": {
+            "en": "This places is only for non-vegetarians",
+            "ca": "Aquest lloc és només per a no vegetarians",
+            "es": "Este local solo tiene dieta para no vegetarianos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lactose_free",
+      "question": {
+        "en": "Does this place offer lactose_free?",
+        "ca": "Aquest lloc ofereix menjar sense lactosa?",
+        "es": "¿Este lugar ofrece comida sin lactosa?"
+      },
+      "mappings": [
+        {
+          "if": "diet:lactose_free=yes",
+          "then": {
+            "en": "This place offers lactose_free",
+            "ca": "Aquest lloc ofereix menjar sense lactosa",
+            "es": "Este lugar ofrece comida sin lactosa"
+          }
+        },
+        {
+          "if": "diet:lactose_free=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix menjar sense lactosa",
+            "es": "Este lugar no ofrece comida sin lactosa",
+            "en": "This place don't offer lactose_free"
+          }
+        },
+        {
+          "if": "diet:lactose_free=only",
+          "then": {
+            "en": "This places only offers lactose_free",
+            "ca": "Aquest lloc només ofereix menjar sense lactosa",
+            "es": "Este local solo ofrece comida sin lactosa"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pescetarian",
+      "question": {
+        "en": "Is this place for pescetarians?",
+        "ca": "Aquest lloc és apte per pescetarians?",
+        "es": "¿Este lugar es apto para pescetarianos?"
+      },
+      "mappings": [
+        {
+          "if": "diet:pescetarian=yes",
+          "then": {
+            "en": "This place is for pescetarians",
+            "ca": "Aquest lloc és per pescetarians",
+            "es": "Este lugar es para pescetarianos"
+          }
+        },
+        {
+          "if": "diet:pescetarian=no",
+          "then": {
+            "ca": "Aquest lloc no és per pescetarians",
+            "es": "Este lugar no es para pescetarianos",
+            "en": "This place is not for pescetarians"
+          }
+        },
+        {
+          "if": "diet:pescetarian=only",
+          "then": {
+            "en": "This places is only for pescetarians",
+            "ca": "Aquest lloc és només per a pescetarians",
+            "es": "Este local solo tiene dieta para pescetarianos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dairy_free",
+      "question": {
+        "en": "Does this place offer dairy_free?",
+        "ca": "Aquest lloc ofereix menjar sense làctics?",
+        "es": "¿Este lugar ofrece comida sin lácticos?"
+      },
+      "mappings": [
+        {
+          "if": "diet:dairy_free=yes",
+          "then": {
+            "en": "This place offers dairy_free",
+            "ca": "Aquest lloc ofereix menjar sense làctics",
+            "es": "Este lugar ofrece comida sin lácticos"
+          }
+        },
+        {
+          "if": "diet:dairy_free=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix menjar sense làctics",
+            "es": "Este lugar no ofrece comida sin lácticos",
+            "en": "This place don't offer dairy_free"
+          }
+        },
+        {
+          "if": "diet:dairy_free=only",
+          "then": {
+            "en": "This places only offers dairy_free",
+            "ca": "Aquest lloc només ofereix menjar sense làctics",
+            "es": "Este local solo ofrece comida sin lácticos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sugar_free",
+      "question": {
+        "en": "Does this place offer sugar_free?",
+        "ca": "Aquest lloc ofereix menjar sense sucre?",
+        "es": "¿Este lugar ofrece comida sin azúcar?"
+      },
+      "mappings": [
+        {
+          "if": "diet:sugar_free=yes",
+          "then": {
+            "en": "This place offers sugar_free",
+            "ca": "Aquest lloc ofereix menjar sense sucre",
+            "es": "Este lugar ofrece comida sin azúcar"
+          }
+        },
+        {
+          "if": "diet:sugar_free=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix menjar sense sucre",
+            "es": "Este lugar no ofrece comida sin azúcar",
+            "en": "This place don't offer sugar_free"
+          }
+        },
+        {
+          "if": "diet:sugar_free=only",
+          "then": {
+            "en": "This places only offers sugar_free",
+            "ca": "Aquest lloc només ofereix menjar sense sucre",
+            "es": "Este local solo ofrece comida sin azúcar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lacto_vegetarian",
+      "question": {
+        "en": "Is this place for lacto vegetarians?",
+        "ca": "Aquest lloc és apte per lactovegetarians?",
+        "es": "¿Este lugar es apto para lactovegetarianos?"
+      },
+      "mappings": [
+        {
+          "if": "diet:lacto_vegetarian=yes",
+          "then": {
+            "en": "This place is for lacto vegetarians",
+            "ca": "Aquest lloc és per lactovegetarians",
+            "es": "Este lugar es para lactovegetarianos"
+          }
+        },
+        {
+          "if": "diet:lacto_vegetarian=no",
+          "then": {
+            "ca": "Aquest lloc no és per lactovegetarians",
+            "es": "Este lugar no es para lactovegetarianos",
+            "en": "This places is not for lacto vegetarians"
+          }
+        },
+        {
+          "if": "diet:lacto_vegetarian=only",
+          "then": {
+            "en": "This places is only for lacto vegetarians",
+            "ca": "Aquest lloc és només per a lactovegetarians",
+            "es": "Este local solo tiene dieta para lactovegetarianos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ovo_vegetarians",
+      "question": {
+        "en": "Is this place for ovo vegetarians?",
+        "ca": "Aquest lloc és apte per ovovegetarians?",
+        "es": "¿Este lugar es apto para ovovegetarianos?"
+      },
+      "mappings": [
+        {
+          "if": "diet:ovo_vegetarian=yes",
+          "then": {
+            "en": "This place is for ovo vegetarians",
+            "ca": "Aquest lloc és per ovovegetarians",
+            "es": "Este lugar es para ovovegetarianos"
+          }
+        },
+        {
+          "if": "diet:ovo_vegetarian=no",
+          "then": {
+            "ca": "Aquest lloc no és per ovovegetarians",
+            "es": "Este lugar no es para ovoegetarianos",
+            "en": "This places is not for ovo vegetarians"
+          }
+        },
+        {
+          "if": "diet:ovo_vegetarian=only",
+          "then": {
+            "en": "This places is only for ovo vegetarians",
+            "ca": "Aquest lloc és només per a ovovegetarians",
+            "es": "Este local solo tiene dieta para ovovegetarianos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fruitarian",
+      "question": {
+        "en": "Is this place for fruitarians?",
+        "ca": "Aquest lloc és apte per fruitarians?",
+        "es": "¿Este lugar es apto para frutarianos?"
+      },
+      "mappings": [
+        {
+          "if": "diet:fruitarian=yes",
+          "then": {
+            "en": "This place is for fruitarians",
+            "ca": "Aquest lloc és per fruitarians",
+            "es": "Este lugar es para frutarianos"
+          }
+        },
+        {
+          "if": "diet:fruitarian=no",
+          "then": {
+            "ca": "Aquest lloc no és per fruitarians",
+            "es": "Este lugar no es para frutarianos",
+            "en": "This places is not for fruitarians"
+          }
+        },
+        {
+          "if": "diet:fruitarian=only",
+          "then": {
+            "en": "This places is only for fruitarians",
+            "ca": "Aquest lloc és només per a fruitarians",
+            "es": "Este local solo tiene dieta para frutarianos"
+          }
+        }
+      ]
+    },
+    {
+      "id": "raw",
+      "question": {
+        "en": "Does this place offer raw meal?",
+        "ca": "Aquest lloc ofereix menjar cru?",
+        "es": "¿Este lugar ofrece comida cruda?"
+      },
+      "mappings": [
+        {
+          "if": "diet:raw=yes",
+          "then": {
+            "en": "This place offers raw meal",
+            "ca": "Aquest lloc ofereix menjar cru",
+            "es": "Este lugar ofrece comida cruda"
+          }
+        },
+        {
+          "if": "diet:raw=no",
+          "then": {
+            "ca": "Aquest lloc no ofereix menjar cru",
+            "es": "Este lugar no ofrece comida cruda",
+            "en": "This places offers raw meal"
+          }
+        },
+        {
+          "if": "diet:raw=only",
+          "then": {
+            "en": "This places only offers raw meal",
+            "ca": "Aquest lloc només ofereix menjar cru",
+            "es": "Este local solo ofrece comida cruda"
+          }
+        }
+      ]
     }
   ],
-  "roamingRenderings": []
+  "lineRendering": [
+    {
+      "color": "gray",
+      "width": 10,
+      "dashArray": "6 12"
+    }
+  ],
+  "pointRendering": [
+    {
+      "location": [
+        "centroid"
+      ],
+      "iconBadges": [
+        {
+          "if": "_favourite=yes",
+          "then": "circle:white;heart:red"
+        }
+      ],
+      "marker": [
+        {
+          "icon": "confirm"
+        }
+      ]
+    }
+  ],
+  "minzoom": 13,
+  "shownByDefault": true,
+  "popupInFloatover": false
 }
