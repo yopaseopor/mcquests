@@ -403,6 +403,14 @@
           }
         },
         {
+          "if": "diet:sugar_free=limited",
+          "then": {
+            "ca": "Aquest lloc ofereix algun menjar sense sucre",
+            "es": "Este lugar ofrece alguna comida sin azúcar",
+            "en": "This place offers limited sugar_free products"
+          }
+        },
+        {
           "if": "diet:sugar_free=no",
           "then": {
             "ca": "Aquest lloc no ofereix menjar sense sucre",
