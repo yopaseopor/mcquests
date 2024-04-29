@@ -589,7 +589,7 @@
           "icon": "https://raw.githubusercontent.com/yopaseopor/osmeatdrinkmap/main/src/img/icones_web/osmeatdrink_logo.svg"
         }
       ],
-      "label": "{name}<br>Gluten free?{diet:gluten_free}<br>Lactose free?{diet:lactose_free}<br>Dairy free?{diet:dairy_free}<br>Sugar free?{diet:sugar_free}"
+      "label": "{name}<br>Gluten_free?{diet:gluten_free}<br>Lactose_free?{diet:lactose_free}<br>Dairy_free?{diet:dairy_free}<br>Sugar_free?{diet:sugar_free}"
     }
   ],
   "minzoom": 13,
