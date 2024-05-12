@@ -1,0 +1,216 @@
+{
+  "id": "containeronvas",
+  "name": {
+    "en": "Container, where do you go?",
+    "es": "Container, ¿dónde vas?",
+    "ca": "Container, on vas?"
+  },
+  "description": {
+    "en": "Places with containers",
+    "ca": "Tots recordem la cançoneta: Encara que siguis de plàstiiiiiiic... però...i el contenidor en sí: on va? Aquí posarem contenidors i completarem la informació dels que faltin.",
+    "es": "Pondremos contenedores y completaremos la información de los que falten por completar."
+  },
+  "title": {
+    "render": {
+      "en": "ContainerOnVas",
+      "ca": "ContainerOnVas",
+      "es": "ContainerOnVas"
+    },
+    "mappings": [
+      {
+        "if": "recycling_type=container",
+        "then": {
+          "en": "Container",
+          "ca": "Contenidor",
+          "es": "Contenedor"
+        },
+        "icon": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/general.svg"
+      },
+      {
+        "then": {}
+      }
+    ],
+    "icon": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/general.svg"
+  },
+  "source": {
+    "osmTags": {
+      "or": [
+        "amenity=recycling",
+        "recycling_type=container"
+      ]
+    }
+  },
+  "tagRenderings": [
+    "images",
+    {
+      "id": "container",
+      "question": {
+        "en": "Of what is this container?",
+        "ca": "De què és aquest contenidor?",
+        "es": "¿Qué se lanza en este contenedor?"
+      },
+      "mappings": [
+        {
+          "if": "recycling:paper=yes",
+          "then": {
+            "en": "Paper",
+            "ca": "Paper",
+            "es": "Papel"
+          }
+        },
+        {
+          "if": "recycling:beverage_cartons=yes",
+          "then": {
+            "en": "Beverage cartons",
+            "ca": "Envasos cartró",
+            "es": "Envases de cartón"
+          }
+        },
+        {
+          "if": "recycling:PET=yes",
+          "then": {
+            "en": "PET",
+            "ca": "Ampolles de plàstic",
+            "es": "Botellas de plástico"
+          }
+        },
+        {
+          "if": "recycling:cans=yes",
+          "then": {
+            "en": "Cans",
+            "ca": "Llaunes de refresc",
+            "es": "Latas de refresco"
+          }
+        },
+        {
+          "if": "recycling:glass_bottles=yes",
+          "then": {
+            "en": "Glass",
+            "ca": "Vidre",
+            "es": "Vidrio"
+          }
+        },
+        {
+          "if": "recycling:organic=yes",
+          "then": {
+            "en": "Organic",
+            "ca": "Orgànic",
+            "es": "Orgánico"
+          }
+        },
+        {
+          "if": "recycling:waste=yes",
+          "then": {
+            "en": "Waste",
+            "ca": "Rebuig",
+            "es": "Resto"
+          }
+        },
+        {
+          "if": "recycling:clothes=yes",
+          "then": {
+            "en": "Clothes",
+            "ca": "Roba",
+            "es": "Ropa"
+          }
+        },
+        {
+          "if": "recycling:batteries=yes",
+          "then": {
+            "en": "Batteries",
+            "ca": "Piles",
+            "es": "Pilas"
+          }
+        },
+        {
+          "if": "recycling:cooking_oil=yes",
+          "then": {
+            "en": "Cooking oil",
+            "ca": "Oli",
+            "es": "Aceite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "containerorcentre",
+      "question": {
+        "en": "Container or recycling centre?",
+        "ca": "Contenidor o centre de reciclatge?",
+        "es": "¿Contenedor o centro de reciclaje?"
+      },
+      "mappings": [
+        {
+          "if": "recycling_type=container",
+          "then": {
+            "en": "This is a container",
+            "ca": "Això és un contenidor",
+            "es": "Esto es un contenedor"
+          }
+        },
+        {
+          "if": "recycling_type=centre",
+          "then": {
+            "ca": "Això és un centre de reciclatge",
+            "es": "Esto es un centro de reciclaje",
+            "en": "This is a recycling centre"
+          }
+        }
+      ]
+    },
+    {
+      "id": "underground",
+      "question": {
+        "en": "Is this container underground?",
+        "ca": "Està el contenidor soterrat?",
+        "es": "¿Está el contenedor soterrado?"
+      },
+      "mappings": [
+        {
+          "if": "location=underground",
+          "then": {
+            "en": "Underground",
+            "ca": "Soterrat",
+            "es": "Soterrado"
+          }
+        },
+        {
+          "if": "location=",
+          "then": {
+            "en": "Other locations"
+          }
+        }
+      ]
+    }
+  ],
+  "lineRendering": [
+    {
+      "color": "gray",
+      "width": 10,
+      "dashArray": "6 12"
+    }
+  ],
+  "pointRendering": [
+    {
+      "location": [
+        "centroid",
+        "point"
+      ],
+      "iconBadges": [
+        {
+          "if": "_favourite=yes",
+          "then": "circle:white;heart:red"
+        }
+      ],
+      "marker": [
+        {
+          "icon": "square",
+          "color": "#0000ff"
+        }
+      ]
+    }
+  ],
+  "minzoom": 13,
+  "shownByDefault": false,
+  "popupInFloatover": false
+}
