@@ -25,9 +25,6 @@
           "es": "Contenedor"
         },
         "icon": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/general.svg"
-      },
-      {
-        "then": {}
       }
     ],
     "icon": "https://raw.githubusercontent.com/yopaseopor/osmrecyclingmap/main/src/img/icones_contenidors/general.svg"
