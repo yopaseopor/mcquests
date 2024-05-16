@@ -180,100 +180,34 @@
       ]
     }
   ],
-  "icon": {
-    "render": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding.svg",
-    "mappings": [
-      {
-        "if": {
-          "and": [
-            "recycling:paper=yes"
-          ]
-        },
-        "then": {
-          "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg",
-          "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg",
-          "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_yes.svg"
-        }
-      },
-      {
-        "if": {
-          "and": [
-            "recycling:PET=yes"
-          ]
-        },
-        "then": {
-          "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg",
-          "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg",
-          "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_no.svg"
-        }
-      },
-      {
-        "if": {
-          "and": [
-            "location="
-          ]
-        },
-        "then": {
-          "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg",
-          "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg",
-          "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_question.svg"
-        }
-      },
-      {
-        "if": {
-          "and": [
-            "recycling:batteries=yes"
-          ]
-        },
-        "then": {
-          "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg",
-          "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg",
-          "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_room.svg"
-        }
-      },
-      {
-        "if": {
-          "and": [
-            "recycling:organic=yes"
-          ]
-        },
-        "then": {
-          "en": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg",
-          "es": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg",
-          "ca": "https://raw.githubusercontent.com/yopaseopor/osmbabymap/main/src/img/icones/babyfeeding_lactation.svg"
-        }
-      }
-    ]
-  },
-  "width": {
-    "render": "8"
-  },
-  "iconSize": {
-    "render": "40,40,anchor",
-    "mappings": []
-  },
-  "color": {
-    "render": "#00f"
- },
-      "presets": [
-        {
-          "tags": [
-            "amenity=toilets"
-          ],
-          "title": {
-            "en": "a toilet",
-            "es": "un lavabo",
-            "ca": "un lavabo"
-          },
-          "description": {
-            "en": "Now you can add a toilet. Then answer the questions",
-            "es": "Ahora puedes añadir un lavabo. Después respondes las preguntas.",
-            "ca": "Ara pots afegir un lavabo i després respondre les preguntes."
-          }
-        }
-      ],
-      "wayHandling": 1
+  "lineRendering": [
+    {
+      "color": "gray",
+      "width": 10,
+      "dashArray": "6 12"
     }
   ],
-  "roamingRenderings": []
+  "pointRendering": [
+    {
+      "location": [
+        "centroid",
+        "point"
+      ],
+      "iconBadges": [
+        {
+          "if": "_favourite=yes",
+          "then": "circle:white;heart:red"
+        }
+      ],
+      "marker": [
+        {
+          "icon": "square",
+          "color": "#0000ff"
+        }
+      ]
+    }
+  ],
+  "minzoom": 13,
+  "shownByDefault": false,
+  "popupInFloatover": false
 }
