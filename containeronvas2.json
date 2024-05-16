@@ -254,9 +254,26 @@
   },
   "color": {
     "render": "#00f"
-  }
+ },
+      "presets": [
+        {
+          "tags": [
+            "amenity=toilets"
+          ],
+          "title": {
+            "en": "a toilet",
+            "es": "un lavabo",
+            "ca": "un lavabo"
+          },
+          "description": {
+            "en": "Now you can add a toilet. Then answer the questions",
+            "es": "Ahora puedes añadir un lavabo. Después respondes las preguntas.",
+            "ca": "Ara pots afegir un lavabo i després respondre les preguntes."
+          }
+        }
+      ],
+      "wayHandling": 1
+    }
   ],
-  "minzoom": 13,
-  "shownByDefault": false,
-  "popupInFloatover": false
+  "roamingRenderings": []
 }
