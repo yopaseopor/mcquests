@@ -1,0 +1,162 @@
+{
+  "credits": "Not logged in",
+  "minzoom": 13,
+  "pointRendering": [
+    {
+      "location": [
+        "centroid",
+        "point"
+      ],
+      "marker": [
+        {
+          "icon": {
+            "render": "https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg",
+            "mappings": [
+              {
+                "if": "check_date!=",
+                "then": "https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg"
+              },
+              {
+                "if": "check_date=",
+                "then": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Cross_red_circle.svg"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "tagRenderings": [
+    "images",
+    {
+      "question": {
+        "en": "What date do you have check this item?"
+      },
+      "id": "1_jdked7qmdy25aw2",
+      "render": {
+        "en": "Check date is {check_date}"
+      },
+      "freeform": {
+        "key": "check_date",
+        "type": "date"
+      }
+    },
+    {
+      "question": {
+        "en": "What sport is being practised here?",
+        "ca": "Quin esport es practica aquí?",
+        "es": "¿Qué deporte se practica aquí?"
+      },
+      "id": "2_0pblcx1ae5dlyec",
+      "render": {
+        "en": "The sport here is {sport}"
+      },
+      "freeform": {
+        "key": "sport",
+        "type": "string"
+      },
+      "questionHint": {
+        "en": "If you consider it is not correct and it's a traditional Spanish sport please correct the sport to skittles"
+      },
+      "multiAnswer": false,
+      "mappings": [
+        {
+          "if": "sport=bowls",
+          "then": {
+            "en": "Bowls",
+            "ca": "Joc de bitlles",
+            "es": "Juego de bolos"
+          }
+        },
+        {
+          "if": "sport=boules",
+          "then": {
+            "en": "Boules",
+            "ca": "Petanca",
+            "es": "Petanca"
+          }
+        },
+        {
+          "if": "sport=9pin",
+          "then": {
+            "en": "9 pin",
+            "ca": "Bitlles americanes 9 bitlles",
+            "es": "Bolos americanos 9 bolos"
+          }
+        },
+        {
+          "if": "sport=10pin",
+          "then": {
+            "en": "10 pin",
+            "ca": "Bitlles americanes 10 bitlles",
+            "es": "Bitlles americanes 9 bitlles"
+          }
+        },
+        {
+          "if": "sport=skittles",
+          "then": {
+            "en": "Skittles (Spanish traditional game)",
+            "ca": "Bitlles tradicionals",
+            "es": "Bolos tradicionales"
+          }
+        }
+      ]
+    }
+  ],
+  "lineRendering": [
+    {
+      "width": 1,
+      "color": "blue"
+    }
+  ],
+  "id": "skittleses",
+  "name": {
+    "en": "skittleses",
+    "ca": "skittleses",
+    "es": "skittleses"
+  },
+  "description": {
+    "en": "Add the tag skittles to traditional games from Spain rather than american games. Then change the check_date to mark it is checked.",
+    "ca": "Classifica correctament les bitlles tradicionals enfront les boleres americanes. Un cop fet això canvia la data de comprovació per marcar que ha estat comprovada",
+    "es": "Clasifica correctamente los bolos tradicionales para diferenciarlas de las boleras americanas. Una vez hecho cambia la fecha de comprobación para demostrar que ha sido comprobada."
+  },
+  "source": {
+    "osmTags": {
+      "or": [
+        "sport=bowls",
+        "sport=boules",
+        "sport=9pin",
+        "sport=10pin"
+      ]
+    }
+  },
+  "title": {
+    "render": {
+      "en": "{name} || {sport}",
+      "ca": "{name} || {sport}",
+      "es": "{name} || {sport}"
+    },
+    "mappings": [
+      {
+        "if": {
+          "or": [
+            "sport=bowls",
+            "sport=boules",
+            "sport=9pin",
+            "sport=10pin"
+          ]
+        },
+        "then": {
+          "en": "{name} || {sport}",
+          "ca": "{name} || {sport}",
+          "es": "{name} || {sport}"
+        }
+      }
+    ]
+  },
+  "shownByDefault": true,
+  "popupInFloatover": false,
+  "passAllFeatures": false,
+  "doNotDownload": false,
+  "forceLoad": false
+}
