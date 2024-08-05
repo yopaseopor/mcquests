@@ -30,11 +30,15 @@
     "images",
     {
       "question": {
-        "en": "What date do you have check this item?"
+        "en": "What date do you have check this item?",
+		    "ca": "Quina data de comprovació té aquest ítem?",
+			"es": "¿Qué fecha de comprobación tiene este ítem?"
       },
       "id": "1_jdked7qmdy25aw2",
       "render": {
-        "en": "Check date is {check_date}"
+        "en": "Check date is {check_date}",
+		    "ca": "La data de comprovació és {check_date}",
+			"es": "La fecha de comprobación es {check_date}"
       },
       "freeform": {
         "key": "check_date",
@@ -48,7 +52,7 @@
       "color": "blue"
     }
   ],
-  "id": "wikidataimage",
+  "id": "wikidataimg",
   "name": {
     "en": "wikidataimg",
     "ca": "wikidataimg",
