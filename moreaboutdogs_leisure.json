@@ -131,19 +131,19 @@
       "color": "blue"
     }
   ],
-  "id": "moreaboutdogsleasure",
+  "id": "moreaboutdogsleisure",
   "name": {
-    "en": "More about dogs-leasure",
+    "en": "More about dogs-leisure",
     "ca": "Més sobre gossos-oci",
     "es": "Más sobre perros-ocio"
   },
   "description": {
-    "en": "More about dogs, as you now in Openstreetmap we divide places in categories. This is for leasure.",
+    "en": "More about dogs, as you now in Openstreetmap we divide places in categories. This is for leisure.",
     "ca": "Més sobre gossos, com saps a Openstreetmap dividim els llocs en categories. Aquesta és la de oci.",
     "es": "Más sobre perros, como sabrás en Openstreetmap dividimos los lugares en categorías. Esta es la de ocio."
   },
   "source": {
-    "osmTags": "leasure!="
+    "osmTags": "leisure!="
   },
   "title": {
     "render": {
