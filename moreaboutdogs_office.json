@@ -131,19 +131,19 @@
       "color": "blue"
     }
   ],
-  "id": "moreaboutdogsamenity",
+  "id": "moreaboutdogsoffice",
   "name": {
-    "en": "More about dogs",
-    "ca": "Més sobre gossos",
-    "es": "Más sobre perros"
+    "en": "More about dogs-office",
+    "ca": "Més sobre gossos-oficines",
+    "es": "Más sobre perros-oficinas"
   },
   "description": {
-    "en": "More about dogs, as you now in Openstreetmap we divide places in categories. This is for amenities.",
-    "ca": "Més sobre gossos, com saps a Openstreetmap dividim els llocs en categories. Aquesta és la de serveis.",
-    "es": "Más sobre perros, como sabrás en Openstreetmap dividimos los lugares en categorías. Esta es la de servicios."
+    "en": "More about dogs, as you now in Openstreetmap we divide places in categories. This is for offices.",
+    "ca": "Més sobre gossos, com saps a Openstreetmap dividim els llocs en categories. Aquesta és la de oficines.",
+    "es": "Más sobre perros, como sabrás en Openstreetmap dividimos los lugares en categorías. Esta es la de oficinas."
   },
   "source": {
-    "osmTags": "amenity!="
+    "osmTags": "office!="
   },
   "title": {
     "render": {

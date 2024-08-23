@@ -1,0 +1,156 @@
+{
+  "credits": "Not logged in",
+  "minzoom": 17,
+  "pointRendering": [
+    {
+      "location": [
+        "point",
+        "centroid"
+      ],
+      "marker": [
+        {
+          "color": "white",
+          "icon": {
+            "mappings": [
+              {
+                "if": "dog=yes",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_green.svg"
+              },
+              {
+                "if": "dog=no",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_red.svg"
+              },
+              {
+                "if": "dog=permissive",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_yellow.svg"
+              },
+              {
+                "if": "dog=unleashed",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_purple.svg"
+              },
+              {
+                "if": "dog=designated",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_turquoise.svg"
+              },
+              {
+                "if": "dog=on_request",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_brown.svg"
+              },
+              {
+                "if": "dog=leashed",
+                "then": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_orange.svg"
+              }
+            ],
+            "render": "https://yopaseopor.github.io/osmpetsmap/src/img/icones/dog_question.svg"
+          }
+        }
+      ]
+    }
+  ],
+  "tagRenderings": [
+    "images",
+    {
+      "question": {
+        "en": "Does this place allow dogs?",
+    "ca": "Aquest lloc accepta gossos?",
+    "es": "¿Este sitio acepta perros?"
+      },
+      "id": "1_zlba3t3dnbd19fe",
+      "freeform": {
+        "key": "dog"
+      },
+      "mappings": [
+        {
+          "if": "dog=yes",
+          "then": {
+            "en": "Yes to dogs",
+    "ca": "Sí a gossos",
+    "es": "Sí a perros"
+          }
+        },
+        {
+          "if": "dog=no",
+          "then": {
+            "en": "No to dogs",
+    "ca": "No a gossos",
+    "es": "No a perros"
+          }
+        },
+        {
+          "if": "dog=permissive",
+          "then": {
+            "en": "Permissive to dogs",
+    "ca": "Permissiu amb gossos",
+    "es": "Permisivo con perros"
+          }
+        },
+        {
+          "if": "dog=unleashed",
+          "then": {
+            "en": "Unleashed dogs",
+    "ca": "Gossos sense lligar",
+    "es": "Perros sin atar"
+          }
+        },
+        {
+          "if": "dog=designated",
+          "then": {
+            "en": "Designated to dogs",
+    "ca": "Designat per a gossos",
+    "es": "Designado para perros"
+          }
+        },
+        {
+          "if": "dog=on_request",
+          "then": {
+            "en": "Can you request it?",
+    "ca": "Ho pots demanar?",
+    "es": "¿Lo puedes preguntar?"
+          }
+        },
+        {
+          "if": "dog=leashed",
+          "then": {
+            "en": "Leashed",
+    "ca": "Gossos lligats",
+    "es": "Perros atados"
+          }
+        }
+      ],
+      "render": {
+        "en": "Dogs? {dog}",
+    "ca": "Gossos? {dog}",
+    "es": "Perros? {dog}"
+      }
+    },
+    "reviews"
+  ],
+  "lineRendering": [
+    {
+      "width": 1,
+      "color": "blue"
+    }
+  ],
+  "id": "moreaboutdogsamenity",
+  "name": {
+    "en": "More about dogs-amenities",
+    "ca": "Més sobre gossos-serveis",
+    "es": "Más sobre perros-servicios"
+  },
+  "description": {
+    "en": "More about dogs, as you now in Openstreetmap we divide places in categories. This is for amenities.",
+    "ca": "Més sobre gossos, com saps a Openstreetmap dividim els llocs en categories. Aquesta és la de serveis.",
+    "es": "Más sobre perros, como sabrás en Openstreetmap dividimos los lugares en categorías. Esta es la de servicios."
+  },
+  "source": {
+    "osmTags": "amenity!="
+  },
+  "title": {
+    "render": {
+      "en": "{name}",
+    "ca": "{name}",
+    "es": "{name}"
+      
+    }
+  }
+}
