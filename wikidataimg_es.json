@@ -1,0 +1,86 @@
+{
+  "credits": "Not logged in",
+  "minzoom": 13,
+  "pointRendering": [
+    {
+      "location": [
+        "centroid",
+        "point"
+      ],
+      "marker": [
+        {
+          "icon": {
+            "render": "https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg",
+            "mappings": [
+              {
+                "if": "check_date!=",
+                "then": "https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg"
+              },
+              {
+                "if": "check_date=",
+                "then": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Cross_red_circle.svg"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "tagRenderings": [
+    "images",
+    {
+      "question": {
+        "en": "What date do you have check this item?",
+		    "ca": "Quina data de comprovació té aquest ítem?",
+			"es": "¿Qué fecha de comprobación tiene este ítem?"
+      },
+      "id": "1_jdked7qmdy25aw2",
+      "render": {
+        "en": "Check date is {check_date}",
+		    "ca": "La data de comprovació és {check_date}",
+			"es": "La fecha de comprobación es {check_date}"
+      },
+      "freeform": {
+        "key": "check_date",
+        "type": "date"
+      }
+    }
+  ],
+  "lineRendering": [
+    {
+      "width": 1,
+      "color": "blue"
+    }
+  ],
+  "id": "wikidataimg",
+  "name": {
+    "en": "wikidataimg",
+    "ca": "wikidataimg",
+    "es": "wikidataimg"
+  },
+  "description": {
+    "en": "Add images from wikimedia articles.",
+    "ca": "Afegeix imatges d'articles de wikimedia",
+    "es": "Añadir imágenes sobre un artículo de wikimedia"
+  },
+  "source": {
+    "osmTags": {
+      "and": [
+        "wikidata!=",
+        "boundary="
+      ]
+    }
+  },
+  "title": {
+    "render": {
+      "en": "{name} || wikipedia: {wikipedia} || wikidata:{wikidata}",
+      "ca": "{name} || wikipedia: {wikipedia} || wikidata:{wikidata}",
+      "es": "{name} || wikipedia: {wikipedia} || wikidata:{wikidata}"
+    }
+  },
+  "shownByDefault": true,
+  "popupInFloatover": false,
+  "passAllFeatures": false,
+  "doNotDownload": false,
+  "forceLoad": false
+}
