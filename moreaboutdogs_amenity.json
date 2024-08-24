@@ -146,24 +146,22 @@
     "osmTags": {
       "and": [
         "amenity!=",
-        {
-          "or": [
-            "amenity!=parking",
-            "amenity!=parking_entrance",
-            "amenity!=bench",
-            "amenity!=cafe",
-            "amenity!=bar",
-            "amenity!=restaurant"
-          ]
-        }
+		        "amenity!=recycling",
+				        "amenity!=charging_station",
+						        "amenity!=bench",
+        "amenity!=waste_basket",
+		        "amenity!=bicycle_parking",
+				        "amenity!=motorcycle_parking",
+        "amenity!=parking",
+        "amenity!=parking_space"
       ]
     }
   },
   "title": {
     "render": {
-      "en": "{name}",
-    "ca": "{name}",
-    "es": "{name}"
+      "en": "{amenity}:{name}",
+    "ca": "{amenity}:{name}",
+    "es": "{amenity}:{name}"
       
     }
   }
