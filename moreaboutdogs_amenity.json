@@ -143,7 +143,21 @@
     "es": "Más sobre perros, como sabrás en Openstreetmap dividimos los lugares en categorías. Esta es la de servicios."
   },
   "source": {
-    "osmTags": "amenity!="
+    "osmTags": {
+      "and": [
+        "amenity!=",
+        {
+          "or": [
+            "amenity!=parking",
+            "amenity!=parking_entrance",
+            "amenity!=bench",
+            "amenity!=cafe",
+            "amenity!=bar",
+            "amenity!=restaurant"
+          ]
+        }
+      ]
+    }
   },
   "title": {
     "render": {
