@@ -146,14 +146,22 @@
     "osmTags": {
       "and": [
         "amenity!=",
-		        "amenity!=recycling",
-				        "amenity!=charging_station",
-						        "amenity!=bench",
-        "amenity!=waste_basket",
-		        "amenity!=bicycle_parking",
-				        "amenity!=motorcycle_parking",
+		"amenity!=atm",
+        "amenity!=bench",        
+		"amenity!=bicycle_parking",
+        "amenity!=charging_station",
+		"amenity!=hunting_stand",     
+        "amenity!=motorcycle_parking",
         "amenity!=parking",
-        "amenity!=parking_space"
+        "amenity!=post_box",
+        "amenity!=recycling",
+        "amenity!=telephone",
+		"amenity!=taxi",
+		"amenity!=parking_entrance",
+        "amenity!=parking_space",        
+		"amenity!=vending_machine",
+		"amenity!=waste_basket",        
+		"amenity!=waste_disposal"
       ]
     }
   },
