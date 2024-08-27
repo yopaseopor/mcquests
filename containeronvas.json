@@ -251,8 +251,8 @@
       ]
     }
   ],
-  "minzoom": 13,
-  "shownByDefault": false,
+  "minzoom": 17,
+  "shownByDefault": true,
   "popupInFloatover": false,
   "presets": [
     {
