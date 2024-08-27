@@ -178,7 +178,8 @@
           }
         }
       ]
-    }
+    },
+    "reviews"
   ],
   "lineRendering": [
     {
@@ -251,8 +252,8 @@
       ]
     }
   ],
-  "minzoom": 17,
-  "shownByDefault": true,
+  "minzoom": 13,
+  "shownByDefault": false,
   "popupInFloatover": false,
   "presets": [
     {
