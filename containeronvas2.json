@@ -201,13 +201,70 @@
       ],
       "marker": [
         {
-          "icon": "square",
-          "color": "#0000ff"
+          "color": "#0000ff",
+          "icon": {
+            "mappings": [
+              {
+                "if": "recycling:paper=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/paper.svg"
+              },
+              {
+                "if": "recycling:beverage_cartons=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/envasos.svg"
+              },
+              {
+                "if": "recycling:PET=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/envasos.svg"
+              },
+              {
+                "if": "recycling:cans=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/envasos.svg"
+              },
+              {
+                "if": "recycling:cooking_oil=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/oli.svg"
+              },
+              {
+                "if": "recycling:organic=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/organic.svg"
+              },
+              {
+                "if": "recycling:waste=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/rebuig.svg"
+              },
+              {
+                "if": "recycling:clothes=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/roba.svg"
+              },
+              {
+                "if": "recycling:batteries=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/piles.svg"
+              },
+              {
+                "if": "recycling:glass_bottles=yes",
+                "then": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/vidre.svg"
+              }
+            ],
+            "render": "https://yopaseopor.github.io/osmrecyclingmap/src/img/icones_contenidors/general.svg"
+          }
         }
       ]
     }
   ],
   "minzoom": 13,
   "shownByDefault": false,
-  "popupInFloatover": false
+  "popupInFloatover": false,
+  "presets": [
+    {
+      "title": {
+        "en": " a container",
+        "es": " un contenedor",
+        "ca": " un nou contenidor"
+      },
+      "tags": [
+        "amenity=recycling",
+        "recycling_type=container"
+      ]
+    }
+  ]
 }
